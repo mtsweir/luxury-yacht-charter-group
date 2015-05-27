@@ -1,0 +1,600 @@
+/* all app scss styles here */
+
+@import "compass/css3";
+@import "compass/utilities";
+
+$navy-blue   : #1A1C33;
+$teal        : #1FAEC0;
+
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$monsoon     : #777777;
+$tuatara     : #444444;
+$jet         : #222222;
+
+$text-center : center;
+$text-small  : .975rem;
+$font-weight-normal: 400;
+
+$font-style-serif: 'Roboto Slab', Georgia, Times, serif;
+
+/* Accessibility ------------------------------ */
+
+#skip a {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#skip a:focus { 
+	position: static; 
+	width: auto; 
+	height: auto; 
+}
+
+.screen-reader-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Typography ------------------------------ */
+
+.uppercase {
+	text-transform: uppercase;
+}
+.small {
+	font-size: 80%;
+	line-height: inherit;
+}
+
+/* Header ------------------------------ */
+
+.info-bar {
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+	background-color: #FFF;
+}
+.top-links {
+	margin: 0;
+	a {
+		color: $monsoon;
+		font-size: 13px;
+	}
+}
+
+.header {
+	padding: .7em 0;
+	float: left;
+	width: 100%;
+	background-color: $navy-blue;
+	z-index: 100;
+}
+.main-nav {
+	margin: 0;
+}
+.main-nav-link > a {
+	color: #FFF;
+}
+
+.main-nav-link .header-button-search {
+	margin: 0;
+	padding-left: 1rem;
+	padding-top: .4rem;
+	padding-right: 1rem;	
+	padding-bottom: .5rem;
+	font-weight: 400;
+}
+
+.accordion-social {
+	padding: 1rem;
+	a {
+		margin-right: .7rem;
+	}
+}
+
+.menu-trigger {
+	position: absolute;
+	left: 15px;
+	top: -2px;
+	.icon-burger {
+		color: #FFF;
+		font-size: 25px;
+		cursor: pointer;
+	}
+}
+
+.mobile-nav {
+	margin: 0;
+}
+
+/*.top-bar, .contain-to-grid, .top-bar-section ul li, .top-bar-section ul li > a {
+	background-color: $navy-blue !important;
+}*/
+
+/* Homepage ------------------------------ */
+
+.hero-wrapper {
+	position: relative;
+	height: 500px;
+	margin-bottom: 2rem;
+	clear: both;
+	background: {
+	  image: image-url("hero-banner.jpg");
+	  repeat: no-repeat;
+	  position: top left;
+	  size: cover;
+	};
+}
+
+.hero-bg {
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.hero-bg-wrap {
+  position: absolute;
+  z-index: -5;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-bg img {
+	position: absolute;
+	bottom: 0;
+}
+
+@media only screen and (max-width: 950px) {
+
+	.hero-wrapper {
+		height: 400px;
+	}
+	.hero-bg img {
+		position: absolute;
+		bottom: 0;
+		width: auto;
+		max-width: inherit;
+	}
+
+}
+@media only screen and (min-width: 951px) and (min-width: 1050px) {
+
+	.hero-bg img {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+}
+
+
+.hero-banner-content {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.va-middle {
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 100px;
+}
+
+.intro {
+	.banner-title {
+		color: #FFF;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.sub-line {
+		color: #FFF;
+	}
+}
+
+.banner-search {
+	background: #000;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.input-list {
+		margin: 0;
+	}
+}
+.search-form .button {
+	margin: 0;
+}
+
+/* Section styles */
+
+.section-header {
+	margin-bottom: .2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
+.sub-head {
+	text-align: center;
+}
+
+/* Yacht Types */
+
+.grid-yacht-type {
+	margin-bottom: 2rem;
+	h3 {
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+}
+
+/* Overview */
+
+.section-overview {
+	border-bottom: 1px solid $gainsboro;
+	margin-bottom: 3rem;
+}
+.overview-wrap {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	margin-bottom: 2rem;
+	color: #FFF;
+	background: {
+	  image: image-url("destination.jpg");
+	  repeat: no-repeat;
+	  position: top left;
+	};
+	@include background-size(cover);
+
+	h2 {
+		color: #FFF;
+		text-transform: uppercase;
+	}
+}
+
+/* Destinations */
+
+.panel-group {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+.panel-wrap {
+	padding-bottom: 40%;
+	height: 0;
+	position: relative;
+	overflow: hidden;
+}
+.panel-img {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	max-width: inherit;
+}
+.panel-inner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #FFF;
+	background: image-url("header-fade.png");
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+}
+.panel-info {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	right: 15px;
+
+	h3 {
+		margin: 0;
+		font-family: $font-style-serif;
+		font-size: 1.25rem;
+		color: #FFF;
+		line-height: 1.3;
+	}
+}
+.panel-info .destination-name {
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: $text-small;
+	font-weight: $font-weight-normal;
+	color: #fff;
+}
+.destination-sub {
+	margin-top: 1.6rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	display: inline-block;
+}
+
+/* News Feed */
+
+.section-news {
+	background-color: $smoke;
+	margin-top: 2.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.article-snippet {
+	margin-bottom: 1.2rem;
+	background-color: #FFF;
+	border: 1px solid $gainsboro;
+
+	a {
+		display: block;
+		padding-top: 1rem;
+	}
+
+	.post-content {
+		h3 {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 1.3rem;
+		}
+		.post-date {
+			font-size: $text-small;
+			color: $monsoon;
+			text-transform: uppercase;
+		}
+		p {
+			color: $tuatara;
+		}
+	}
+}
+
+/* Team */
+
+.section-team {
+	background-color: $smoke;
+	padding-bottom: 2rem;
+}
+.profile-card {
+		padding: 1rem;
+		margin: 2rem 0;
+		background-color: #FFF;
+	img {
+		width: 8rem;
+		display: block;
+		margin: 2rem auto;
+		text-align: center;
+		border-radius: 50%;
+	}
+	.profile-info {
+		padding: 0 0 1rem;
+		text-align: center;
+		h4 {
+		  margin-top: 0;
+		  font-size: 1.2rem;
+		  font-weight: 600;
+		  color: #444;
+		  text-align: center;
+		}
+		.small {
+			text-transform: uppercase;
+			font-size: $text-small;
+			font-weight: 400;
+			color: #777;
+		}
+		.button {
+			margin: 0;
+		}
+	}
+}
+
+/* Footer ------------------------------ */
+
+.footer-nav {
+	padding-top: 2.5rem;
+	padding-bottom: 2rem;
+	background-color: $navy-blue;
+	
+	h4 {
+		margin-bottom: 1rem;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #FFF;
+	}
+	p {
+		color: rgba(255,255,255,0.8);
+	}
+
+	.nav-list {
+
+		a {
+			margin-bottom: .5rem;
+			display: block;
+			color: rgba(255,255,255,0.8);
+			&:hover {
+				color: #FFF;
+			}
+		}
+	}
+}
+
+.nav-subscribe {
+	.input-subscribe {
+		border-radius: 2px 0 0 2px;
+	}
+	.button-subscribe {
+		background-color: #FFF;
+		border-radius: 0 2px 2px 0;
+	}
+}
+
+.social-icon i {
+	margin-right: .3em;
+	margin-top: 5px;
+	padding: .6rem 0;
+	width: 40px;
+	font-size: 1.2em;
+	color: #FFF;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	border-radius: 50%;
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+.footer-bottom {
+	padding: 1.5rem 0;
+}
+.member-text,
+.nav-footer-info {
+	font-size: $text-small;
+}
+.nav-footer-info {
+	li {
+		margin-left: 1rem;
+	}
+}
+
+/* Custom Styles ------------------------------ */
+
+.button {
+	padding: .7rem 2.4rem .8rem 2.4rem;
+	font-weight: 600;
+	border-radius: 0.2em;
+	background: $teal;
+	-webkit-transition: all 250ms;
+	-moz-transition: all 250ms;
+	-o-transition: all 250ms;
+	transition: all 250ms;
+}
+.button-secondary {
+	border: 1px solid $iron;
+	color: $tuatara;
+	background-color: #FFF;
+	&:hover {
+		border-color: $base;
+		color: $jet;
+		background-color: #FFF;
+	}
+}
+.postfix.button {
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	text-align: center;
+}
+
+.row {
+	max-width: 74rem;
+}
+
+.move-right .exit-off-canvas {
+	background-color: rgba(0,0,0,.4);
+}
+.accordion .accordion-navigation > a,
+.accordion .accordion-navigation > a:hover {
+	background-color: transparent;
+}
+.accordion .accordion-navigation.active > a {
+	background-color: $teal;
+}
+.accordion .accordion-navigation > a {
+	color: #FFF;
+	font-weight: 600;
+	border-bottom: 1px solid rgba(255,255,255,0.1)
+}
+.accordion .accordion-navigation > .content.active {
+	background-color: adjust-lightness($navy-blue, -10);
+	padding: 0;
+}
+.accordion-navigation > .content a {
+	padding: 1rem;
+	display: block;
+	color: #FFF;
+	font-weight: 600;
+	border-bottom: 1px solid #000;
+	&:hover {
+		background-color: adjust-lightness($navy-blue, -5);
+	}
+}
+.button-search {
+	margin-left: 4px;
+	@include opacity(0.6);
+}
+
+@media only screen and (max-width: 40.0624em) {
+	.logo-wrap {
+		text-align: center;
+		display: block;
+		.logo {
+			margin: 0 auto;
+			display: block;
+			width: 250px;
+			height: 20px;
+		}
+	}
+	.intro .sub-line {
+		display: none;
+	}
+	.banner-search .input-list {
+		margin-bottom: 1rem;
+	}
+}
+@media only screen and (min-width: 40.0625em) {
+	.logo-wrap {
+		float: left;
+	}
+	.sub-head {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+@media only screen and (min-width: 25em) and (max-width: 44em) {
+	.panel-wrap {
+		padding-bottom: 50%;
+	}
+}
+@media only screen and (min-width: 44em) {
+	.panel-wrap {
+		padding-bottom: 25%;
+		float: left;
+		width: 33.333%;
+	}
+	.panel-span-6 {
+		width: 50%;
+	}
+	.panel-wrap:last-child {
+		float: right;
+	}
+	.panel-info h3 {
+		font-size: 1.3rem;
+	}
+}
+@media only screen and (min-width: 60em) {
+	.panel-info h3 {
+		font-size: 1.6rem;
+	}
+	.panel-span-6 h3 {
+		font-size: 2rem;
+	}
+}
