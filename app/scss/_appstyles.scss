@@ -4,21 +4,39 @@
 @import "compass/utilities";
 
 $navy-blue   : #1A1C33;
-$teal        : #1FAEC0;
+$teal        : #129caf;
 
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
 $smoke       : #EEEEEE;
 $gainsboro   : #DDDDDD;
 $iron        : #CCCCCC;
 $base        : #AAAAAA;
 $monsoon     : #777777;
+$charcoal    : #555555;
 $tuatara     : #444444;
 $jet         : #222222;
+$black       : #000000;
 
 $text-center : center;
+$text-tiny   : .875rem;
 $text-small  : .975rem;
 $font-weight-normal: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
 
-$font-style-serif: 'Roboto Slab', Georgia, Times, serif;
+$font-style-header: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-style-fancy: 'Roboto Slab', Georgia, Times, serif;
+$font-style-body: 'Open Sans', Helvetica, Arial, sans-serif;
+
+body {
+	font-family: $font-style-body;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-style-header;
+	font-weight: $font-weight-bold;
+}
 
 /* Accessibility ------------------------------ */
 
@@ -61,8 +79,8 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 /* Header ------------------------------ */
 
 .info-bar {
-	padding-top: .2rem;
-	padding-bottom: .2rem;
+	padding-top: .4rem;
+	padding-bottom: .4rem;
 	background-color: #FFF;
 }
 .top-links {
@@ -74,14 +92,35 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 }
 
 .header {
-	padding: .7em 0;
 	float: left;
 	width: 100%;
 	background-color: $navy-blue;
 	z-index: 100;
 }
+
+.logo-wrap {
+	position: relative;
+	.logo {
+		position: absolute; top: -26px; left: 0;
+		display: inline-block;
+		width: 545px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
 .main-nav {
-	margin: 0;
+	margin: 18px 0;
+	overflow: visible;
+	li {
+		float: none;
+		display: inline-block;
+		font-size: .9rem;
+		.f-dropdown li {
+			width: 100%;
+		}
+	}
 }
 .main-nav-link > a {
 	color: #FFF;
@@ -89,11 +128,8 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 
 .main-nav-link .header-button-search {
 	margin: 0;
-	padding-left: 1rem;
-	padding-top: .4rem;
-	padding-right: 1rem;	
-	padding-bottom: .5rem;
-	font-weight: 400;
+	padding: .4rem 1rem;
+	font-size: .9rem;
 }
 
 .accordion-social {
@@ -129,12 +165,13 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 	height: 500px;
 	margin-bottom: 2rem;
 	clear: both;
+	/*clear: both;
 	background: {
 	  image: image-url("hero-banner.jpg");
 	  repeat: no-repeat;
 	  position: top left;
 	  size: cover;
-	};
+	};*/
 }
 
 .hero-bg {
@@ -200,6 +237,7 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 		text-transform: uppercase;
 	}
 	.sub-line {
+		font-size: 1.2rem;
 		color: #FFF;
 	}
 }
@@ -224,14 +262,14 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 /* Section styles */
 
 .section-header {
-	margin-bottom: .2rem;
+	margin-bottom: .6rem;
 	font-size: 1.8rem;
-	font-weight: 600;
 	line-height: 1.2;
 	text-align: center;
 }
 .sub-head {
 	text-align: center;
+	line-height: 1.8;
 }
 
 /* Yacht Types */
@@ -239,6 +277,7 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 .grid-yacht-type {
 	margin-bottom: 2rem;
 	h3 {
+		margin-top: 1.3rem;
 		font-size: 1rem;
 		text-transform: uppercase;
 	}
@@ -247,24 +286,39 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 /* Overview */
 
 .section-overview {
-	border-bottom: 1px solid $gainsboro;
-	margin-bottom: 3rem;
+	position: relative;
 }
 .overview-wrap {
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 	margin-bottom: 2rem;
 	color: #FFF;
-	background: {
-	  image: image-url("destination.jpg");
-	  repeat: no-repeat;
-	  position: top left;
-	};
+
 	@include background-size(cover);
 
 	h2 {
 		color: #FFF;
 		text-transform: uppercase;
+	}
+}
+.section-overview-sub {
+	border-bottom: 1px solid $gainsboro;
+	margin-bottom: 3rem;
+}
+
+.media-cover, .media-cover:after {
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+}
+.media-cover {
+	background: {
+	  image: image-url("section-overview-hero.jpg");
+	  repeat: no-repeat;
+	  position: top left;
+	};
+	&:after {
+		content: "";
+		background-color: $black;
+		@include opacity(0.4);
 	}
 }
 
@@ -303,13 +357,13 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 }
 .panel-info {
 	position: absolute;
-	bottom: 20px;
+	bottom: 15px;
 	left: 15px;
 	right: 15px;
 
 	h3 {
 		margin: 0;
-		font-family: $font-style-serif;
+		font-family: $font-style-fancy;
 		font-size: 1.25rem;
 		color: #FFF;
 		line-height: 1.3;
@@ -327,6 +381,8 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 	margin-top: 1.6rem;
 	padding-left: 4rem;
 	padding-right: 4rem;
+	width: 100%;
+	clear: both;
 	display: inline-block;
 }
 
@@ -338,24 +394,37 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-.article-snippet {
+.article-fluid {
+	padding: 1rem;
 	margin-bottom: 1.2rem;
+	display: inline-block;
 	background-color: #FFF;
 	border: 1px solid $gainsboro;
-
+	@include box-sizing(border-box);
+}
+.article-snippet {
+	padding: 0 0 0 280px;
+	.post-image {
+		margin: 0;
+		padding: 0;
+		width: 240px;
+		margin-left: -270px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+	}
 	a {
 		display: block;
-		padding-top: 1rem;
 	}
 
 	.post-content {
 		h3 {
-			margin-top: 0;
+			margin-top: .6rem;
 			margin-bottom: 0;
 			font-size: 1.3rem;
 		}
 		.post-date {
-			font-size: $text-small;
+			font-size: $text-tiny;
 			color: $monsoon;
 			text-transform: uppercase;
 		}
@@ -394,7 +463,7 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 		}
 		.small {
 			text-transform: uppercase;
-			font-size: $text-small;
+			font-size: $text-tiny;
 			font-weight: 400;
 			color: #777;
 		}
@@ -418,7 +487,8 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 		color: #FFF;
 	}
 	p {
-		color: rgba(255,255,255,0.8);
+		font-size: $text-tiny;
+		color: $iron;
 	}
 
 	.nav-list {
@@ -426,7 +496,8 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 		a {
 			margin-bottom: .5rem;
 			display: block;
-			color: rgba(255,255,255,0.8);
+			font-size: $text-tiny;
+			color: $iron;
 			&:hover {
 				color: #FFF;
 			}
@@ -439,8 +510,8 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 		border-radius: 2px 0 0 2px;
 	}
 	.button-subscribe {
-		background-color: #FFF;
-		border-radius: 0 2px 2px 0;
+		background-color: #F2F2F2;
+		@include replace-text("arrow-lg-right.png", 50%, 50%);
 	}
 }
 
@@ -461,11 +532,20 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 }
 
 .footer-bottom {
-	padding: 1.5rem 0;
+	padding: 2.2rem 0;
 }
 .member-text,
 .nav-footer-info {
-	font-size: $text-small;
+	font-size: $text-tiny;
+}
+.logo-myba {
+	margin-top: -20px;
+	margin-right: 20px;
+	width: 80px;
+	height: 70px;
+	float: left;
+	@include replace-text("logo-myba.png", 0, 0);
+	background-size: 100% auto;
 }
 .nav-footer-info {
 	li {
@@ -473,11 +553,58 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 	}
 }
 
+/* Typography ------------------------------ */
+
+.summary {
+	font-family: $font-style-fancy;
+	font-size: 1.333em;
+	margin-bottom: 1.5em;
+}
+
+/* Widgets ------------------------------ */
+
+.widget {
+	padding: 1rem;
+	border: 1px solid $gainsboro;
+
+	h4 {
+		font-weight: $font-weight-medium;
+		font-size: 1rem;
+	}
+	.button {
+		width: 100%;
+	}
+}
+
+.block-feature {
+	margin-bottom: 1.2em;
+	background-color: $snow;
+
+	.img {
+		float: left;
+		width: 160px;
+		margin-right: 1em;
+		position: relative;
+	}
+	.bd {
+		overflow: hidden;
+	}
+	.block-feature-title {
+		font-size: 1em;
+		font-weight: $font-weight-bold;
+	}
+	p {
+		color: $monsoon;
+		margin: 0;
+	}
+}
+
 /* Custom Styles ------------------------------ */
 
 .button {
 	padding: .7rem 2.4rem .8rem 2.4rem;
-	font-weight: 600;
+	font-family: $font-style-header;
+	font-weight: $font-weight-medium;
 	border-radius: 0.2em;
 	background: $teal;
 	-webkit-transition: all 250ms;
@@ -505,7 +632,7 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 }
 
 .row {
-	max-width: 74rem;
+	max-width: 80rem;
 }
 
 .move-right .exit-off-canvas {
@@ -586,15 +713,12 @@ $font-style-serif: 'Roboto Slab', Georgia, Times, serif;
 	.panel-wrap:last-child {
 		float: right;
 	}
-	.panel-info h3 {
-		font-size: 1.3rem;
-	}
 }
 @media only screen and (min-width: 60em) {
 	.panel-info h3 {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
 	.panel-span-6 h3 {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 }
