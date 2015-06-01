@@ -1,0 +1,44 @@
+$navy-blue   : #1A1C33;
+$teal        : #129caf;
+$aqua        : #abd7e3;
+
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$monsoon     : #777777;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$jet         : #222222;
+$coal        : #111111;
+$black       : #000000;
+
+$text-center : center;
+$text-tiny   : .875rem;
+$text-small  : .975rem;
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+$font-style-header: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-style-fancy: 'Roboto Slab', Georgia, Times, serif;
+$font-style-body: 'Open Sans', Helvetica, Arial, sans-serif;
+
+body {
+	font-family: $font-style-body;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-style-header;
+	font-weight: $font-weight-bold;
+}
+h2 {
+	font-size: 1.5rem;
+	color: $coal;
+}
+h3 {
+	font-size: 1.125rem;
+	color: $jet;
+}

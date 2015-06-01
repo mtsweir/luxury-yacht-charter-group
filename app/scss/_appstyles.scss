@@ -2,40 +2,13 @@
 
 @import "compass/css3";
 @import "compass/utilities";
+@import "appbase";
 
-$navy-blue   : #1A1C33;
-$teal        : #129caf;
+/* Mobile ------------------------------ */
 
-$ghost       : #FAFAFA;
-$snow        : #F9F9F9;
-$vapor       : #F6F6F6;
-$smoke       : #EEEEEE;
-$gainsboro   : #DDDDDD;
-$iron        : #CCCCCC;
-$base        : #AAAAAA;
-$monsoon     : #777777;
-$charcoal    : #555555;
-$tuatara     : #444444;
-$jet         : #222222;
-$black       : #000000;
-
-$text-center : center;
-$text-tiny   : .875rem;
-$text-small  : .975rem;
-$font-weight-normal: 400;
-$font-weight-medium: 600;
-$font-weight-bold: 700;
-
-$font-style-header: 'Open Sans', Helvetica, Arial, sans-serif;
-$font-style-fancy: 'Roboto Slab', Georgia, Times, serif;
-$font-style-body: 'Open Sans', Helvetica, Arial, sans-serif;
-
-body {
-	font-family: $font-style-body;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: $font-style-header;
-	font-weight: $font-weight-bold;
+.img-responsive {
+	width: 100%;
+	height: auto;
 }
 
 /* Accessibility ------------------------------ */
@@ -123,13 +96,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 .main-nav-link > a {
-	color: #FFF;
+	color: $smoke;
+	&:hover {
+		color: #FFF;
+	}
 }
 
 .main-nav-link .header-button-search {
 	margin: 0;
 	padding: .4rem 1rem;
 	font-size: .9rem;
+	color: #FFF;
 }
 
 .accordion-social {
@@ -154,70 +131,68 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-/*.top-bar, .contain-to-grid, .top-bar-section ul li, .top-bar-section ul li > a {
-	background-color: $navy-blue !important;
-}*/
+/* Content ------------------------------ */
+
+#content {
+	clear: both;
+}
+.content-body {
+	padding-bottom: 5rem;
+}
 
 /* Homepage ------------------------------ */
 
 .hero-wrapper {
 	position: relative;
-	height: 500px;
+	height: 600px;
 	margin-bottom: 2rem;
 	clear: both;
-	/*clear: both;
-	background: {
-	  image: image-url("hero-banner.jpg");
-	  repeat: no-repeat;
-	  position: top left;
-	  size: cover;
-	};*/
 }
 
 .hero-bg {
 	z-index: -1;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
 	overflow: hidden;
 }
 .hero-bg-wrap {
-  position: absolute;
-  z-index: -5;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+	position: absolute;
+	z-index: 100;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 .hero-bg img {
 	position: absolute;
 	bottom: 0;
 }
 
-@media only screen and (max-width: 950px) {
-
+@media only screen and (max-width: 767px) {
+	
 	.hero-wrapper {
 		height: 400px;
 	}
+
+}
+
+@media only screen and (max-width: 1067px) {
+	
 	.hero-bg img {
-		position: absolute;
-		bottom: 0;
+		position: absolute; bottom: 0;
 		width: auto;
+		height: 100%;
 		max-width: inherit;
 	}
 
 }
-@media only screen and (min-width: 951px) and (min-width: 1050px) {
+
+@media only screen and (min-width: 1067px) and (min-width: 1199px) {
 
 	.hero-bg img {
-		position: absolute;
-		bottom: 0;
+		position: absolute; bottom: 0;
 		width: 100%;
 	}
 
 }
-
 
 .hero-banner-content {
 	display: table;
@@ -227,17 +202,19 @@ h1, h2, h3, h4, h5, h6 {
 .va-middle {
 	display: table-cell;
 	vertical-align: middle;
-	padding-bottom: 100px;
+	padding-bottom: 120px;
 }
 
 .intro {
+	padding: 0 8%;
 	.banner-title {
+		font-size: 3rem;
 		color: #FFF;
-		font-weight: 700;
 		text-transform: uppercase;
 	}
 	.sub-line {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		font-weight: $font-weight-normal;
 		color: #FFF;
 	}
 }
@@ -249,8 +226,8 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	.input-list {
 		margin: 0;
 	}
@@ -297,8 +274,8 @@ h1, h2, h3, h4, h5, h6 {
 	@include background-size(cover);
 
 	h2 {
+		font-size: 2.6rem;
 		color: #FFF;
-		text-transform: uppercase;
 	}
 }
 .section-overview-sub {
@@ -314,6 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 	  image: image-url("section-overview-hero.jpg");
 	  repeat: no-repeat;
 	  position: top left;
+	  size: cover;
 	};
 	&:after {
 		content: "";
@@ -379,8 +357,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .destination-sub {
 	margin-top: 1.6rem;
-	padding-left: 4rem;
-	padding-right: 4rem;
 	width: 100%;
 	clear: both;
 	display: inline-block;
@@ -389,13 +365,11 @@ h1, h2, h3, h4, h5, h6 {
 /* News Feed */
 
 .section-news {
-	background-color: $smoke;
 	margin-top: 2.5rem;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 .article-fluid {
-	padding: 1rem;
 	margin-bottom: 1.2rem;
 	display: inline-block;
 	background-color: #FFF;
@@ -403,34 +377,34 @@ h1, h2, h3, h4, h5, h6 {
 	@include box-sizing(border-box);
 }
 .article-snippet {
-	padding: 0 0 0 280px;
+	/*padding: 0 0 0 280px;*/
 	.post-image {
 		margin: 0;
 		padding: 0;
-		width: 240px;
-		margin-left: -270px;
-		float: left;
-		overflow: hidden;
-		position: relative;
 	}
 	a {
 		display: block;
 	}
 
-	.post-content {
-		h3 {
-			margin-top: .6rem;
-			margin-bottom: 0;
-			font-size: 1.3rem;
+}
+.post-content {
+	padding: 1rem 1rem .5rem;
+	h3 {
+		margin-top: .6rem;
+		margin-bottom: 0;
+		font-size: 1.3rem;
+		&:hover {
+			color: $teal;
 		}
-		.post-date {
-			font-size: $text-tiny;
-			color: $monsoon;
-			text-transform: uppercase;
-		}
-		p {
-			color: $tuatara;
-		}
+		
+	}
+	.post-date {
+		font-size: $text-tiny;
+		color: $monsoon;
+		text-transform: uppercase;
+	}
+	p {
+		color: $tuatara;
 	}
 }
 
@@ -438,7 +412,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-team {
 	background-color: $smoke;
-	padding-bottom: 2rem;
+	padding: 2rem 0 5rem;
 }
 .profile-card {
 		padding: 1rem;
@@ -511,6 +485,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.button-subscribe {
 		background-color: #F2F2F2;
+		border-radius: 0;
 		@include replace-text("arrow-lg-right.png", 50%, 50%);
 	}
 }
@@ -532,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-bottom {
-	padding: 2.2rem 0;
+	padding: 2.2rem 0 1rem;
 }
 .member-text,
 .nav-footer-info {
@@ -557,24 +532,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .summary {
 	font-family: $font-style-fancy;
+	font-weight: $font-weight-normal;
 	font-size: 1.333em;
 	margin-bottom: 1.5em;
 }
 
-/* Widgets ------------------------------ */
-
-.widget {
-	padding: 1rem;
-	border: 1px solid $gainsboro;
-
-	h4 {
-		font-weight: $font-weight-medium;
-		font-size: 1rem;
-	}
-	.button {
-		width: 100%;
-	}
+.segment-overview img {
+	margin-bottom: 1.4rem;
+	display: block;
 }
+
+/* Widgets ------------------------------ */
 
 .block-feature {
 	margin-bottom: 1.2em;
@@ -594,12 +562,15 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: $font-weight-bold;
 	}
 	p {
-		color: $monsoon;
 		margin: 0;
 	}
 }
 
-/* Custom Styles ------------------------------ */
+/* ZURB Style Settings ------------------------------ */
+
+.row {
+	max-width: 76rem;
+}
 
 .button {
 	padding: .7rem 2.4rem .8rem 2.4rem;
@@ -629,10 +600,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 0;
 	padding-top: 0;
 	text-align: center;
-}
-
-.row {
-	max-width: 80rem;
 }
 
 .move-right .exit-off-canvas {
@@ -670,12 +637,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 40.0624em) {
+	.header {
+		height: 3.5em;
+	}
+	.menu-trigger {
+		top: 13px;
+	}
+	.menu-trigger .icon-burger {
+		font-size: 32px;
+	}
+	.primary-nav {
+		margin-left: 3em;
+		margin-top: 10px;
+		float: left;
+	}
 	.logo-wrap {
-		text-align: center;
-		display: block;
 		.logo {
-			margin: 0 auto;
-			display: block;
+			top: 0;
 			width: 250px;
 			height: 20px;
 		}
@@ -685,6 +663,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.banner-search .input-list {
 		margin-bottom: 1rem;
+	}
+	.panel-img {
+		width: 100%;
+		height: auto;
 	}
 }
 @media only screen and (min-width: 40.0625em) {
@@ -701,7 +683,30 @@ h1, h2, h3, h4, h5, h6 {
 		padding-bottom: 50%;
 	}
 }
+@media only screen and (min-width: 36em) {
+	.article-fluid {
+		padding: 1rem;
+	}
+	.article-snippet {
+		padding: 0 0 0 280px;
+		.post-image {
+			margin: 0;
+			padding: 0;
+			width: 240px;
+			margin-left: -270px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+		.post-content {
+			padding: 0;
+		}
+	}
+}
 @media only screen and (min-width: 44em) {
+	.banner-title {
+		font-size: 2.8rem;
+	}
 	.panel-wrap {
 		padding-bottom: 25%;
 		float: left;
