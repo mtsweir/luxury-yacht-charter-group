@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:700,400" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
@@ -30,6 +31,7 @@
           <li class="accordion-navigation">
               <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
           </li>
+          <li class="accordion-navigation"><a href="#">Home</a></li>
           <li class="accordion-navigation">
             <a href="#panel1a">Destinations</a>
             <div id="panel1a" class="content">
@@ -65,8 +67,23 @@
             </div>
           </li>
           <li class="accordion-navigation"><a href="#">News</a></li>
-          <li>
-              social links to add here
+          <li class="accordion-navigation">
+            <a href="#panel4a">About Us</a>
+            <div id="panel4a" class="content">
+                <ul class="no-bullet">
+                    <li><a href="#">Sub Nav Link</a></li>
+                    <li><a href="#">Sub Nav Link</a></li>
+                    <li><a href="#">Sub Nav Link</a></li>
+                    <li><a href="#">Sub Nav Link</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="accordion-navigation accordion-social">
+            <nav class="nav-social">
+                <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+            </nav>
           </li>
         </ul>
     </aside>
@@ -97,43 +114,49 @@
             <i class="fa fa-bars icon-burger"></i>
             <span class="screen-reader-only">Menu</span>
         </a>
-        
-        <div class="logo-wrap">
-            <a class="logo" href="#" title="Luxury Yacht Charter Group">Luxury Yacht Charter Group</a>
-        </div>
 
-        <ul class="main-nav inline-list right show-for-medium-up">
-            <li class="main-nav-link">
-                <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
-                <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                </ul>
-            </li>
-            <li class="main-nav-link">
-                <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
-                <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                    <li><a href="#">Sailing Yachts</a></li>
-                    <li><a href="#">Motor Yachts</a></li>
-                    <li><a href="#">Catamarans</a></li>
-                    <li><a href="#">Gulets</a></li>
-                </ul>
-            </li>
-            <li class="main-nav-link">
-                <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
-                <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </li>
-            <li class="main-nav-link"><a href="#">News</a></li>
-            <li class="main-nav-link"><a href="#" class="header-button-search button">Find Your Yacht</a></li>
-        </ul>
+        <nav class="primary-nav">
+
+            <div class="logo-wrap">
+                <a class="logo" href="#" title="Luxury Yacht Charter Group">
+                    <img data-interchange="[images/logo-lycg.svg, (default)], [images/logo-lycg-mobile.svg, (small-only)]">
+                </a>
+            </div>
+
+            <ul class="main-nav inline-list right show-for-medium-up">
+                <li class="main-nav-link">
+                    <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
+                    <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                        <li><a href="#">Caribbean</a></li>
+                        <li><a href="#">Mediterranean</a></li>
+                        <li><a href="#">Bahamas</a></li>
+                        <li><a href="#">Florida</a></li>
+                        <li><a href="#">South Pacific</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-link">
+                    <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
+                    <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                        <li><a href="#">Sailing Yachts</a></li>
+                        <li><a href="#">Motor Yachts</a></li>
+                        <li><a href="#">Catamarans</a></li>
+                        <li><a href="#">Gulets</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-link">
+                    <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
+                    <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                        <li><a href="#">Sub Nav Link</a></li>
+                        <li><a href="#">Sub Nav Link</a></li>
+                        <li><a href="#">Sub Nav Link</a></li>
+                        <li><a href="#">Sub Nav Link</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-link"><a href="#">News</a></li>
+                <li class="main-nav-link"><a href="#" class="header-button-search button">Find Your Yacht</a></li>
+            </ul>
+
+        </nav>
 
         </div>
     </div>
@@ -141,21 +164,41 @@
 
 <div id="content">
 
-<div class="content-header">
-    <h1>French Riviera</h1>
-    <h4>France</h4>
+<div class="hero" style="background-image:url(images/landing-hero.jpg)">
+    <div class="hero-content-wrapper">
+        <div class="hero-content">
+            <h1>French Riviera</h1>
+            <p>With seemingly endless sunny beaches, charming towns, glamorous yachts and celebrities galore, the French Riviera keeps the Belle Époque alive.</p>
+        </div>
+    </div>
 </div>
 
 <div class="content-body">
     <div class="row">
         <div class="medium-8 column">
             <div class="gallery">
-                image gallery
+            
+            <div class="gallery-hero">
+                <a href="#"><img class="img-responsive" src="images/villefranche_charter.jpg" alt=""></a>
+            </div>
+            <ul class="gallery-tiles small-block-grid-1 medium-block-grid-3">
+                <li>
+                    <a href="#"><img src="images/cannes_shopping.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/cap_ferrat_beach_001.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/st_paul_de_vence.jpg" alt=""></a>
+                </li>
+            </ul>
+
             </div>
             <div class="summary">
                 Known as, the French Riviera or Côte d'Azur (azure coast), France's slice of the Mediterranean stretches from the Cassis to the Italian border, and has always been synonymous with glamour, celebrity, sophistication and of course, superyachts and yacht charter, and a magnet to those with means seeking sunshine and pleasure.
             </div>
-            <div class="block-feature widget">
+
+            <!--<div class="block-feature widget">
                 <a href="#">
                     <div class="img">
                         <img src="images/yacht-thumb.jpg" alt="">
@@ -165,12 +208,13 @@
                         <p>The largest Sunreef catamaran built to date, the 114ft (35m) CHE is back on the luxury charter circuit and available to guests looking to explore the Mediterranean in the ultimate fusion of space, pace and grace.</p>
                     </div>
                 </a>
-            </div>
+            </div>-->
 
             <div class="segment-overview">
-                <h2>Section title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ipsa, pariatur, ullam, libero consequuntur ut quibusdam quasi ducimus vitae error fugiat aut blanditiis nulla recusandae architecto maiores id numquam dolore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptate, facere, quam magni cumque molestias expedita beatae suscipit vel dolorem laborum saepe culpa laboriosam et necessitatibus repellat perferendis ratione eos.</p>
+                <p>This long stretch of coastline is found along the beautiful Mediterranean Sea and includes the magical sounding towns of Nice, Cannes, Monaco, and Saint Tropez with ports that attract stopovers for most yacht charterers. But beyond the nightclubs and casinos, superlative boutiques, hotels and Michelin-starred restaurants, the 'Riv' retains its quaint appeal in its egalitarian beach clubs, fishing villages, produce markets, and locals going about their daily life.</p>
+                <p>For luxury charter itineraries, the Riviera also offers a coastline with sheltered bays, anchorages, marinas and pockets of pristine waterway, such as the Porquerolles, Lerin Islands and Bay d'Agay, where you can drop anchor and find a secluded beach or bay.</p>
+                <p>Nice International Airport is the hub for easy international access to the Riviera and also has convenient helicopter connections with both St. Tropez and Monaco for those wishing to embark/ disembark their charter yachts avoiding the traffic.</p>
+                <p>In fact, Monaco is considered the epicentre of luxury yachts, hosting the Monaco Yacht Show exclusively for large, lavish vessels each year in September.</p>
             </div>
 
             <div class="location-details">
@@ -188,16 +232,25 @@
             </div>
 
             <div class="segment-overview">
-                <h2>Section title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ipsa, pariatur, ullam, libero consequuntur ut quibusdam quasi ducimus vitae error fugiat aut blanditiis nulla recusandae architecto maiores id numquam dolore.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptate, facere, quam magni cumque molestias expedita beatae suscipit vel dolorem laborum saepe culpa laboriosam et necessitatibus repellat perferendis ratione eos.</p>
+                <h2>Nice to Monaco</h2>
+                <p>The classic part of the French Riviera is Nice to Menton, a coast of breath-taking beauty, enviable property and picturesque towns like Villefranche sur Mer, Cap Ferrat, Roquebrune-Cap Martin, Cap d'Ail and the medieval village of Èze.</p>
+                <p>Nice has undergone a recent refurbishment to restore its historic downtown to its former glory. This bustling city is considered a "must see" for its galleries, boutiques and museums dotted along the Promenade des Anglais, Vieux Nice, Château Hill and its port, built to fortify the city against invaders from the sea. The grand Opera House and swathe of elegant turn of the century hotels such as the Hôtel Negresco are testament to the extravagance of la belle époque.</p>
+                <img class="img-responsive" src="images/cap_ferrat_beach_001.jpg" alt="">
+                <p><b>Villefranche-sur-Mer</b> is a resort town adjacent to Nice, replete with medieval vestiges in the form of pretty squares, cathedral and cobblestoned streets in the vieille ville or 'old town'. On the waterfront are long sandy beaches, terrace cafés and restaurants.</p>
+                <img class="img-responsive" src="images/villefranche_charter.jpg" alt="">
+                <h2>Eze</h2>
+                <p>Just a 2.5km drive south of Monaco is the medieval village of Eze, a rustic town which appears to cling to the precipice and offers unmatched views of the Med. This pedestrian-only village is filled with charming stone garrets with colourful window boxes, shady squares, ancient fountains and proudly restored relics of its fortified past. The plethora of hard to resist arts and crafts shops are dug out of the rocky hill-side.</p>
+                <h2>Monaco</h2>
+                <p>Monuments, gardens, museums, marinas, beautiful people, glorious streetscapes and an unrivalled way of life – Monaco well deserves the title of Jewel in the Crown of the Riviera.</p>
+                <p>There is always something happening in Monaco – such as the F1 each year – a great opportunity to charter a yacht and enjoy front row seats at one of the most spectacular events in the world from the flybridge of your superyacht docked meters from the track.</p>
             </div>
 
         </div>
-        <div class="medium-3 column">
+        <div class="medium-4 column">
+
             <div class="widget widget-search">
+                <div class="widget-inner">
                 <h4>Search for a Charter Yacht</h4>
-                <form>
                     <div class="row">
                         <div class="small-12 columns">
                             <select>
@@ -219,12 +272,153 @@
                             <input type="text" id="" placeholder="by Yacht Name">
                         </div>
                         <div class="small-12 column">
-                            <a href="#" class="button">Go</a>
+                            <a href="#" class="button">Search Yachts</a>
                         </div>
                     </div>
-                </form>
+                </div>
+            </div>
+
+            <div class="widget widget-broker-contact">
+                <div class="widget-inner widget-inner-leader">
+                    <div class="row">
+                        <div class="small-12 medium-3 column">
+                            <div class="broker-image">
+                                <img src="images/radek-gendek.jpg" alt="Radek Gendek">
+                            </div>
+                        </div>
+                        <div class="small-12 medium-9 column">
+                            <div class="broker-title">
+                                <h4>Radek Gendek
+                                <span>Yacht Broker</span></h4>
+                            </div>
+                        </div>
+                        <div class="small-12 column">
+                            <div class="broker-message">
+                                Call me today on +33 184 884 395 or send me an email to get started.
+                                <a class="button button-secondary" href="#"><i class="fa fa-envelope-o"></i> Request Information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-inner">
+                    <h4>Submit Enquiry</h4>
+                    <span class="form-sub-title">Send us your details and we'll call you straight back.</span>
+                    <div class="row sidebar-contact ">
+                        <div class="small-12 column">
+                            <input type="text" id="" placeholder="Name">
+                        </div>
+                        <div class="small-12 column">
+                            <input type="text" id="" placeholder="Email">
+                        </div>
+                        <div class="small-12 column">
+                            <input type="text" id="" placeholder="Phone and country code">
+                        </div>
+                        <div class="small-12 columns">
+                            <select>
+                              <option value="1">Type of Yacht</option>
+                              <option value="2">Sailing</option>
+                              <option value="3">Motor</option>
+                              <option value="4">Catamaran</option>
+                              <option value="5">Gulet</option>
+                            </select>
+                        </div>
+                        <div class="small-12 columns">
+                            <select>
+                              <option value="1">When and for how long?</option>
+                              <option value="2">label 2</option>
+                              <option value="3">label 3</option>
+                              <option value="4">label 4</option>
+                            </select>
+                        </div>
+                        <div class="small-12 columns">
+                            <select>
+                              <option value="1">Number of guests</option>
+                              <option value="2">label 2</option>
+                              <option value="3">label 3</option>
+                              <option value="4">label 4</option>
+                            </select>
+                        </div>
+                        <div class="small-12 columns">
+                            <select>
+                              <option value="1">My Budget</option>
+                              <option value="2">label 2</option>
+                              <option value="3">label 3</option>
+                              <option value="4">label 4</option>
+                            </select>
+                        </div>
+                        <div class="small-12 columns">
+                            <textarea name="" id="" rows="5" placeholder="Comments/feedback"></textarea>
+                        </div>
+                        <div class="large-12 column">
+                            <h4>Subscribe to our Newsletter?</h4>
+                            <div class="newsletter-message-panel">
+                                <input id="checkbox1" type="checkbox">
+                                <span class="">Yes I want to receive latest offers and exclusive deals straight to my inbox.</span>
+                            </div>
+                        </div>
+                        <div class="small-12 column">
+                            <a href="#" class="button">Submit Enquiry</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-inner widget-request-brochure">
+                    <h4><i class="fa fa-arrow-circle-o-down"></i> Request Brochure</h4>
+                    <p>If you would like to grab a copy of our latest 'something' brochure <a href="#">click here</a>.</p>
+                </div>
 
             </div>
+
+            <div class="widget widget-season-dates">
+                <div class="widget-inner">
+                    <h4>Charter Season</h4>
+                    <div class="row">
+                        <div class="small-12 medium-6 columns date-range">
+                            <span class="date-range-title">Low Season</span>
+                            October - June
+                        </div>
+                        <div class="small-12 medium-6 columns date-range">
+                            <span class="date-range-title">High Season</span>
+                            July - September
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-inner widget-inner-leader">
+                    <div class="row">
+                        <div class="small-12 column">
+                            <p><i class="fa fa-calendar"></i> Book in early to get the best boats in high season. <a href="#">Book Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-yachts">
+                <h4>Related Yachts</h4>
+
+                <ul class="yacht-list small-block-grid-1 ">
+                    <li>
+                        <img src="images/related.jpg" alt="">
+                        <h3>Sailing</h3>
+                        <p>34.1m(112') / 12 Guests</p>
+                    </li>
+                    <li>
+                        <img src="images/related.jpg" alt="">
+                        <h3>Sailing</h3>
+                        <p>34.1m(112') / 12 Guests</p>
+                    </li>
+                    <li>
+                        <img src="images/related.jpg" alt="">
+                        <h3>Sailing</h3>
+                        <p>34.1m(112') / 12 Guests</p>
+                    </li>
+                    <li>
+                        <img src="images/related.jpg" alt="">
+                        <h3>Sailing</h3>
+                        <p>34.1m(112') / 12 Guests</p>
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
     </div>
 </div>
@@ -235,6 +429,13 @@
 
     <div class="footer-nav">
         <div class="row">
+            <div class="small-12 column show-for-small-only">
+                <label class="screen-reader-only">Choose your language</label>
+                <select>
+                    <option value="english">English</option>
+                    <option value="Français">Français</option>
+                </select>
+            </div>
             <div class="medium-6 medium-push-3 columns">
                 <div class="row medium-collapse">
                     <div class="medium-4 columns">
@@ -292,7 +493,6 @@
                     <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="social-icon social-icon-linkedin"><i class="fa fa-linkedin"></i></a>
                 </nav>
             </div>
         </div>
@@ -300,11 +500,11 @@
 
     <div class="footer-bottom">
         <div class="row">
-            <div class="medium-5 columns">
-                <p class="member-text"><a href="#">logo</a>
-                Member of MYBA, The Worldwide Yachting Association.</p>
+            <div class="small-12 medium-5 columns">
+                <a class="logo-myba" href="#">The Worldwide Yachting Association</a>
+                <p class="member-text">Member of MYBA, The Worldwide Yachting Association.</p>
             </div>
-            <div class="medium-7 columns">
+            <div class="small-12 medium-7 columns">
                 <ul class="nav-footer-info inline-list right">
                     <li>&copy; Luxury Charter Group Limited 2009-2014</li>
                     <li><a href="#">Privacy Policy</a></li>
