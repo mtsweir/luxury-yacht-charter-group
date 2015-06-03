@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libraries.min.css">
     <link rel="stylesheet" href="css/app.min.css">
@@ -17,11 +17,12 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="left-off-canvas-menu">
+    <aside class="right-off-canvas-menu">
         <ul class="mobile-nav accordion" data-accordion>
           <li class="accordion-navigation">
               <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
           </li>
+          <li class="accordion-navigation"><a href="#">Home</a></li>
           <li class="accordion-navigation">
             <a href="#panel1a">Destinations</a>
             <div id="panel1a" class="content">
@@ -57,6 +58,17 @@
             </div>
           </li>
           <li class="accordion-navigation"><a href="#">News</a></li>
+          <li class="accordion-navigation">
+            <a href="#panel4a">About Us</a>
+            <div id="panel4a" class="content">
+                <ul class="no-bullet">
+                    <li><a href="#">Sub Nav Link</a></li>
+                    <li><a href="#">Sub Nav Link</a></li>
+                    <li><a href="#">Sub Nav Link</a></li>
+                    <li><a href="#">Sub Nav Link</a></li>
+                </ul>
+            </div>
+          </li>
           <li class="accordion-navigation accordion-social">
             <nav class="nav-social">
                 <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
@@ -71,6 +83,7 @@
     <div class="row large-collapse">
         <div class="small-12 column">
             <ul class="top-links inline-list right">
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li>
@@ -89,18 +102,20 @@
     <div class="row">
         <div class="medium-12 column">
         
-        <a class="menu-trigger left-off-canvas-toggle hide-for-medium-up" href="#">
+        <a class="menu-trigger right-off-canvas-toggle" href="#">
             <i class="fa fa-bars icon-burger"></i>
             <span class="screen-reader-only">Menu</span>
         </a>
 
-        <nav>
+        <nav class="primary-nav">
 
             <div class="logo-wrap">
-                <a class="logo" href="#" title="Luxury Yacht Charter Group"><img src="images/logo-lycg.svg" alt=""></a>
+                <a class="logo" href="#" title="Luxury Yacht Charter Group">
+                    <img data-interchange="[images/logo-lycg.svg, (medium)], [images/logo-lycg-mobile.svg, (small-only)]">
+                </a>
             </div>
 
-            <ul class="main-nav inline-list right show-for-medium-up">
+            <ul class="main-nav inline-list right">
                 <li class="main-nav-link">
                     <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
                     <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
@@ -129,9 +144,9 @@
                         <li><a href="#">Sub Nav Link</a></li>
                     </ul>
                 </li>
-                <li class="main-nav-link"><a href="#">News</a></li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Find Your Yacht</a></li>
+                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
             </ul>
+            <a href="#" class="header-button-search mobile-search-button button">Search</a>
 
         </nav>
 
@@ -144,7 +159,7 @@
 <section class="hero-wrapper">
     <div class="hero-bg">
         <div class="hero-bg-wrap">
-            <img src="images/hero-banner.jpg" alt="">
+            <img src="images/home-landing-hero.jpg" alt="">
         </div>
     </div>
     <div class="hero-banner-content">
@@ -159,7 +174,7 @@
 
                     <div class="search-form">
                         <div class="row">
-                            <div class="medium-4 columns">
+                            <div class="medium-5 columns">
                                 <select class="input-list" id="destination" name="destination">
                                     <option value="1">Where do you want to go?</option>
                                     <option value="2">1</option>
@@ -174,14 +189,14 @@
                                     <option value="5">Gulets</option>
                                 </select>
                             </div>
-                            <div class="small-6 medium-3 columns">
+                            <div class="small-6 medium-2 columns">
                                 <select class="input-list" id="price" name="price">
-                                    <option value="1">Price Range</option>
+                                    <option value="1">Price</option>
                                     <option value="2">1</option>
                                 </select>
                             </div>
                             <div class="medium-2 columns">
-                              <a href="#" class="button postfix">Search</a>
+                                <a href="#" class="button postfix">Search</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +214,7 @@
             <h2 class="section-header">Choose your Yacht</h2>
             <p class="sub-head">Discover your gateway to a world of incredible experiences.</p>
 
-            <ul class="grid-yacht-type small-block-grid-1 medium-block-grid-4 text-center">
+            <ul class="grid-yacht-type small-block-grid-1 medium-block-grid-2 large-block-grid-4 text-center">
                 <li>
                     <a href="#"><img src="images/tile-sailing-yacht.jpg" alt=""><h3>Sailing</h3></a>
                 </li>
@@ -213,6 +228,7 @@
                     <a href="#"><img src="images/tile-gulet.jpg" alt=""><h3>Gulets</h3></a>
                 </li>
             </ul>
+            
         </div>
     </div>
 </section>
@@ -303,8 +319,12 @@
                     </a>
                 </div>
             </div>
-            <div class="destination-sub text-center">
-                <a href="#" class="button button-secondary">See all destinations</a>
+            <div class="row">
+                <div class="small-12 text-center">
+                    <div class="destination-sub">
+                        <a href="#" class="button button-secondary">See all destinations</a>
+                    </div>  
+                </div>
             </div>
 
         </div>
@@ -326,52 +346,55 @@
             <div class="article-fluid">
                 <article class="article article-snippet">
                     <a href="#">
-                    <figure class="post-image"><img src="images/yacht-thumb.jpg" alt=""></figure>
+                    <figure class="post-image"><img src="images/opari-3-motor-yacht-charter-10.png" alt=""></figure>
                     <div class="post-content">
                         <span class="post-date">March 20, 2015</span>
-                        <h3>Top 5 Mega Yachts in 2015</h3>
-                        <p>Together our Team brings you over 40-years of yacht charter knowledge and experience, and a variety of the finest hand-picked luxury yachts, inspected by us.</p>
+                        <h3>O'PARI 3 hailed "instant classic"</h3>
+                        <p>O'PARI 3 was designed as the ultimate charter yacht for guests seeking to escape the pressures of workday life and truly unwind</p>
                     </div></a>
                 </article>
             </div>
             <div class="article-fluid">
                 <article class="article article-snippet">
                     <a href="#">
-                    <figure class="post-image"><img src="images/yacht-thumb.jpg" alt=""></figure>
+                    <figure class="post-image"><img src="images/luxury_yacht_arcadia_jurata.jpg" alt=""></figure>
                     <div class="post-content">
                         <span class="post-date">March 20, 2015</span>
-                        <h3>Top 5 Mega Yachts in 2015</h3>
-                        <p>Together our Team brings you over 40-years of yacht charter knowledge and experience, and a variety of the finest hand-picked luxury yachts, inspected by us.</p>
+                        <h3>Environmentally-aware ARCADIA</h3>
+                        <p>Italian shipyard, Arcadia Yachts are keeping pace with the trend towards larger superyachts, with new models the Arcadia 100 and 145 currently in build and preliminary plans for a 180.</p>
                     </div></a>
                 </article>
             </div>
             <div class="article-fluid">
                 <article class="article article-snippet">
                     <a href="#">
-                    <figure class="post-image"><img src="images/yacht-thumb.jpg" alt=""></figure>
+                    <figure class="post-image"><img src="images/alfa-nero-beach-club.jpg" alt=""></figure>
                     <div class="post-content">
                         <span class="post-date">March 20, 2015</span>
-                        <h3>Top 5 Mega Yachts in 2015</h3>
-                        <p>Together our Team brings you over 40-years of yacht charter knowledge and experience, and a variety of the finest hand-picked luxury yachts, inspected by us.</p>
+                        <h3>Join the Club – the Superyacht Beach Club</h3>
+                        <p>Bigger and with more options than ever, the superyacht beach club brings charter guests as close as possible to the water.</p>
                     </div></a>
                 </article>
             </div>
             <div class="article-fluid">
                 <article class="article article-snippet">
                     <a href="#">
-                    <figure class="post-image"><img src="images/yacht-thumb.jpg" alt=""></figure>
+                    <figure class="post-image"><img src="images/onboard-spa.jpg" alt=""></figure>
                     <div class="post-content">
                         <span class="post-date">March 20, 2015</span>
-                        <h3>Top 5 Mega Yachts in 2015</h3>
-                        <p>Together our Team brings you over 40-years of yacht charter knowledge and experience, and a variety of the finest hand-picked luxury yachts, inspected by us.</p>
+                        <h3>Let's get Physical, or Spiritual – the choice is yours</h3>
+                        <p>Today's superyacht Owners are incorporating high-tech gyms and dedicated spas on their superyachts to cater to the every wellness whim of their charter guests.</p>
                     </div></a>
                 </article>
             </div>
 
         </div>
+        <div class="small-12 text-center">
+            <div class="destination-sub">
+                <a href="#" class="button button-secondary">More News</a>
+            </div>  
+        </div>
     </div>
-
-    <p class="text-center"><a href="#" class="button button-secondary">More News</a></p>
 
 </section>
 
@@ -437,6 +460,13 @@
 
     <div class="footer-nav">
         <div class="row">
+            <div class="small-12 column show-for-small-only">
+                <label class="screen-reader-only">Choose your language</label>
+                <select>
+                    <option value="english">English</option>
+                    <option value="Français">Français</option>
+                </select>
+            </div>
             <div class="medium-6 medium-push-3 columns">
                 <div class="row medium-collapse">
                     <div class="medium-4 columns">
@@ -501,11 +531,11 @@
 
     <div class="footer-bottom">
         <div class="row">
-            <div class="small-5 columns">
+            <div class="small-12 medium-5 columns">
                 <a class="logo-myba" href="#">The Worldwide Yachting Association</a>
                 <p class="member-text">Member of MYBA, The Worldwide Yachting Association.</p>
             </div>
-            <div class="small-7 columns">
+            <div class="small-12 medium-7 columns">
                 <ul class="nav-footer-info inline-list right">
                     <li>&copy; Luxury Charter Group Limited 2009-2014</li>
                     <li><a href="#">Privacy Policy</a></li>
