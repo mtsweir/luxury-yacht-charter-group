@@ -47,6 +47,10 @@
 @import 'foundation/components/offcanvas';
 @import 'foundation/components/visibility';
 
-@import 'appstyles';
-@import 'appforms';
-@import 'applanding';
+@import 'base';
+@import 'site';
+@import 'home';
+@import 'common';
+@import 'sidebar';
+@import 'appdetail';
+@import 'responsive';

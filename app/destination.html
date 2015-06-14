@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
@@ -26,7 +26,7 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="left-off-canvas-menu">
+    <aside class="right-off-canvas-menu">
         <ul class="mobile-nav accordion" data-accordion>
           <li class="accordion-navigation">
               <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
@@ -92,6 +92,7 @@
     <div class="row large-collapse">
         <div class="small-12 column">
             <ul class="top-links inline-list right">
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li>
@@ -110,7 +111,7 @@
     <div class="row">
         <div class="medium-12 column">
         
-        <a class="menu-trigger left-off-canvas-toggle hide-for-medium-up" href="#">
+        <a class="menu-trigger right-off-canvas-toggle" href="#">
             <i class="fa fa-bars icon-burger"></i>
             <span class="screen-reader-only">Menu</span>
         </a>
@@ -119,11 +120,11 @@
 
             <div class="logo-wrap">
                 <a class="logo" href="#" title="Luxury Yacht Charter Group">
-                    <img data-interchange="[images/logo-lycg.svg, (default)], [images/logo-lycg-mobile.svg, (small-only)]">
+                    <img data-interchange="[/images/logo-lycg.svg, (medium)], [/images/logo-lycg-mobile.svg, (small-only)]">
                 </a>
             </div>
 
-            <ul class="main-nav inline-list right show-for-medium-up">
+            <ul class="main-nav inline-list right">
                 <li class="main-nav-link">
                     <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
                     <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
@@ -152,9 +153,9 @@
                         <li><a href="#">Sub Nav Link</a></li>
                     </ul>
                 </li>
-                <li class="main-nav-link"><a href="#">News</a></li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Find Your Yacht</a></li>
+                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
             </ul>
+            <a href="#" class="header-button-search mobile-search-button button">Search</a>
 
         </nav>
 
@@ -164,51 +165,76 @@
 
 <div id="content">
 
-<div class="hero" style="background-image:url(images/landing-hero.jpg)">
-    <div class="hero-content-wrapper">
-        <div class="hero-content">
+<div class="media-photo destination-hero">
+    <div class="media-cover" style="background-image:url(images/landing-hero.jpg)"></div>
+    <div class="row row-table collapse">
+        <div class="title small-12 text-center col-middle column">
             <h1>French Riviera</h1>
-            <p>With seemingly endless sunny beaches, charming towns, glamorous yachts and celebrities galore, the French Riviera keeps the Belle Époque alive.</p>
+            <p>With seemingly endless sunny beaches, charming towns, glamorous yachts and celebrities galore, the beautiful French Riviera is the place to be.</p>   
         </div>
     </div>
 </div>
 
 <div class="content-body">
     <div class="row">
-        <div class="medium-8 column">
+        
+        <div class="nav-tabs medium-12 column">
+            <div class="contain-to-grid">
+                <nav class="nav-tabs-bar top-bar" data-topbar role="navigation" data-options="is_hover: false">
+                    <ul class="title-area">
+                    <li class="name">
+                      
+                    </li>
+                        <li class="toggle-topbar"><a href="#">Overview</a></li>
+                    </ul>
+
+                    <section class="top-bar-section">
+                        <ul>
+                            <li class="current"><a href="#">Overview</a></li>
+                            <li><a href="#">Fact File</a></li>
+                            <li><a href="#">Suggested Itineraries</a></li>
+                            <li><a href="#">Yachts for Charter</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+        </div>
+
+        <div class="small-12 large-8 column content-main">
+
             <div class="gallery">
+                <ul class="gallery-tiles clearing-thumbs medium-block-grid-3" data-clearing>
+                    <li class="gallery-hero">
+                        <a href="images/villefranche_charter.jpg"><img class="img-responsive" data-caption="caption here..." src="images/villefranche_charter.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="images/cannes_shopping.jpg"><img src="images/cannes_shopping.jpg" data-caption="caption here..." alt=""></a>
+                    </li>
+                    <li>
+                        <a href="images/cap_ferrat_beach_001.jpg"><img data-caption="caption here..." src="images/cap_ferrat_beach_001.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="images/st_paul_de_vence.jpg"><img data-caption="caption here..." src="images/st_paul_de_vence.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
             
-            <div class="gallery-hero">
-                <a href="#"><img class="img-responsive" src="images/villefranche_charter.jpg" alt=""></a>
-            </div>
-            <ul class="gallery-tiles small-block-grid-1 medium-block-grid-3">
-                <li>
-                    <a href="#"><img src="images/cannes_shopping.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/cap_ferrat_beach_001.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/st_paul_de_vence.jpg" alt=""></a>
-                </li>
-            </ul>
-
-            </div>
             <div class="summary">
-                Known as, the French Riviera or Côte d'Azur (azure coast), France's slice of the Mediterranean stretches from the Cassis to the Italian border, and has always been synonymous with glamour, celebrity, sophistication and of course, superyachts and yacht charter, and a magnet to those with means seeking sunshine and pleasure.
+                <p>Known as, the French Riviera or Côte d'Azur (azure coast), France's slice of the Mediterranean stretches from the Cassis to the Italian border, and has always been synonymous with glamour, celebrity, sophistication and of course, superyachts and yacht charter, and a magnet to those with means seeking sunshine and pleasure.</p>
             </div>
 
-            <!--<div class="block-feature widget">
-                <a href="#">
-                    <div class="img">
+            <div class="feature-yacht">
+                <div class="row">
+                    <div class="small-12 medium-4 column">
                         <img src="images/yacht-thumb.jpg" alt="">
                     </div>
-                    <div class="bd">
+                    <div class="small-12 medium-8 column">
                         <h3 class="block-feature-title">CHE is back: Glamorous Adventure</h3>
                         <p>The largest Sunreef catamaran built to date, the 114ft (35m) CHE is back on the luxury charter circuit and available to guests looking to explore the Mediterranean in the ultimate fusion of space, pace and grace.</p>
+                        <p class="bold"><a href="#">View yacht</a></p>
                     </div>
-                </a>
-            </div>-->
+                </div>
+            </div>
 
             <div class="segment-overview">
                 <p>This long stretch of coastline is found along the beautiful Mediterranean Sea and includes the magical sounding towns of Nice, Cannes, Monaco, and Saint Tropez with ports that attract stopovers for most yacht charterers. But beyond the nightclubs and casinos, superlative boutiques, hotels and Michelin-starred restaurants, the 'Riv' retains its quaint appeal in its egalitarian beach clubs, fishing villages, produce markets, and locals going about their daily life.</p>
@@ -218,15 +244,19 @@
             </div>
 
             <div class="location-details">
+                <h3>On the Map</h3>
                 <div class="map">
-                    google map
+                    <iframe frameborder="0" width="100%" height="400" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=the+french+riviera&amp;ie=UTF8&amp;hq=&amp;hnear=French+Riviera&amp;t=m&amp;ll=43.536603,7.119141&amp;spn=1.600833,3.22998&amp;z=8&amp;output=embed&amp;iwloc=1"></iframe>
                 </div>
                 <div class="row">
-                    <div class="primary medium-7 column">
-                        map summary
+                    <div class="map-summary medium-7 column">
+                        <p>This long stretch of coastline is found along the beautiful Mediterranean Sea and includes the magical sounding towns of Nice, Cannes, Monaco, and Saint Tropez with ports that attract stopovers for most yacht charterers.</p>
                     </div>
-                    <div class="secondary medium-5 column">
-                        extra details
+                    <div class="map-sidebar medium-4 column">
+                        <ul class="no-bullet">
+                            <li><i class="fa fa-check-circle-o"></i> Easy public transit</li>
+                            <li><i class="fa fa-check-circle-o"></i> Another feature here</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -238,15 +268,49 @@
                 <img class="img-responsive" src="images/cap_ferrat_beach_001.jpg" alt="">
                 <p><b>Villefranche-sur-Mer</b> is a resort town adjacent to Nice, replete with medieval vestiges in the form of pretty squares, cathedral and cobblestoned streets in the vieille ville or 'old town'. On the waterfront are long sandy beaches, terrace cafés and restaurants.</p>
                 <img class="img-responsive" src="images/villefranche_charter.jpg" alt="">
-                <h2>Eze</h2>
+                <b>Eze</b>
                 <p>Just a 2.5km drive south of Monaco is the medieval village of Eze, a rustic town which appears to cling to the precipice and offers unmatched views of the Med. This pedestrian-only village is filled with charming stone garrets with colourful window boxes, shady squares, ancient fountains and proudly restored relics of its fortified past. The plethora of hard to resist arts and crafts shops are dug out of the rocky hill-side.</p>
-                <h2>Monaco</h2>
+                <b>Monaco</b>
                 <p>Monuments, gardens, museums, marinas, beautiful people, glorious streetscapes and an unrivalled way of life – Monaco well deserves the title of Jewel in the Crown of the Riviera.</p>
                 <p>There is always something happening in Monaco – such as the F1 each year – a great opportunity to charter a yacht and enjoy front row seats at one of the most spectacular events in the world from the flybridge of your superyacht docked meters from the track.</p>
+                <img class="img-responsive" src="images/monaco-grand-prix.jpg" alt="">
+                <p>Monaco is also host to numerous exhibitions, festivals, shows and product launches, in spectacular back drops such as the Casino de Monte Carlo, one of the world's first major casinos, the Prince's Palace of Monaco, Oceanographic Museum or on a balcony or bar along the superb waterfront.</p>
+                <p>The steep streets are worth the climb for all the covetable designer boutiques along the way. The two major ports in the area for luxury yachts are Port Hercules and Port de Fontvieille Great for its restaurants and night life, check out Cafe de Paris, Casino, Jimmy'z, and Buddha Bar.</p>
+                <img class="img-responsive" src="images/monaco_casino_during_monaco_boat_show.jpg" alt="">
+                <p><b>Menton</b> is a town that retains a genteel, sedate pace, basking in its beautiful, clifftop setting. Considered the warmest and the most Italianate of the towns on the Riviera, boasting 316 days of sunshine each year, it's famous for an abundance of lemon groves, manicured gardens with topiaries, mazes, roses and regal palms, and picturesque bays.</p>
+                <p>From its Mermaid and Dolphin fountain overlooking, Menton is historically a port city, welcoming yachts of all nations with an exciting calendar of events, water sports and cultural activities for visitors to enjoy.</p>
+                <h2>Nice to Cannes</h2>
+                <p>Dotted with villages and towns such as Mougins, Biot, Cagnes, Vallauris and Villeneuve Loubet, this stretch of coast is famous as the enclave of the great artists, sculptors, authors and philosophers of the 20th century: Monet, Renoir, Picasso, Rodin, Lêger, Cocteau and a myriad of other legendary talents all clustered in these hilltop towns, inspired by the views, sea breezes and maritime lifestyle.</p>
+                <b>St Paul de Vence</b>
+                <p>2km from Nice, this hilltop village was once the favourite spot for Picasso, Matisse and other influential artists who took up residence there. Today it is still a popular place for modern day creatives. For its markets, galleries, walks and historic sites, St Paul de Vence is probably the most visited village on the Côte d'Azur and certainly one of the most beautiful in Provence.</p>
+                <img class="img-responsive" src="images/st_paul_de_vence_001.jpg" alt="">
+                
+                <b>Antibes-Juan les Pins</b>
+                <p>Nestled between Nice and Cannes, Antibes retains its old world charms, with its rampart and twin medieval towers. It must be one of the most picturesque towns on the Côte d'Azur and preserves traditions with pride, including the flower and fruit markets. Vieille Antibes is notable for its charming cobble-stoned streets that have preserved the aura of its artistic past, one that included artists like Picasso, Chagall, Matisse and many more.</p>
+                <p>Close by is the Cap d'Antibes, one of the most exclusive areas on the French Riviera and the more relaxed Juan les Pins, the place where in the 1920s and 30s luminaries of the likes of Scott and Jelda Fitzgerald, Rudolf Valentino, Charlie Chaplin, Douglas Fairbanks and other Americans sought social and cultural entertainment. In fact, they say fun-seekers invented water skiing right here in the 1920s.</p>
+                <p>Cannes is famous as the host of the annual Cannes Film Festival which attracts over 30,000 official visitors plus 4,000 accredited journalists, but throughout the year, Cannes receives more shows, events, conferences and festivals than any other city in Europe.</p>
+                <img class="img-responsive" src="images/festival_de_cannes.jpg" alt="">
+                <p>Yacht charter is a very popular alternative to limited hotel accommodation in the city center at the time of the most important events. Favourite charter yachts for private entertaining are much sought after and are booked well in advance.</p>
+                <img class="img-responsive" src="images/croisette_baie_de_cannes.jpg" alt="">
+                <p>The Iles de Lérins is a small archipelago just off the coast of Cannes with two main islands of Sainte-Marguerite and Saint-Honorat. Ile Sainte Marguerite is the larger island and is known for its lovely pine and eucalyptus forests, with wide walking trails criss-crossing the island. The port area has cafés and restaurants, and is just a short walk to the Fort Royal containing the cell where the legendary Man in the Iron Mask was incarcerated. Between the islands is a shallow, protected passage, known as the Plateau du Mileu, a popular anchor point for charter yachts.</p>
+                <img class="img-responsive" src="images/isles_lerins_001.jpg" alt="">
+                <p>St Tropez is known for its chic boutiques and trendy restaurants and dining nooks which occupy the many little streets surrounding the main harbour. Infamous since the 1950s when Brigitte Bardot enchanted the world with her Gallic grace and bikini, St Tropez is every bit as alluring today.</p>
+                <p>As well as bistros, bars and its share of bocce grids, St Tropez is a popular stopover on any charter itinerary. From its various incarnations as fishing village, port, military stronghold and artist enclave, St Tropez is a good mix of everything the Riviera is renowned for. Place des Lices with its bountiful local produce at the markets held Tuesdays and Saturdays., the fortified Citadel, Chapelle Ste-Anne and Notre Dame de l'Assomption are places of interest.</p>
+                <p>The Hyéres Islands, or Golden Islands, are south of the Riviera, and ideal for Charterers looking for a peaceful stop to enjoy swimming, water sports, and perhaps bicycling or hiking</p>
+            </div>
+
+            <div class="row row-collapse page-footer-nav">
+                <div class="small-12 medium-6 column">
+                    <a class="button icon-before" href="#"><i class="fa fa-envelope-o"></i> Request Information</a>
+                </div>
+                <div class="small-12 medium-6 column">
+                    <a class="button button-secondary icon-after right" href="#">Fact File <i class="fa fa-angle-double-right"></i></a>
+                </div>
             </div>
 
         </div>
-        <div class="medium-4 column">
+
+        <div class="small-12 large-4 column sidebar">
 
             <div class="widget widget-search">
                 <div class="widget-inner">
@@ -272,7 +336,7 @@
                             <input type="text" id="" placeholder="by Yacht Name">
                         </div>
                         <div class="small-12 column">
-                            <a href="#" class="button">Search Yachts</a>
+                            <a href="#" class="button button-secondary"><i class="fa fa-search icon-before light"></i> Search Yachts</a>
                         </div>
                     </div>
                 </div>
@@ -281,21 +345,21 @@
             <div class="widget widget-broker-contact">
                 <div class="widget-inner widget-inner-leader">
                     <div class="row">
-                        <div class="small-12 medium-3 column">
+                        <div class="small-3 medium-3 column">
                             <div class="broker-image">
                                 <img src="images/radek-gendek.jpg" alt="Radek Gendek">
                             </div>
                         </div>
-                        <div class="small-12 medium-9 column">
+                        <div class="small-9 medium-9 column">
                             <div class="broker-title">
                                 <h4>Radek Gendek
-                                <span>Yacht Broker</span></h4>
+                                <span class="small">Yacht Broker</span></h4>
                             </div>
                         </div>
                         <div class="small-12 column">
                             <div class="broker-message">
-                                Call me today on +33 184 884 395 or send me an email to get started.
-                                <a class="button button-secondary" href="#"><i class="fa fa-envelope-o"></i> Request Information</a>
+                                <span class="small">Call me today on +33 184 884 395 or send me an email to get started.</span>
+                                <a class="button" href="#"><i class="fa fa-envelope-o icon-before"></i> Contact Me</a>
                             </div>
                         </div>
                     </div>
@@ -304,16 +368,16 @@
                     <h4>Submit Enquiry</h4>
                     <span class="form-sub-title">Send us your details and we'll call you straight back.</span>
                     <div class="row sidebar-contact ">
-                        <div class="small-12 column">
+                        <div class="small-12 medium-6 large-12 column">
                             <input type="text" id="" placeholder="Name">
                         </div>
-                        <div class="small-12 column">
+                        <div class="small-12 medium-6 large-12 column">
                             <input type="text" id="" placeholder="Email">
                         </div>
-                        <div class="small-12 column">
+                        <div class="small-12 medium-6 large-12 column">
                             <input type="text" id="" placeholder="Phone and country code">
                         </div>
-                        <div class="small-12 columns">
+                        <div class="small-12 medium-6 large-12 column">
                             <select>
                               <option value="1">Type of Yacht</option>
                               <option value="2">Sailing</option>
@@ -322,7 +386,7 @@
                               <option value="5">Gulet</option>
                             </select>
                         </div>
-                        <div class="small-12 columns">
+                        <div class="small-12 medium-6 large-12 column">
                             <select>
                               <option value="1">When and for how long?</option>
                               <option value="2">label 2</option>
@@ -330,7 +394,7 @@
                               <option value="4">label 4</option>
                             </select>
                         </div>
-                        <div class="small-12 columns">
+                        <div class="small-12 medium-6 large-12 column">
                             <select>
                               <option value="1">Number of guests</option>
                               <option value="2">label 2</option>
@@ -338,7 +402,7 @@
                               <option value="4">label 4</option>
                             </select>
                         </div>
-                        <div class="small-12 columns">
+                        <div class="small-12 medium-6 large-12 column">
                             <select>
                               <option value="1">My Budget</option>
                               <option value="2">label 2</option>
@@ -349,21 +413,23 @@
                         <div class="small-12 columns">
                             <textarea name="" id="" rows="5" placeholder="Comments/feedback"></textarea>
                         </div>
-                        <div class="large-12 column">
+
+                        <div class="large-12 column newsletter-message">
                             <h4>Subscribe to our Newsletter?</h4>
                             <div class="newsletter-message-panel">
-                                <input id="checkbox1" type="checkbox">
-                                <span class="">Yes I want to receive latest offers and exclusive deals straight to my inbox.</span>
+                                <label for="user_optin" class="xsmall">Yes I want to receive latest offers and exclusive deals straight to my inbox.</label>
+                                <input id="user_optin" type="checkbox">
                             </div>
                         </div>
+
                         <div class="small-12 column">
                             <a href="#" class="button">Submit Enquiry</a>
                         </div>
                     </div>
                 </div>
                 <div class="widget-inner widget-request-brochure">
-                    <h4><i class="fa fa-arrow-circle-o-down"></i> Request Brochure</h4>
-                    <p>If you would like to grab a copy of our latest 'something' brochure <a href="#">click here</a>.</p>
+                    <h4><i class="fa fa-file-pdf-o grey"></i> Request Brochure</h4>
+                    <p class="xsmall">If you would like to grab a copy of our latest 'something' brochure <a href="#">click here</a>.</p>
                 </div>
 
             </div>
@@ -372,12 +438,12 @@
                 <div class="widget-inner">
                     <h4>Charter Season</h4>
                     <div class="row">
-                        <div class="small-12 medium-6 columns date-range">
-                            <span class="date-range-title">Low Season</span>
+                        <div class="small-6 medium-6 columns date-range">
+                            <span class="range-title">Low Season</span>
                             October - June
                         </div>
-                        <div class="small-12 medium-6 columns date-range">
-                            <span class="date-range-title">High Season</span>
+                        <div class="small-6 medium-6 columns date-range">
+                            <span class="range-title">High Season</span>
                             July - September
                         </div>
                     </div>
@@ -385,7 +451,7 @@
                 <div class="widget-inner widget-inner-leader">
                     <div class="row">
                         <div class="small-12 column">
-                            <p><i class="fa fa-calendar"></i> Book in early to get the best boats in high season. <a href="#">Book Now</a></p>
+                            <p class="xsmall"><i class="fa fa-calendar"></i> Book in early to get the best boats in high season. <a href="#">Make a Booking</a></p>
                         </div>
                     </div>
                 </div>
@@ -396,31 +462,33 @@
 
                 <ul class="yacht-list small-block-grid-1 ">
                     <li>
-                        <img src="images/related.jpg" alt="">
-                        <h3>Sailing</h3>
-                        <p>34.1m(112') / 12 Guests</p>
+                        <a href="#"><img src="images/related.jpg" alt=""></a>
+                        <p><a href="#"><b>Quaranta</b></a>
+                        <span>34.1m(112') / 12 Guests</span></p>
                     </li>
                     <li>
-                        <img src="images/related.jpg" alt="">
-                        <h3>Sailing</h3>
-                        <p>34.1m(112') / 12 Guests</p>
+                        <a href="#"><img src="images/related.jpg" alt=""></a>
+                        <p><a href="#"><b>This Is Us</b></a>
+                        <span>34.1m(112') / 12 Guests</span></p>
                     </li>
                     <li>
-                        <img src="images/related.jpg" alt="">
-                        <h3>Sailing</h3>
-                        <p>34.1m(112') / 12 Guests</p>
+                        <a href="#"><img src="images/related.jpg" alt=""></a>
+                        <p><a href="#"><b>Allures</b></a>
+                        <span>34.1m(112') / 12 Guests</span></p>
                     </li>
                     <li>
-                        <img src="images/related.jpg" alt="">
-                        <h3>Sailing</h3>
-                        <p>34.1m(112') / 12 Guests</p>
+                        <a href="#"><img src="images/related.jpg" alt=""></a>
+                        <p><a href="#"><b>Ipharra</b></a>
+                        <span>34.1m(112') / 12 Guests</span></p>
                     </li>
                 </ul>
 
             </div>
 
         </div>
+
     </div>
+
 </div>
 
 </div><!-- /#content-->

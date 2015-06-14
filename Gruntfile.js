@@ -118,6 +118,8 @@ module.exports = function(grunt) {
 					open: true,
 					livereload: true,
 					hostname: '192.168.1.101'
+					//hostname: '10.1.1.5'
+					//hostname: '192.168.2.47'
 				}
 			},
 			dist: {
