@@ -1,0 +1,116 @@
+$navy-blue   : #1A1C33;
+$teal        : #129caf;
+$aqua        : #abd7e3;
+
+$contrast    : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$monsoon     : #777777;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$jet         : #222222;
+$coal        : #111111;
+$black       : #000000;
+
+$text-center : center;
+$text-tiny   : .8rem;
+$text-small  : .9rem;
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+$font-style-header: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-style-fancy: 'Roboto Slab', Georgia, Times, serif;
+$font-style-body: 'Open Sans', Helvetica, Arial, sans-serif;
+
+$base-font  : 14px;
+
+$modular    : 100;
+$header     : 50;
+$hero       : 10;
+$content    : 5;
+
+body {
+	font-family: $font-style-body;
+	font-size: $base-font;
+	color: $charcoal;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-style-header;
+	font-weight: $font-weight-bold;
+}
+h2 {
+	font-size: 1.5rem;
+	color: $charcoal;
+}
+h3 {
+	font-size: 1.125rem;
+	color: $tuatara;
+}
+h4 {
+	margin-top: 1rem;
+	font-size: 1rem;
+	color: $charcoal;
+}
+p {
+	font-size: inherit;
+}
+ul, ol, dl {
+	font-size: inherit;
+}
+
+/* Typography ------------------------------ */
+
+.xsmall {
+	font-size: $text-tiny;
+}
+.small {
+	font-size: $text-small;
+}
+
+.bold {
+	font-weight: $font-weight-bold;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.light {
+	color: $base;
+}
+.grey {
+	color: $monsoon;
+}
+
+/* Grid ------------------------------ */
+
+.row-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.col-middle {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+.row-space-top {
+	margin-top: 2rem;
+}
+.row-space-bottom {
+	margin-bottom: 2rem;
+}
+
+
+/* Icons ------------------------------ */
+
+.icon-size-4 {
+	font-size: 4.5rem;
+}

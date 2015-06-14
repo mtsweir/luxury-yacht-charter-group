@@ -1,0 +1,207 @@
+
+@media only screen and (min-width: 25em) and (max-width: 44em) {
+	.panel-wrap {
+		padding-bottom: 50%;
+	}
+}
+
+@media only screen and (min-width: 36em) {
+	.article-fluid {
+		padding: 1rem;
+	}
+	.article-snippet {
+		padding: 0 0 0 280px;
+		.post-image {
+			margin: 0;
+			padding: 0;
+			width: 240px;
+			margin-left: -270px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+		.post-content {
+			padding: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: 40.0625em) {
+
+	.logo-wrap {
+		float: left;
+	}
+	.sub-head {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.contain-to-grid .top-bar {
+		margin-top: -50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.top-bar-section ul li {
+		background-color: transparent;
+	}
+	.top-bar-section ul li a {
+		padding: 0 1.5rem !important;
+		line-height: 50px !important;
+		background-color: transparent !important;
+		&:hover {
+			color: $gainsboro !important;
+		}
+	}
+	.top-bar-section .current > a {
+		color: $jet;
+		background-color: #FFF !important;
+		&:hover {
+			color: $jet !important;
+		}
+	}
+
+	.content-header-inner {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 400px;
+	}
+	.header-block {
+		position: absolute; left: 0; right: 0; bottom: 75px;
+		padding: 0;
+	}
+
+}
+
+@media only screen and (min-width: 44em) {
+
+	.title {
+		h1 {
+			font-size: 2.4rem;
+		}
+		h2 {
+			font-size: 1.2rem;
+		}
+	}
+	
+	.section-header {
+	  font-size: 1.8rem;
+	}
+
+	.panel-wrap {
+		padding-bottom: 25%;
+		float: left;
+		width: 33.333%;
+	}
+	.panel-span-6 {
+		width: 50%;
+	}
+	.panel-wrap:last-child {
+		float: right;
+	}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+	.content-main {
+		width: 65%;
+	}
+
+	.sidebar {
+		width: 35%;
+	}
+
+	.panel-info h3 {
+		font-size: 1.5rem;
+	}
+	.panel-span-6 h3 {
+		font-size: 1.7rem;
+	}
+
+}
+
+@media only screen and (min-width: 62.5em) {
+
+	.main-nav {
+		display: block;
+	}
+	.menu-trigger,
+	.mobile-search-button {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 40.0624em) {
+
+	.header {
+		height: 3.5em;
+	}
+	.menu-trigger {
+		top: 13px;
+	}
+	.menu-trigger .icon-burger {
+		font-size: 32px;
+	}
+	.primary-nav {
+		margin-left: 0;
+		margin-top: 10px;
+		float: left;
+	}
+	.logo-wrap {
+		.logo {
+			top: 0;
+			width: 250px;
+			height: 20px;
+		}
+	}
+	.intro .sub-line {
+		display: none;
+	}
+	.banner-search .input-list {
+		margin-bottom: 1rem;
+	}
+	.panel-img {
+		width: 100%;
+		height: auto;
+	}
+
+	.page-footer-nav {
+		.button {
+			width: 100%;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 47em) {
+
+	.mobile-search-button {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 1067px) {
+	
+	.hero-bg img {
+		position: absolute; bottom: 0;
+		width: auto;
+		height: 100%;
+		max-width: inherit;
+	}
+
+}
+
+@media only screen and (min-width: 1067px) and (min-width: 1199px) {
+
+	.hero-bg img {
+		position: absolute; bottom: 0;
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,328 @@
+@import "base";
+
+/* Content ------------------------------ */
+
+#content {
+	clear: both;
+}
+.content-body {
+	padding-bottom: 3rem;
+}
+
+.content-main {
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+/* Banner Hero ------------------------------ */
+
+.media-photo {
+	position: relative;
+	margin-bottom: 2rem;
+	height: 400px;
+	overflow: hidden;
+}
+.media-cover,
+.media-cover:after {
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+}
+.media-cover {
+	background: {
+	  repeat: no-repeat;
+	  position: 50% 50%;
+	  size: cover;
+	};
+	&:after {
+		content: "";
+		background-color: $black;
+		@include opacity(0.3);
+	}
+}
+
+.title {
+	h1 {
+		font-size: 1.4rem;
+		color: #FFF;
+	}
+	h2 {
+		font-size: 1.2rem;
+		font-weight: $font-weight-medium;
+		color: #FFF;
+	}
+	p {
+		margin: 0 auto 1.5rem;
+		font-weight: $font-weight-bold;
+		color: #FFF;
+		max-width: 600px;
+	}
+}
+
+.home-hero {
+	height: 70vh;
+	.media-cover {
+		background-position: 50% 80%;
+	}
+	.title {
+		padding-bottom: 70px;
+	}
+}
+
+.destination-landing {
+	height: 80vh;
+	.media-cover {
+		background-position: 50% 40%;
+	}
+}
+
+.destination-hero {
+	margin-bottom: 0;
+	height: 400px;
+	.title {
+		padding-bottom: 50px;
+	}
+}
+
+.yacht-hero {
+	margin-bottom: 0;
+	.media-cover {
+		&:after {
+			@include opacity(1);
+			background: {
+				color: transparent;
+			 	image: image-url("header-fade.png");
+			 	repeat: repeat-x;
+			 	position: bottom right;
+			};
+		}
+	}
+}
+
+.about-hero {
+	height: 70vh;
+}
+
+/* Homepage ------------------------------ */
+
+.summary {
+	p {
+		font-family: $font-style-fancy;
+		font-weight: $font-weight-normal;
+		font-size: 1.125em;
+		margin-bottom: 1.5em;
+	}
+}
+
+.segment-overview img {
+	margin-bottom: 1.4rem;
+	display: block;
+}
+
+.section-intro {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+/* Destinations ------------------------------ */
+
+/* Destination Landing */
+
+.regions {
+	ul {
+		margin-bottom: 3rem;
+	}
+	li {
+		a {
+			font-weight: $font-weight-bold;
+			font-size: 1.5rem;
+			color: #FFF;
+			&:hover {
+				color: rgba(255,255,255,0.8);
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.row-space .region-card {
+	margin-bottom: 25px;
+}
+.region-tile {
+	position: relative;
+}
+.region-card {
+	height: 200px;
+	position: relative;
+	.card-container {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+	h2 {
+		font-size: 1.2rem;
+		color: $contrast;
+		padding: 0 2%;
+	}
+}
+.region-img, .region-img:after {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+.region-img {
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+.region-img:after {
+	content: "";
+	background-color: $black;
+	@include opacity(0.2);
+}
+
+/* Landing Page Hero ------------------------------ */
+
+.hero {
+	position: relative;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+}
+.hero::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.4);
+	content: "";
+}
+
+.overlay {
+	position: relative;
+	text-align: center;
+	top: 2rem;
+	z-index: 30;
+	width: 100%;
+	color: #fff;
+	padding: 55px 0 10px 0;
+}
+
+.hero-content-wrapper {
+	margin: auto;
+	width: 90%;
+	height: 100%;
+	max-width: 700px;
+	display: table;
+	position: relative;
+	z-index: 3;
+}
+
+.nav-tabs-bar, .nav-tabs .contain-to-grid, .contain-to-grid .top-bar {
+	background: rgba($charcoal, 0.8);
+}
+.contain-to-grid .top-bar {
+	margin-bottom: 2rem;
+	margin-top: -45px;
+	z-index: 100;
+}
+.top-bar-section ul li a {
+	font-family: $font-style-body;
+	font-size: $text-small;
+	font-weight: $font-weight-medium;
+}
+
+.top-bar .toggle-topbar {
+	left: 0;
+	a {
+		display: block;
+		font-size: 1rem;
+		font-weight: $font-weight-normal;
+		&:after {
+			position: absolute; right: 15px; top: 20px;
+			width: 0;
+			height: 0;
+			border: 7px solid transparent;
+			content: "";
+			border-top-color: #FFF;
+		}
+	}
+}
+.top-bar.expanded {
+	.top-bar-section {
+		a {
+			font-size: 1rem;
+		}
+	}
+}
+.top-bar .toggle-topbar a {
+	text-transform: none;
+}
+
+.gallery {
+	margin-bottom: 1.2rem;
+}
+.clearing-thumbs {
+	margin-left: inherit;
+}
+.gallery .clearing-thumbs li {
+	width: 33.333%;
+	margin-right: 0;
+	padding-left: 0;
+}
+.gallery .clearing-thumbs .gallery-hero {
+	width: 100%;
+	padding: 0 10px 10px 0;
+}
+.clearing-thumbs li:last-child {
+	margin: 0;
+	clear: none;
+}
+
+.location-details {
+	margin: 1.5rem 0;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid $gainsboro;
+	.map {
+		width: 100%;
+		height: 400px;
+		border: 1px solid $gainsboro;
+		margin-bottom: 1rem;
+		img {
+			border: 0;
+		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.map-sidebar {
+		ul {
+			font-size: $text-tiny;
+			line-height: 1.7;
+		}
+		i {
+			color: $monsoon;
+		}
+	}
+}
+
+.sub-section {
+	background-color: $smoke;
+	padding: 2rem 0;
+}
+
+.feature-yacht {
+	padding-top: 1.5rem;
+	padding-bottom: 1.2rem;
+	margin-bottom: 2rem;
+	border-color: $smoke;
+	border-width: 2px 0;
+	border-style: solid;
+	img {
+		margin-bottom: 1rem;
+	}
+}
+
+.page-footer-nav {
+	padding: 2rem 0 3rem;
+}
