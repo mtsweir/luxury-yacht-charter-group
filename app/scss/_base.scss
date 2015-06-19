@@ -1,6 +1,6 @@
 $navy-blue   : #1A1C33;
-$teal        : #129caf;
-$aqua        : #abd7e3;
+$teal        : #6fa2cd;
+$links       : #6fa2cd;
 
 $contrast    : #FFFFFF;
 $ghost       : #FAFAFA;
@@ -10,6 +10,7 @@ $smoke       : #EEEEEE;
 $gainsboro   : #DDDDDD;
 $iron        : #CCCCCC;
 $base        : #AAAAAA;
+$slate       : #999999;
 $monsoon     : #777777;
 $charcoal    : #555555;
 $tuatara     : #444444;
@@ -24,9 +25,9 @@ $font-weight-normal: 400;
 $font-weight-medium: 600;
 $font-weight-bold: 700;
 
-$font-style-header: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-style-header: 'Roboto', Helvetica, Arial, sans-serif;
 $font-style-fancy: 'Roboto Slab', Georgia, Times, serif;
-$font-style-body: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-style-body: 'Roboto', Helvetica, Arial, sans-serif;
 
 $base-font  : 14px;
 
@@ -64,7 +65,17 @@ ul, ol, dl {
 	font-size: inherit;
 }
 
+a {
+	color: $links;
+}
+
 /* Typography ------------------------------ */
+
+.h2 {
+	font-size: 1.9rem;
+	font-weight: $font-weight-normal;
+	margin-bottom: 1.4rem;
+}
 
 .xsmall {
 	font-size: $text-tiny;
@@ -73,12 +84,19 @@ ul, ol, dl {
 	font-size: $text-small;
 }
 
+.normal {
+	font-weight: $font-weight-normal;
+}
 .bold {
 	font-weight: $font-weight-bold;
 }
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.text-right {
+	text-align: right;
 }
 
 .light {
@@ -101,11 +119,50 @@ ul, ol, dl {
 	float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+	margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
 	margin-top: 2rem;
 }
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
 	margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+	margin-top: 3rem;
+}
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+	margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+	margin-top: 4rem;
+}
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+	margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+
+.img-responsive-height {
+	width: auto;
+	height: 100%;
+}
+
+hr {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: 0;
+	border-top: 1px solid $gainsboro;
 }
 
 /* Icons ------------------------------ */

@@ -8323,13 +8323,13 @@ th.hide-for-touch {
   }
 }
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -8357,7 +8357,17 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+a {
+  color: #6fa2cd;
+}
+
 /* Typography ------------------------------ */
+.h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .xsmall {
   font-size: 0.8rem;
 }
@@ -8366,12 +8376,20 @@ ul, ol, dl {
   font-size: 0.9rem;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .light {
@@ -8395,12 +8413,52 @@ ul, ol, dl {
   float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
   margin-top: 2rem;
 }
 
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+  margin-top: 3rem;
+}
+
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+  margin-top: 4rem;
+}
+
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+.img-responsive-height {
+  width: auto;
+  height: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
 }
 
 /* Icons ------------------------------ */
@@ -8410,13 +8468,13 @@ ul, ol, dl {
 
 /* Compass ------------------------------ */
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -8444,7 +8502,17 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+a {
+  color: #6fa2cd;
+}
+
 /* Typography ------------------------------ */
+.h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .xsmall {
   font-size: 0.8rem;
 }
@@ -8453,12 +8521,20 @@ ul, ol, dl {
   font-size: 0.9rem;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .light {
@@ -8482,12 +8558,52 @@ ul, ol, dl {
   float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
   margin-top: 2rem;
 }
 
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+  margin-top: 3rem;
+}
+
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+  margin-top: 4rem;
+}
+
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+.img-responsive-height {
+  width: auto;
+  height: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
 }
 
 /* Icons ------------------------------ */
@@ -8578,6 +8694,10 @@ ul, ol, dl {
 }
 .main-nav-link > a:hover {
   color: #FFF;
+}
+
+.f-dropdown a {
+  color: #777777;
 }
 
 .button.header-button-search {
@@ -8741,13 +8861,13 @@ ul, ol, dl {
 
 .button {
   padding: .6rem 2rem .7rem;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   border: 1px solid;
-  border-color: #129caf;
-  border-bottom-color: #0e7d8c;
-  background-color: #129caf;
+  border-color: #6fa2cd;
+  border-bottom-color: #5982a4;
+  background-color: #6fa2cd;
   border-radius: 2px;
   -webkit-transition: background-color 100ms ease-out;
   transition: background-color 100ms ease-out;
@@ -8760,12 +8880,12 @@ ul, ol, dl {
 }
 .button:hover {
   text-decoration: none !important;
-  background-color: #13a8bd;
+  background-color: #7aa9d1;
 }
 
 .button-secondary {
   color: #444444;
-  border-color: #b8b8b8;
+  border-color: #c7c7c7;
   border-bottom-color: #a3a3a3;
   background-color: #FFF;
 }
@@ -8793,7 +8913,7 @@ ul, ol, dl {
 }
 
 .accordion .accordion-navigation.active > a {
-  background-color: #129caf;
+  background-color: #6fa2cd;
 }
 
 .accordion .accordion-navigation > a {
@@ -8830,15 +8950,40 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+.results-count {
+  padding-top: 1rem;
+  border-top: 1px solid #DDDDDD;
+}
+
+ul.pagination li {
+  margin-bottom: 1.4rem;
+}
+
+ul.pagination li.current a, ul.pagination li.current a:hover, ul.pagination li.current button {
+  color: #555555;
+  background-color: #EEEEEE;
+  cursor: default;
+}
+
+ul.pagination li a, ul.pagination li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #6fa2cd;
+  border: 1px solid #CCCCCC;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+
 /* Compass ------------------------------ */
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -8866,7 +9011,17 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+a {
+  color: #6fa2cd;
+}
+
 /* Typography ------------------------------ */
+.h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .xsmall {
   font-size: 0.8rem;
 }
@@ -8875,12 +9030,20 @@ ul, ol, dl {
   font-size: 0.9rem;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .light {
@@ -8904,12 +9067,52 @@ ul, ol, dl {
   float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
   margin-top: 2rem;
 }
 
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+  margin-top: 3rem;
+}
+
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+  margin-top: 4rem;
+}
+
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+.img-responsive-height {
+  width: auto;
+  height: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
 }
 
 /* Icons ------------------------------ */
@@ -9122,7 +9325,7 @@ ul, ol, dl {
   font-size: 1.3rem;
 }
 .post-content h3:hover {
-  color: #129caf;
+  color: #6fa2cd;
 }
 .post-content .post-date {
   font-size: 0.8rem;
@@ -9133,53 +9336,14 @@ ul, ol, dl {
   color: #444444;
 }
 
-/* Team */
-.section-team {
-  background-color: #EEEEEE;
-  padding: 2rem 0 5rem;
-}
-
-.profile-card {
-  padding: 1rem;
-  margin: 2rem 0;
-  background-color: #FFFFFF;
-}
-.profile-card img {
-  width: 8rem;
-  display: block;
-  margin: 2rem auto;
-  text-align: center;
-  border-radius: 50%;
-}
-.profile-card .profile-info {
-  padding: 0 0 1rem;
-  text-align: center;
-}
-.profile-card .profile-info h4 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #444444;
-  text-align: center;
-}
-.profile-card .profile-info .small {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #777777;
-}
-.profile-card .profile-info .button {
-  margin: 0;
-}
-
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -9207,7 +9371,17 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+a {
+  color: #6fa2cd;
+}
+
 /* Typography ------------------------------ */
+.h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .xsmall {
   font-size: 0.8rem;
 }
@@ -9216,12 +9390,20 @@ ul, ol, dl {
   font-size: 0.9rem;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .light {
@@ -9245,12 +9427,52 @@ ul, ol, dl {
   float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
   margin-top: 2rem;
 }
 
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+  margin-top: 3rem;
+}
+
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+  margin-top: 4rem;
+}
+
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+.img-responsive-height {
+  width: auto;
+  height: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
 }
 
 /* Icons ------------------------------ */
@@ -9261,10 +9483,6 @@ ul, ol, dl {
 /* Content ------------------------------ */
 #content {
   clear: both;
-}
-
-.content-body {
-  padding-bottom: 3rem;
 }
 
 .content-main a:hover {
@@ -9300,7 +9518,7 @@ ul, ol, dl {
   opacity: 0.3;
 }
 
-.title h1 {
+.title h1, .title .h1 {
   font-size: 1.4rem;
   color: #FFF;
 }
@@ -9335,10 +9553,16 @@ ul, ol, dl {
 
 .destination-hero {
   margin-bottom: 0;
-  height: 400px;
 }
 .destination-hero .title {
   padding-bottom: 50px;
+}
+
+.section-hero {
+  height: 230px;
+}
+.section-hero h1 {
+  font-weight: 600;
 }
 
 .yacht-hero {
@@ -9357,11 +9581,16 @@ ul, ol, dl {
   height: 70vh;
 }
 
-/* Homepage ------------------------------ */
+/* ------------------------------ */
+.content-body {
+  display: inline-block;
+  width: 100%;
+}
+
 .summary p {
   font-family: "Roboto Slab", Georgia, Times, serif;
   font-weight: 400;
-  font-size: 1.125em;
+  font-size: 1.3em;
   margin-bottom: 1.5em;
 }
 
@@ -9484,7 +9713,7 @@ ul, ol, dl {
 }
 
 .top-bar-section ul li a {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -9583,17 +9812,181 @@ ul, ol, dl {
 }
 
 .page-footer-nav {
-  padding: 2rem 0 3rem;
+  padding: 2rem 0;
+}
+
+/* Team ------------------------------ */
+#team {
+  background-color: #EEEEEE;
+  padding: 3rem 0 5rem;
+  margin-top: 3rem;
+}
+
+.profile-card {
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #FFFFFF;
+}
+.profile-card img {
+  width: 8rem;
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 50%;
+}
+.profile-card .profile-info {
+  padding: 0 0 1rem;
+  text-align: center;
+}
+.profile-card .profile-info h4 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444444;
+  text-align: center;
+}
+.profile-card .profile-info .small {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #777777;
+}
+.profile-card .profile-info .button {
+  margin: 0;
+}
+
+.page-container:before, .page-container-responsive:before,
+.page-container:after, .page-container-responsive:after {
+  content: " ";
+  display: table;
+}
+
+.listing-results {
+  display: inline-block;
+  width: 100%;
+  clear: both;
+}
+
+.filters-section {
+  position: relative;
+  padding: 20px 0 0;
+  margin: 1rem 0 3rem;
+}
+.filters-section label {
+  margin: 0;
+}
+
+.filters-section:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  height: 1px;
+  left: 0.9375rem;
+  right: 0.9375rem;
+  border-bottom: 1px solid #F9F9F9;
+  border-color: rgba(220, 224, 224, 0.5);
+}
+
+.filters-section:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  left: 0.9375rem;
+  right: 0.9375rem;
+  border-bottom: 1px solid #F9F9F9;
+  border-color: rgba(220, 224, 224, 0.5);
+}
+
+/* Cards ------------------------------ */
+.card-section {
+  padding: 10px 0;
+}
+.card-section h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+.card-section a {
+  color: #555555;
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 67%;
+}
+
+.card-media-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card-media-cover img {
+  width: 100%;
+  height: auto;
+}
+
+.guests {
+  color: #999999;
+}
+
+.card-listing-info {
+  color: #999999;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.card img {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.center-block-25 {
+  margin: 0 auto;
+  width: 60px;
+}
+
+.circle-text:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border: 1px solid #FFFFFF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.circle-text div {
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  line-height: 1em;
+  margin-top: -1em;
+  text-align: center;
+  color: white;
+}
+
+.circle-text .fa {
+  font-size: 1.7rem;
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -9621,7 +10014,17 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+a {
+  color: #6fa2cd;
+}
+
 /* Typography ------------------------------ */
+.h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .xsmall {
   font-size: 0.8rem;
 }
@@ -9630,12 +10033,20 @@ ul, ol, dl {
   font-size: 0.9rem;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .light {
@@ -9659,12 +10070,52 @@ ul, ol, dl {
   float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
   margin-top: 2rem;
 }
 
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+  margin-top: 3rem;
+}
+
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+  margin-top: 4rem;
+}
+
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+.img-responsive-height {
+  width: auto;
+  height: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
 }
 
 /* Icons ------------------------------ */
@@ -9680,9 +10131,12 @@ ul, ol, dl {
 .widget .widget-inner {
   padding: 1.25rem;
 }
+.widget h4 {
+  margin-top: 0;
+}
 .widget h4 i {
   margin-right: 4px;
-  color: #129caf;
+  color: #6fa2cd;
 }
 .widget .form-sub-title {
   padding-bottom: .7rem;
@@ -9785,7 +10239,6 @@ ul, ol, dl {
 
 .range-title {
   display: block;
-  padding-bottom: 10px;
   font-size: 0.8rem;
   font-weight: 600;
   color: #444444;
@@ -9799,14 +10252,25 @@ ul, ol, dl {
   display: block;
 }
 
+/* Sidebar Styles */
+.sidenav-text a {
+  display: block;
+  padding: 6px 0;
+  font-size: 16px;
+  color: #777777;
+}
+.sidenav-text a:hover {
+  color: #999999;
+}
+
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -9834,7 +10298,17 @@ ul, ol, dl {
   font-size: inherit;
 }
 
+a {
+  color: #6fa2cd;
+}
+
 /* Typography ------------------------------ */
+.h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .xsmall {
   font-size: 0.8rem;
 }
@@ -9843,12 +10317,20 @@ ul, ol, dl {
   font-size: 0.9rem;
 }
 
+.normal {
+  font-weight: 400;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .light {
@@ -9872,12 +10354,52 @@ ul, ol, dl {
   float: none;
 }
 
-.row-space-top {
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
   margin-top: 2rem;
 }
 
-.row-space-bottom {
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+  margin-top: 3rem;
+}
+
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+  margin-top: 4rem;
+}
+
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+/* Helpers ------------------------------ */
+.img-responsive-height {
+  width: auto;
+  height: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
 }
 
 /* Icons ------------------------------ */
@@ -9931,6 +10453,11 @@ ul, ol, dl {
 
 .disclaimer p {
   font-size: 0.75rem;
+}
+
+/* Specifications */
+.content-specs li {
+  padding: 0 0.625rem 0.625rem;
 }
 
 @media only screen and (min-width: 25em) and (max-width: 44em) {
@@ -9996,6 +10523,14 @@ ul, ol, dl {
     color: #222222 !important;
   }
 
+  .page-container {
+    max-width: 1045px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .content-header-inner {
     padding-top: 0;
     padding-bottom: 0;
@@ -10011,7 +10546,7 @@ ul, ol, dl {
   }
 }
 @media only screen and (min-width: 44em) {
-  .title h1 {
+  .title h1, .title .h1 {
     font-size: 2.4rem;
   }
   .title h2 {
@@ -10037,12 +10572,15 @@ ul, ol, dl {
   }
 }
 @media only screen and (min-width: 60em) {
-  .content-main {
-    width: 65%;
-  }
-
-  .sidebar {
-    width: 35%;
+  	/*.content-main {
+  		width: 65%;
+  	}
+  
+  	.sidebar {
+  		width: 35%;
+  	}*/
+  .content-offest-3 {
+    padding-right: 3rem;
   }
 
   .panel-info h3 {

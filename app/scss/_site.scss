@@ -86,6 +86,11 @@
 		color: #FFF;
 	}
 }
+.f-dropdown {
+	a {
+		color: $monsoon;
+	}
+}
 
 .button.header-button-search {
 	margin: 0;
@@ -266,7 +271,7 @@
 }
 .button-secondary {
 	color: $tuatara;
-	border-color: shade($iron, 10);
+	border-color: shade($gainsboro, 10);
 	border-bottom-color: shade($iron, 20);
 	background-color: #FFF;
 	&:hover {
@@ -321,4 +326,26 @@
 	color: $contrast;
 	font-weight: $font-weight-medium;
 	font-size: inherit;
+}
+
+.results-count {
+	padding-top: 1rem;
+	border-top: 1px solid $gainsboro;
+}
+ul.pagination li {
+	margin-bottom: 1.4rem;
+}
+ul.pagination li.current a, ul.pagination li.current a:hover, ul.pagination li.current button {
+	color: $charcoal;
+	background-color: $smoke;
+	cursor: default;
+}
+ul.pagination li a, ul.pagination li button {
+	padding: 5px 10px;
+	margin-left: 10px;
+	text-decoration: none;
+	color: $teal;
+	border: 1px solid $iron;
+	background-color: $contrast;
+	border-radius: 2px;
 }

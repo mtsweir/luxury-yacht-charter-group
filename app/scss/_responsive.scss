@@ -60,6 +60,14 @@
 		}
 	}
 
+	.page-container {
+		max-width: 1045px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
 	.content-header-inner {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -75,7 +83,7 @@
 @media only screen and (min-width: 44em) {
 
 	.title {
-		h1 {
+		h1, .h1 {
 			font-size: 2.4rem;
 		}
 		h2 {
@@ -103,12 +111,15 @@
 
 @media only screen and (min-width: 60em) {
 
-	.content-main {
+	/*.content-main {
 		width: 65%;
 	}
 
 	.sidebar {
 		width: 35%;
+	}*/
+	.content-offest-3 {
+		padding-right: 3rem;
 	}
 
 	.panel-info h3 {
@@ -117,6 +128,8 @@
 	.panel-span-6 h3 {
 		font-size: 1.7rem;
 	}
+
+
 
 }
 
