@@ -105,6 +105,10 @@
 	height: 70vh;
 }
 
+.section-hero-search {
+	margin-bottom: 0;
+}
+
 /* ------------------------------ */
 
 .content-body {
@@ -381,7 +385,7 @@
 	display: table;
 }
 
-.listing-results {
+/*.listing-results {
 	display: inline-block;
 	width: 100%;
 	clear: both;
@@ -414,9 +418,9 @@
 	right: 0.9375rem;
 	border-bottom: 1px solid $snow;
 	border-color: rgba(220,224,224,0.5);
-}
+}*/
 
-/* Cards ------------------------------ */
+/* User Cards ------------------------------ */
 
 .card-section {
 	padding: 10px 0;
@@ -450,6 +454,9 @@
 }
 .card-listing-info {
 	color: $slate;
+	span {
+		display: block;
+	}
 }
 
 .card {
@@ -489,4 +496,50 @@
 }
 .circle-text .fa {
 	font-size: 1.7rem;
+}
+
+/* Search */
+
+.filters {
+	background-color: $vapor;
+	padding-top: 3rem;
+	margin-bottom: 2rem;
+	h2 {
+		margin-bottom: 1.2rem;
+	}
+}
+
+.results-filter {
+	.sub-nav  {
+		overflow: visible;
+		dt {
+			font-weight: $font-weight-medium;
+			color: $charcoal;
+			text-transform: none;
+			margin: 0 1rem 0 0;
+		}
+		dt, dd, li {
+			font-family: $font-style-body;
+			font-weight: $font-weight-medium;
+			margin-left: .2rem;
+		}
+		dt a, dd a, li a {
+			color: $teal;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		dt.active a, dd.active a, li.active a {
+			color: $monsoon;
+			background-color: $vapor;
+			border: 1px solid $base;
+			border-radius: 2px;
+		}
+	}
+}
+
+.results-total {
+	p {
+		color: $slate;
+	}
 }
