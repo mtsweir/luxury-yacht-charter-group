@@ -8461,6 +8461,10 @@ hr {
   border-top: 1px solid #DDDDDD;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 /* Icons ------------------------------ */
 .icon-size-4 {
   font-size: 4.5rem;
@@ -8604,6 +8608,10 @@ hr {
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 /* Icons ------------------------------ */
@@ -9115,6 +9123,10 @@ hr {
   border-top: 1px solid #DDDDDD;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 /* Icons ------------------------------ */
 .icon-size-4 {
   font-size: 4.5rem;
@@ -9471,6 +9483,10 @@ hr {
   border-top: 1px solid #DDDDDD;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 /* Icons ------------------------------ */
 .icon-size-4 {
   font-size: 4.5rem;
@@ -9517,6 +9533,8 @@ hr {
 .title h1, .title .h1 {
   font-size: 1.4rem;
   color: #FFF;
+  -webkit-animation-delay: 200ms;
+  -webkit-animation-duration: 1s;
 }
 .title h2 {
   font-size: 1.2rem;
@@ -10020,6 +10038,77 @@ hr {
   color: #999999;
 }
 
+/* Testimonials */
+.feedback-list {
+  margin: 2rem 0 3rem;
+}
+
+.feedback-item .feedback-source {
+  text-align: center;
+}
+.feedback-item .feedback-source .source {
+  margin: 0;
+}
+.feedback-item .feedback-source .destination {
+  margin-bottom: 10px;
+}
+.feedback-item .yacht {
+  font-weight: 600;
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+.feedback-item .destination {
+  font-size: 0.8rem;
+}
+.feedback-item img {
+  width: 80px;
+  height: auto;
+}
+
+.feedback-summary {
+  font-family: "Roboto Slab", Georgia, Times, serif;
+}
+
+.feedback-item {
+  padding: 0 0 3em;
+  overflow: hidden;
+}
+.feedback-item .quote-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  line-height: 1.5;
+  position: relative;
+}
+.feedback-item .quote-wrapper p:first-child:before {
+  content: "\f10d";
+  color: #CCCCCC;
+  font-family: "FontAwesome";
+  font-size: 2.0rem;
+  position: relative;
+  height: 20px;
+  width: 40px;
+  top: -12px;
+  left: 0px;
+  float: left;
+}
+.feedback-item .quote-wrapper p:last-child {
+  margin: 0;
+}
+.feedback-item .quote-wrapper blockquote {
+  border: 0;
+  margin: 0;
+  padding: 1.2rem;
+}
+.feedback-item p {
+  font-size: 1rem;
+  color: #777777;
+}
+
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -10157,6 +10246,10 @@ hr {
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 /* Icons ------------------------------ */
@@ -10443,6 +10536,10 @@ hr {
   border-top: 1px solid #DDDDDD;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 /* Icons ------------------------------ */
 .icon-size-4 {
   font-size: 4.5rem;
@@ -10525,6 +10622,43 @@ hr {
   }
   .article-snippet .post-content {
     padding: 0;
+  }
+
+  .feedback-item {
+    padding: 0 2em 3em 0;
+  }
+
+  .feedback-item .feedback-source {
+    margin-top: 30px;
+  }
+
+  .quote-wrapper {
+    margin-top: 2px;
+  }
+  .quote-wrapper:after, .quote-wrapper:before {
+    right: 100%;
+    top: 60px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .quote-wrapper:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 15px;
+    margin-top: -15px;
+  }
+  .quote-wrapper:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #dddddd;
+    border-width: 16px;
+    margin-top: -16px;
+  }
+  .quote-wrapper blockquote {
+    padding: 2rem;
   }
 }
 @media only screen and (min-width: 40.0625em) {

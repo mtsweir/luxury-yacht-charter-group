@@ -41,6 +41,8 @@
 	h1, .h1 {
 		font-size: 1.4rem;
 		color: #FFF;
+		-webkit-animation-delay: 200ms;
+		-webkit-animation-duration: 1s;
 	}
 	h2 {
 		font-size: 1.2rem;
@@ -542,4 +544,77 @@
 	p {
 		color: $slate;
 	}
+}
+
+/* Testimonials */
+
+.feedback-list {
+	margin: 2rem 0 3rem;
+}
+.feedback-item {
+	.feedback-source {
+		text-align: center;
+		.source {
+			margin: 0;
+		}
+		.destination {
+			margin-bottom: 10px;
+		}
+	}
+	.yacht {
+		font-weight: $font-weight-medium;
+		display: block;
+		margin-top: 7px;
+		margin-bottom: 0;
+	}
+	.destination {
+		font-size: $text-tiny;
+	}
+	img {
+		width: 80px;
+		height: auto;
+	}
+}
+
+.feedback-summary {
+	font-family: $font-style-fancy;
+}
+.feedback-item {
+	padding: 0 0 3em;
+	overflow: hidden;
+	.quote-wrapper {
+		background: $contrast;
+		border: 1px solid $gainsboro;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.075);
+		-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.075);
+		box-shadow: 0 2px 4px rgba(0,0,0,0.075);
+		line-height: 1.5;
+		position: relative;
+		p:first-child:before {
+			content: "\f10d";
+			color: $iron;
+			font-family: "FontAwesome";
+			font-size: 2.0rem;
+			position: relative;
+			height: 20px;
+			width: 40px;
+			top: -12px;
+			left: 0px;
+			float: left;
+		}
+		p:last-child {
+			margin: 0;
+		}
+		blockquote {
+			border: 0;
+			margin: 0;
+			padding: 1.2rem;
+		}
+	}
+	p {
+		font-size: 1rem;
+		color: $monsoon;
+	}
+
 }
