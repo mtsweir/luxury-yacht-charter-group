@@ -22,5 +22,5 @@ var app = (function(document, $) {
 (function() {
 	app.init();
 	// Initialise WOW
-	new WOW().init();
+	// new WOW().init();
 })();

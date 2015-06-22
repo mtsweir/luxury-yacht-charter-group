@@ -8449,16 +8449,16 @@ a {
 }
 
 /* Helpers ------------------------------ */
-.img-responsive-height {
-  width: auto;
-  height: 100%;
-}
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-responsive-height {
+  width: auto;
+  height: 100%;
 }
 
 .img-circle {
@@ -8598,16 +8598,16 @@ a {
 }
 
 /* Helpers ------------------------------ */
-.img-responsive-height {
-  width: auto;
-  height: 100%;
-}
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-responsive-height {
+  width: auto;
+  height: 100%;
 }
 
 .img-circle {
@@ -8958,7 +8958,7 @@ hr {
   font-size: inherit;
 }
 
-.results-count {
+.results-footer {
   padding-top: 1rem;
   border-top: 1px solid #DDDDDD;
 }
@@ -9111,16 +9111,16 @@ a {
 }
 
 /* Helpers ------------------------------ */
-.img-responsive-height {
-  width: auto;
-  height: 100%;
-}
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-responsive-height {
+  width: auto;
+  height: 100%;
 }
 
 .img-circle {
@@ -9471,16 +9471,16 @@ a {
 }
 
 /* Helpers ------------------------------ */
-.img-responsive-height {
-  width: auto;
-  height: 100%;
-}
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-responsive-height {
+  width: auto;
+  height: 100%;
 }
 
 .img-circle {
@@ -9579,10 +9579,10 @@ hr {
   font-weight: 600;
 }
 
-.yacht-hero {
+.yacht-hero, .yacht-tile {
   margin-bottom: 0;
 }
-.yacht-hero .media-cover:after {
+.yacht-hero .media-cover:after, .yacht-tile .media-cover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   background-color: transparent;
@@ -9591,12 +9591,39 @@ hr {
   background-position: bottom right;
 }
 
+.yacht-tile {
+  height: 230px;
+}
+
 .about-hero {
   height: 70vh;
 }
 
 .section-hero-search {
   margin-bottom: 0;
+}
+
+.media-photo-block {
+  margin: 0;
+}
+
+.media-photo-trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.media-photo-trigger .small {
+  color: #FFFFFF;
+}
+.media-photo-trigger .small:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.row-full-height {
+  height: 100%;
 }
 
 /* ------------------------------ */
@@ -10045,6 +10072,7 @@ hr {
 
 .feedback-item .feedback-source {
   text-align: center;
+  margin-bottom: 1rem;
 }
 .feedback-item .feedback-source .source {
   margin: 0;
@@ -10236,16 +10264,16 @@ a {
 }
 
 /* Helpers ------------------------------ */
-.img-responsive-height {
-  width: auto;
-  height: 100%;
-}
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-responsive-height {
+  width: auto;
+  height: 100%;
 }
 
 .img-circle {
@@ -10524,16 +10552,16 @@ a {
 }
 
 /* Helpers ------------------------------ */
-.img-responsive-height {
-  width: auto;
-  height: 100%;
-}
-
 hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #DDDDDD;
+}
+
+.img-responsive-height {
+  width: auto;
+  height: 100%;
 }
 
 .img-circle {
@@ -10556,6 +10584,10 @@ hr {
 .media-photo.yacht-hero p {
   margin: 0;
   max-width: inherit;
+}
+
+.yacht-inner {
+  margin-bottom: 1.4rem;
 }
 
 .quick-view .heading {
@@ -10631,35 +10663,6 @@ hr {
   .feedback-item .feedback-source {
     margin-top: 30px;
   }
-
-  .quote-wrapper {
-    margin-top: 2px;
-  }
-  .quote-wrapper:after, .quote-wrapper:before {
-    right: 100%;
-    top: 60px;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-  .quote-wrapper:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-right-color: #ffffff;
-    border-width: 15px;
-    margin-top: -15px;
-  }
-  .quote-wrapper:before {
-    border-color: rgba(221, 221, 221, 0);
-    border-right-color: #dddddd;
-    border-width: 16px;
-    margin-top: -16px;
-  }
-  .quote-wrapper blockquote {
-    padding: 2rem;
-  }
 }
 @media only screen and (min-width: 40.0625em) {
   .logo-wrap {
@@ -10719,6 +10722,38 @@ hr {
     bottom: 75px;
     padding: 0;
   }
+
+  .quote-wrapper {
+    margin-top: 2px;
+  }
+  .quote-wrapper:after, .quote-wrapper:before {
+    right: 100%;
+    top: 60px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .quote-wrapper:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 15px;
+    margin-top: -15px;
+  }
+  .quote-wrapper:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #dddddd;
+    border-width: 16px;
+    margin-top: -16px;
+  }
+  .quote-wrapper blockquote {
+    padding: 2rem;
+  }
+  .quote-wrapper.quote-wrapper-offset-left:before, .quote-wrapper.quote-wrapper-offset-left:after {
+    border: 0;
+  }
 }
 @media only screen and (min-width: 44em) {
   .title h1, .title .h1 {
@@ -10774,6 +10809,30 @@ hr {
   .menu-trigger,
   .mobile-search-button {
     display: none;
+  }
+}
+@media only screen and (max-width: 39.8em) {
+  .quote-wrapper:after, .quote-wrapper:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .quote-wrapper:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 16px;
+    margin-left: -16px;
+  }
+  .quote-wrapper:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-bottom-color: #dddddd;
+    border-width: 17px;
+    margin-left: -17px;
   }
 }
 @media only screen and (max-width: 40.0624em) {
