@@ -82,7 +82,7 @@
 }
 
 .section-hero {
-	height: 230px;
+	height: 200px;
 	h1 {
 		font-weight: $font-weight-medium;
 	}
@@ -103,7 +103,7 @@
 	}
 }
 .yacht-tile {
-	height: 230px;
+	height: 200px;
 }
 
 .about-hero {
@@ -639,4 +639,13 @@
 		color: $monsoon;
 	}
 
+}
+
+/* Panels */
+
+.panel-body {
+	padding: 10px 20px 0;
+	.fa {
+		color: $teal;
+	}
 }

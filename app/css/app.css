@@ -8867,6 +8867,10 @@ hr {
   max-width: 76rem;
 }
 
+.row .row {
+  margin: 0;
+}
+
 .button {
   padding: .6rem 2rem .7rem;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -9573,7 +9577,7 @@ hr {
 }
 
 .section-hero {
-  height: 230px;
+  height: 200px;
 }
 .section-hero h1 {
   font-weight: 600;
@@ -9592,7 +9596,7 @@ hr {
 }
 
 .yacht-tile {
-  height: 230px;
+  height: 200px;
 }
 
 .about-hero {
@@ -10137,6 +10141,14 @@ hr {
   color: #777777;
 }
 
+/* Panels */
+.panel-body {
+  padding: 10px 20px 0;
+}
+.panel-body .fa {
+  color: #6fa2cd;
+}
+
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -10588,6 +10600,14 @@ hr {
 
 .yacht-inner {
   margin-bottom: 1.4rem;
+}
+
+.layout-plans {
+  text-align: center;
+}
+
+.layout-info p {
+  margin-bottom: 0;
 }
 
 .quick-view .heading {
