@@ -1,6 +1,7 @@
 @import "base";
 
-.media-photo.yacht-hero {
+.media-photo.yacht-hero,
+.media-photo.yacht-tile {
 	.title {
 		vertical-align: bottom;
 		padding-bottom: 70px;
@@ -8,9 +9,11 @@
 	}
 	h1 {
 		margin-bottom: 0;
+		padding: 0;
 	}
 	p {
 		margin: 0;
+		padding: 0;
 		max-width: inherit;
 	}
 }

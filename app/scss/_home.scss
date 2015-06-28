@@ -30,6 +30,19 @@
 	bottom: 0;
 }
 
+.home-hero {
+	height: 70vh;
+	.media-cover {
+		background-position: 50% 80%;
+	}
+	.title {
+		padding-bottom: 260px;
+	}
+	h2 {
+		display: none;
+	}
+}
+
 .hero-banner-content {
 	display: table;
 	width: 100%;
@@ -62,8 +75,18 @@
 	right: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	.input-list, .button, .input-search {
-		margin: 0;
+	.button {
+		margin-bottom: 0;
+		width: 100%;
+		height: 44px;
+		line-height: 44px;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.input-large {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 44px;
 	}
 }
 
@@ -79,6 +102,8 @@
 	text-align: center;
 	line-height: 1.8;
 	margin-bottom: 2rem;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* Yacht Types */
@@ -100,59 +125,6 @@
 
 /* Destinations */
 
-.panel-group {
-	float: left;
-	width: 100%;
-	overflow: hidden;
-}
-.panel-wrap {
-	padding-bottom: 40%;
-	height: 0;
-	position: relative;
-	overflow: hidden;
-}
-.panel-img {
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	max-width: inherit;
-}
-.panel-inner {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	border: 1px solid #FFF;
-	background: image-url("header-fade.png");
-	background-repeat: repeat-x;
-	background-position: 0 100%;
-}
-.panel-info {
-	position: absolute;
-	bottom: 15px;
-	left: 15px;
-	right: 15px;
-
-	h3 {
-		margin: 0;
-		font-family: $font-style-fancy;
-		font-size: 1.25rem;
-		color: #FFF;
-		line-height: 1.3;
-	}
-}
-.panel-info .destination-name {
-	margin: 0;
-	display: inline-block;
-	vertical-align: middle;
-	font-size: $text-small;
-	font-weight: $font-weight-normal;
-	color: #fff;
-}
 .destination-sub {
 	margin-top: 1.6rem;
 	width: 100%;
@@ -162,18 +134,20 @@
 
 /* News Feed */
 
-.section-news {
-	margin-top: 2.5rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+#news {
+	background-color: $smoke;
+	padding: 3rem 0;
+	margin: 2rem 0 3rem;
 }
 .article-fluid {
 	margin-bottom: 1.2rem;
 	display: inline-block;
 	width: 100%;
 	background-color: #FFF;
-	border: 1px solid $gainsboro;
 	@include box-sizing(border-box);
+	&:hover a {
+		color: $teal;
+	}
 }
 .article-snippet {
 	/*padding: 0 0 0 280px;*/

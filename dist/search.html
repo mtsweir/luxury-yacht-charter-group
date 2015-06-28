@@ -86,12 +86,9 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#" data-dropdown="nav_language" data-options="is_hover:true; hover_timeout:5000">Eng</a>
-                    <ul id="nav_language" class="tiny f-dropdown" data-dropdown-content>
-                      <li><a href="#">English</a></li>
-                      <li><a href="#">Français</a></li>
-                    </ul>
+                <li class="nav-lang">
+                    <a class="nav-lang-eng" href="#">English</a>
+                    <a class="nav-lang-fr" href="#">Français</a>
                 </li>
             </ul>
         </div>
@@ -169,39 +166,36 @@
 
 <div class="filters">
     <div class="page-container">
-    
-    <div class="row">
-        
-        <div class="small-12 column">
-            <h2>Yacht Charter Search Results</h2>
-        </div>
-        <div class="medium-3 column">
-            <select class="input-list" id="destination" name="destination">
-                <option value="1">Destination</option>
-                <option>Caribbean</option>
-                <option>Mediterranean</option>
-                <option>Bahamas</option>
-                <option>Florida</option>
-                <option>South Pacific</option>
-            </select>
-        </div>
-        <div class="medium-3 column">
-            <select class="input-list" id="yacht_type" name="yacht_type">
-                <option value="1">Yacht Type</option>
-                <option value="2">Sailing Yachts</option>
-                <option value="3">Motor Yachts</option>
-                <option value="4">Catamarans</option>
-                <option value="5">Gulets</option>
-            </select>
-        </div>
-        <div class="medium-4 column">
-            <input type="text" placeholder="by yacht name / keyword" />
-        </div>
-        <div class="medium-2 column">
-            <a href="#" class="button postfix">Search</a>
-        </div>
 
-    </div>
+        <div class="row">
+            
+            <div class="small-12 column">
+                <h2>Yacht Charter Search Results</h2>
+            </div>
+            <div class="row">
+                <div class="medium-4 column">
+                    <select class="input-list input-large" id="destination" name="destination">
+                        <option value="1">Destination</option>
+                        <option value="2">1</option>
+                    </select>
+                </div>
+                <div class="medium-3 column">
+                    <select class="input-list input-large" id="yacht_type" name="yacht_type">
+                        <option value="1">Yacht Type</option>
+                        <option value="2">Sailing Yachts</option>
+                        <option value="3">Motor Yachts</option>
+                        <option value="4">Catamarans</option>
+                        <option value="5">Gulets</option>
+                    </select>
+                </div>
+                <div class="medium-3 column">
+                    <input class="input-search input-large" type="text" placeholder="keyword" />
+                </div>
+                <div class="medium-2 column">
+                    <a href="#" class="button postfix">Search</a>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
@@ -482,9 +476,6 @@
 
         <div class="results-footer">
             <div class="row row-space-bottom-3">
-                <div class="results-count small-12 column">
-                    <p>1 - 18 of 100+ Yachts</p>
-                </div>
                 <div class="pagination-row">
                     <ul class="pagination">
                       <li class="arrow unavailable"><a href=""><i class="fa fa-caret-left"></i></a></li>
@@ -554,7 +545,7 @@
                 <p>Get the latest updates on our work delivered to your inbox.</p>
 
                 <form class="nav-subscribe">
-                  <div class="row">
+                  <div class="row collapse">
                     <div class="large-12 columns">
                       <div class="row collapse">
                         <div class="small-10 columns">
@@ -582,12 +573,10 @@
 
     <div class="footer-bottom">
         <div class="row">
-            <div class="small-12 medium-5 columns">
+            <div class="small-12 column">
                 <a class="logo-myba" href="#">The Worldwide Yachting Association</a>
-                <p class="member-text">Member of MYBA, The Worldwide Yachting Association.</p>
-            </div>
-            <div class="small-12 medium-7 columns">
-                <ul class="nav-footer-info inline-list right">
+                <p>Member of MYBA, The Worldwide Yachting Association.</p>
+                <ul class="nav-footer-info inline-list">
                     <li>&copy; Luxury Charter Group Limited 2009-2014</li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Sitemap</a></li>

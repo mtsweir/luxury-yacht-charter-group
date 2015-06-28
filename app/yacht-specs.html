@@ -96,12 +96,9 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#" data-dropdown="nav_language" data-options="is_hover:true; hover_timeout:5000">Eng</a>
-                    <ul id="nav_language" class="tiny f-dropdown" data-dropdown-content>
-                      <li><a href="#">English</a></li>
-                      <li><a href="#">Français</a></li>
-                    </ul>
+                <li class="nav-lang">
+                    <a class="nav-lang-eng" href="#">English</a>
+                    <a class="nav-lang-fr" href="#">Français</a>
                 </li>
             </ul>
         </div>
@@ -168,6 +165,12 @@
 
 <div class="media-photo yacht-tile">
     <div class="media-cover" style="background-image:url(images/oceanscape-tile.jpg)"></div>
+    <div class="row row-table collapse">
+        <div class="title small-12 col-middle column">
+            <h1>Regina</h1>
+            <p>56m, 184' | 2010 Trinity Yachts</p>   
+        </div>
+    </div>
 </div>
 
 <div class="content-body">
@@ -200,13 +203,6 @@
         </div>
 
         <div class="large-8 column content-main content-offest-3">
-
-
-            <div class="yacht-inner">
-                <h1>Regina</h1>
-                <p>56m, 184' | 2010</p> 
-                <img class="img-responsive" src="images/Regina-Sailing.jpg" alt="">
-            </div>
             
             <div class="summary">
                 <p>When you are welcomed aboard the magnificent 56-metre sailing schooner, REGINA, you step into the world of the James Bond movie, Skyfall, and, more specifically, the world of its star, Daniel Craig. REGINA is available for charter in the Caribbean Islands, British Virgin Islands, Antigua, St Barts, and St Maarten until April 2015, when REGINA returns to Turkey where she will be based for charters for the summer of 2015</p>
@@ -554,12 +550,10 @@
 
     <div class="footer-bottom">
         <div class="row">
-            <div class="small-12 medium-5 columns">
+            <div class="small-12 column">
                 <a class="logo-myba" href="#">The Worldwide Yachting Association</a>
-                <p class="member-text">Member of MYBA, The Worldwide Yachting Association.</p>
-            </div>
-            <div class="small-12 medium-7 columns">
-                <ul class="nav-footer-info inline-list right">
+                <p>Member of MYBA, The Worldwide Yachting Association.</p>
+                <ul class="nav-footer-info inline-list">
                     <li>&copy; Luxury Charter Group Limited 2009-2014</li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Sitemap</a></li>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libraries.min.css">
     <link rel="stylesheet" href="css/app.min.css">
@@ -86,12 +86,9 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#" data-dropdown="nav_language" data-options="is_hover:true; hover_timeout:5000">Eng</a>
-                    <ul id="nav_language" class="tiny f-dropdown" data-dropdown-content>
-                      <li><a href="#">English</a></li>
-                      <li><a href="#">Français</a></li>
-                    </ul>
+                <li class="nav-lang">
+                    <a class="nav-lang-eng" href="#">English</a>
+                    <a class="nav-lang-fr" href="#">Français</a>
                 </li>
             </ul>
         </div>
@@ -159,41 +156,41 @@
 <div class="media-photo home-hero">
     <div class="media-cover" style="background-image:url(images/home-landing-hero.jpg)"></div>
     <div class="row row-table collapse">
-        <div class="title small-12 text-center col-middle column">
+        <div class="title text-center small-10 small-offset-1 col-middle column">
             <h1 class="animated fadeIn">Charter the World's Top Yachts</h1>
-            <h2>Personally inspected and selected by our experienced team</h2>   
+            <h2 class="">Personally inspected and selected by our experienced team</h2>   
         </div>
     </div>
 
     <div class="banner-search">
         <div class="row">
-            <div class="large-10 large-offset-1 column">
+            <div class="medium-10 medium-offset-1 column">
 
-            <div class="search-form">
-                <div class="row">
-                    <div class="medium-3 columns">
-                        <select class="input-list" id="destination" name="destination">
-                            <option value="1">Where do you want to go?</option>
-                            <option value="2">1</option>
-                        </select>
-                    </div>
-                    <div class="medium-3 columns">
-                        <select class="input-list" id="yacht_type" name="yacht_type">
-                            <option value="1">Yacht Type</option>
-                            <option value="2">Sailing Yachts</option>
-                            <option value="3">Motor Yachts</option>
-                            <option value="4">Catamarans</option>
-                            <option value="5">Gulets</option>
-                        </select>
-                    </div>
-                    <div class="medium-4 columns">
-                        <input class="input-search" type="text" placeholder="by yacht name / keyword" />
-                    </div>
-                    <div class="medium-2 columns">
-                        <a href="#" class="button postfix">Search</a>
+                <div class="search-form">
+                    <div class="row collapse">
+                        <div class="medium-4 column">
+                            <select class="input-list input-large" id="destination" name="destination">
+                                <option value="1">Destination</option>
+                                <option value="2">1</option>
+                            </select>
+                        </div>
+                        <div class="medium-3 column">
+                            <select class="input-list input-large" id="yacht_type" name="yacht_type">
+                                <option value="1">Yacht Type</option>
+                                <option value="2">Sailing Yachts</option>
+                                <option value="3">Motor Yachts</option>
+                                <option value="4">Catamarans</option>
+                                <option value="5">Gulets</option>
+                            </select>
+                        </div>
+                        <div class="medium-3 column">
+                            <input class="input-search input-large" type="text" placeholder="keyword" />
+                        </div>
+                        <div class="medium-2 column">
+                            <a href="#" class="button postfix">Search</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
         </div>
@@ -203,9 +200,9 @@
 
 <div id="choose_yacht">
     <div class="row small-collapse">
-        <div class="small-12 column">
+        <div class="small-12 column text-center">
             <h2 class="section-header">Choose your Yacht</h2>
-            <p class="sub-head">Discover your gateway to a world of incredible experiences.</p>
+            <p class="text-lead">Discover your gateway to a world of incredible experiences.</p>
 
             <ul class="grid-yacht-type small-block-grid-1 medium-block-grid-2 large-block-grid-4 text-center">
                 <li>
@@ -232,7 +229,7 @@
         <div class="row row-table collapse">
             <div class="title small-12 text-center col-middle column">
                 <h1>Expert Unbiased Advice</h1>
-                <p>Over 40 years of experience and global knowledge for your piece of mind.</p>
+                <p class="text-lead">Over 40 years of experience and global knowledge for your piece of mind.</p>
                 <a href="#" class="button button-secondary">Learn more</a>  
             </div>
         </div>
@@ -241,109 +238,109 @@
         <div class="row">
             <div class="small-12 column">
                 <h2 class="section-header">Luxury Crewed Yacht Charters Worldwide</h2>
-                <p class="sub-head">Together our Team brings you over 40-years of yacht charter knowledge and experience, and a variety of the finest hand-picked luxury yachts, inspected by us, and carefully selected for you in premium destinations around the world. We’ll match the right crewed charter yacht to suit your budget and level of comfort in the destination of your dreams.</p>
+                <p class="text-lead">Together our Team brings you over 40-years of yacht charter knowledge and experience, and a variety of the finest hand-picked luxury yachts, inspected by us, and carefully selected for you in premium destinations around the world. We’ll match the right crewed charter yacht to suit your budget and level of comfort in the destination of your dreams.</p>
             </div>
         </div>
     </div>
 </div>
-
+<hr>
 <div id="feat_destinations">
     <div class="row row-space-top-3">
-        <div class="small-12 column">
+        <div class="small-12 column text-center">
             <h2 class="section-header">Featured Destinations</h2>
-            <p class="sub-head">Experiences from across the ocean and the world.</p>
-            <div class="panel-group">
-                <div class="panel-wrap panel-span-6">
-                    <a href="#">
-                        <img class="panel-img" src="images/tile-destination-caribbean.jpg" alt="">
-                        <div class="panel-inner">
-                            <div class="panel-info">
-                                <h4 class="destination-name">Caribbean</h4>
-                                <h3>Explore coral atolls and uninhabited sandy islands</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="panel-wrap panel-span-6">
-                    <a href="#">
-                        <img class="panel-img" src="images/tile-destination-tahiti.jpg" alt="">
-                        <div class="panel-inner">
-                            <div class="panel-info">
-                                <h4 class="destination-name">Tahiti</h4>
-                                <h3>Adventure awaits in this magical South Pacific paradise</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="panel-group">
-                <div class="panel-wrap">
-                    <a href="#">
-                        <img class="panel-img" src="images/tile-destination-st-barts.jpg" alt="">
-                        <div class="panel-inner">
-                            <div class="panel-info">
-                                <h4 class="destination-name">St Barts</h4>
-                                <h3>Gastronomic delights, bars, boutiques and culture</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="panel-wrap">
-                    <a href="#">
-                        <img class="panel-img" src="images/tile-destination-mediterranean.jpg" alt="">
-                        <div class="panel-inner">
-                            <div class="panel-info">
-                                <h4 class="destination-name">Mediterranean</h4>
-                                <h3>From mystical coastlines to unspoilt cruising grounds</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="panel-wrap">
-                    <a href="#">
-                        <img class="panel-img" src="images/tile-destination-croatia.jpg" alt="">
-                        <div class="panel-inner">
-                            <div class="panel-info">
-                                <h4 class="destination-name">Croatia</h4>
-                                <h3>Explore quaint seaside villages and historic towns</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="small-12 text-center">
-                    <div class="destination-sub">
-                        <a href="#" class="button button-secondary">See all destinations</a>
-                    </div>  
-                </div>
-            </div>
-
+            <p class="text-lead">Experiences from across the ocean and the world.</p>
         </div>
     </div>
-</div>
-
-<div id="news" class="wow fadeIn">
-    <div class="row row-space-top-3">
-        <div class="small-12 columns block-header">
-            <h2 class="section-header">Recent News</h2>
-            <p class="sub-head">Experiences from across the ocean and the world.</p>
+    <div class="panel-group row">
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/tile-destination-caribbean.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Caribbean</h4>
+                            <h3>Explore coral atolls and uninhabited sandy islands</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/tile-destination-tahiti.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Tahiti</h4>
+                            <h3>Adventure awaits in this magical South Pacific paradise</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-group row">
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/tile-destination-st-barts.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">St Barts</h4>
+                            <h3>Gastronomic delights, bars, boutiques and culture</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/tile-destination-mediterranean.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Mediterranean</h4>
+                            <h3>From mystical coastlines to unspoilt cruising grounds</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/tile-destination-croatia.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Croatia</h4>
+                            <h3>Explore quaint seaside villages and historic towns</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="row">
+        <div class="small-12 text-center">
+            <div class="destination-sub">
+                <a href="#" class="button button-secondary">See all destinations</a>
+            </div>  
+        </div>
+    </div>
+</div>
+
+<section id="news">
+
+    <div class="row">
+        <div class="small-12 columns block-header text-center">
+            <h2 class="section-header">Recent News</h2>
+            <p class="text-lead">Experiences from across the ocean and the world.</p>
+        </div>
+    </div>
+
+    <div class="row">
+
         <div class="small-12 columns">
-            
-            <div class="article-fluid">
-                <article class="article article-snippet">
-                    <a href="#">
-                    <figure class="post-image"><img src="images/opari-3-motor-yacht-charter-10.png" alt=""></figure>
-                    <div class="post-content">
-                        <span class="post-date">March 20, 2015</span>
-                        <h3>O'PARI 3 hailed "instant classic"</h3>
-                        <p>O'PARI 3 was designed as the ultimate charter yacht for guests seeking to escape the pressures of workday life and truly unwind</p>
-                    </div></a>
-                </article>
-            </div>
             <div class="article-fluid">
                 <article class="article article-snippet">
                     <a href="#">
@@ -377,22 +374,28 @@
                     </div></a>
                 </article>
             </div>
-
         </div>
+
         <div class="small-12 text-center">
             <div class="destination-sub">
                 <a href="#" class="button button-secondary">More News</a>
             </div>  
         </div>
-    </div>
-</div>
 
-<div id="team" class="text-center">
+    </div>
+
+</section>
+
+<section id="team">
+
     <div class="row">
-        <div class="small-12 column block-header">
-            <h2 class="section-header animated wow fadeInDown">Meet the Team</h2>
-            <p class="sub-head">We're here to create an experience you'll always remember.</p>
+        <div class="small-12 columns block-header text-center">
+            <h2 class="section-header">Meet the Team</h2>
+            <p class="text-lead">We're here to create an experience you'll always remember.</p>
         </div>
+    </div>
+
+    <div class="row">
         <div class="medium-4 columns">
             <div class="profile-card">
               <img src="images/jeni-tidmarsh.jpg" alt="Jeni Tidmarsh">
@@ -435,9 +438,9 @@
               </div>
             </div>
         </div>
-
     </div>
-</div>
+
+</section>
 
 </div>
 
@@ -445,15 +448,8 @@
 
     <div class="footer-nav">
         <div class="row">
-            <div class="small-12 column show-for-small-only">
-                <label class="screen-reader-only">Choose your language</label>
-                <select>
-                    <option value="english">English</option>
-                    <option value="Français">Français</option>
-                </select>
-            </div>
             <div class="medium-6 medium-push-3 columns">
-                <div class="row medium-collapse">
+                <div class="row collapse">
                     <div class="medium-4 columns">
                         <h4>Yachts</h4>
                         <ul class="nav-list no-bullet">
@@ -488,13 +484,13 @@
                 <p>Get the latest updates on our work delivered to your inbox.</p>
 
                 <form class="nav-subscribe">
-                  <div class="row">
+                  <div class="row collapse">
                     <div class="large-12 columns">
                       <div class="row collapse">
-                        <div class="small-10 columns">
+                        <div class="small-10 column">
                           <input class="input-subscribe" type="text" placeholder="email address">
                         </div>
-                        <div class="small-2 columns">
+                        <div class="small-2 column">
                           <a href="#" class="button-subscribe button postfix postfix-radius">Go</a>
                         </div>
                       </div>
@@ -516,12 +512,10 @@
 
     <div class="footer-bottom">
         <div class="row">
-            <div class="small-12 medium-5 columns">
+            <div class="small-12 column">
                 <a class="logo-myba" href="#">The Worldwide Yachting Association</a>
-                <p class="member-text">Member of MYBA, The Worldwide Yachting Association.</p>
-            </div>
-            <div class="small-12 medium-7 columns">
-                <ul class="nav-footer-info inline-list right">
+                <p>Member of MYBA, The Worldwide Yachting Association.</p>
+                <ul class="nav-footer-info inline-list">
                     <li>&copy; Luxury Charter Group Limited 2009-2014</li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Sitemap</a></li>

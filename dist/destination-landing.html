@@ -86,12 +86,9 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#" data-dropdown="nav_language" data-options="is_hover:true; hover_timeout:5000">Eng</a>
-                    <ul id="nav_language" class="tiny f-dropdown" data-dropdown-content>
-                      <li><a href="#">English</a></li>
-                      <li><a href="#">Français</a></li>
-                    </ul>
+                <li class="nav-lang">
+                    <a class="nav-lang-eng" href="#">English</a>
+                    <a class="nav-lang-fr" href="#">Français</a>
                 </li>
             </ul>
         </div>
@@ -163,7 +160,7 @@
             <h1>Yacht Charter Destinations</h1>
             <p>The Luxury Charter Group travels worldwide to explore new charter destinations and to inspect charter yachts, so we are best informed to advise you.</p>
             <div class="regions">
-                <ul class="small-block-grid-1 medium-block-grid-3 no-bullet">
+                <ul class="small-block-grid-2 medium-block-grid-3 no-bullet">
                     <li><a href="#">Caribbean</a></li>
                     <li><a href="#">Mediterranean</a></li>
                     <li><a href="#">Bahamas</a></li>
@@ -172,7 +169,7 @@
                     <li><a href="#">Events</a></li>
                 </ul>
             </div>
-            <div class="center-block-25">
+            <div class="show-for-medium-up">
                 <a href="#">
                     <div class="circle-text"><div><i class="fa fa-angle-down"></i></div></div>
                 </a>
@@ -181,479 +178,341 @@
     </div>
 </div>
 
-<section class="section-1">
-    <div class="row">
+<section id="destination-regions">
+
+    <div class="row leader row-space-bottom-1">
         <div class="small-12 column">
-            <h2 class="section-header">Explore all Destinations</h2>
-            <p class="sub-head">We will assist you with local knowledge, and match the right charter yacht in the destination of your dreams.</p>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Antigua</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Barbuda</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>British Virgin Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Balearic Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Balearic Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Barbuda</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Cannes Film Festival</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Croatia</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-intro">
-                <h2 class="section-header">The Pacific</h2>
-                <p class="sub-head">Discover the beauty and tranquility of the South Pacific.</p>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-6 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/fiji.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Fiji</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-6 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/aus.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Australia</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-4 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>New Zealand</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-4 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Tahiti</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-4 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Tonga</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-4 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Hauraki Gulf</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-4 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Marlborough Sounds</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-4 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Bay of Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-intro">
-                <h2 class="section-header">Section Title</h2>
-                <p class="sub-head">Discover the beauty and tranquility of the South Pacific.</p>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Turkey</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Us Virgin Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Windward Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Dominica</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>French Rivera</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Greece</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Grenada</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Guadeloupe</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Gulf of Naples &amp; Amalfi</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Italy</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Leeward Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Martinque</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/monaco_grand_prix_charter_a_yacht.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Monaco</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>Sicily &amp; Aeolian Islands</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>St Barts</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>St Lucia</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-space">
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>St Martin</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>St Vicent</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-12 medium-4 large-3 column">
-                    <div class="region-tile">
-                        <div class="region-img" style="background-image:url(images/region-tile.jpg)"></div>
-                        <div class="region-card">
-                            <a href="#"><div class="card-container">
-                                <div class="card-inner col-middle text-center">
-                                    <h2>The Grenadines</h2>
-                                </div>
-                            </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <h2 class="section-header">Mediterranean</h2>
+            <p class="text-lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi similique impedit accusantium excepturi.</p>
         </div>
     </div>
+    <div class="panel-group row row-space-bottom-3">
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Croatia</h4>
+                            <h3>Paradise with quaint seaside villages</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">French Riviera (Côte d'Azur)</h4>
+                            <h3>Glamour, Celebrity, sophistication</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Greece</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Turkey</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Italy</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Balearic Islands</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row leader row-space-bottom-1">
+        <div class="small-12 column">
+            <h2 class="section-header">Caribbean</h2>
+            <p class="text-lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi similique impedit accusantium excepturi.</p>
+        </div>
+    </div>
+    <div class="panel-group row row-space-bottom-3">
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">British Virgin Islands</h4>
+                            <h3>Alluring golden beaches</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">US Virgin Islands</h4>
+                            <h3>Vibrant entertainment and nightlife</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Windward Islands</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Leeward Islands</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Anguilla</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/villefranche_charter_001.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Antigua</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Barbuda</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/ionian-4.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Dominica</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row leader row-space-bottom-1">
+        <div class="small-12 column">
+            <h2 class="section-header">South Pacific</h2>
+            <p class="text-lead text-center">Discover the beauty and tranquility of the South Pacific.</p>
+        </div>
+    </div>
+    <div class="panel-group row row-space-bottom-3">
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Australia</h4>
+                            <h3>Urban grandeur and sandy coastlines</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">New Zealand</h4>
+                            <h3>Take in breathing taking scenery</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Fiji</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Tahiti</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Tonga</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Bay of Islands</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Hauraki Gulf</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="medium-4 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Marlborough Sounds</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row leader row-space-bottom-1">
+        <div class="small-12 column">
+            <h2 class="section-header">Events</h2>
+            <p class="text-lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi similique impedit accusantium excepturi.</p>
+        </div>
+    </div>
+    <div class="panel-group row row-space-bottom-3">
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Cannes Film Festival</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+       <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="#">
+                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h4 class="destination-name">Monaco Grand Prix</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
 </section>
 
-<div class="content-body">
-
 </div>
-
-</div><!-- /#content-->
 
 <footer class="site-footer">
 
@@ -730,12 +589,10 @@
 
     <div class="footer-bottom">
         <div class="row">
-            <div class="small-12 medium-5 columns">
+            <div class="small-12 column">
                 <a class="logo-myba" href="#">The Worldwide Yachting Association</a>
-                <p class="member-text">Member of MYBA, The Worldwide Yachting Association.</p>
-            </div>
-            <div class="small-12 medium-7 columns">
-                <ul class="nav-footer-info inline-list right">
+                <p>Member of MYBA, The Worldwide Yachting Association.</p>
+                <ul class="nav-footer-info inline-list">
                     <li>&copy; Luxury Charter Group Limited 2009-2014</li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Sitemap</a></li>

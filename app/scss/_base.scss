@@ -22,7 +22,7 @@ $text-center : center;
 $text-tiny   : .8rem;
 $text-small  : .9rem;
 $font-weight-normal: 400;
-$font-weight-medium: 600;
+$font-weight-medium: 500;
 $font-weight-bold: 700;
 
 $font-style-header: 'Roboto', Helvetica, Arial, sans-serif;
@@ -149,6 +149,10 @@ a {
 .row-space-bottom-4,
 .row .row-space-bottom-4 {
 	margin-bottom: 4rem;
+}
+
+.margin-space {
+	margin-bottom: 1.2rem;
 }
 
 /* Helpers ------------------------------ */

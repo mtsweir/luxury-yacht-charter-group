@@ -45,6 +45,25 @@
 		color: $monsoon;
 		font-size: 13px;
 	}
+	li:last-child {
+		margin-left: 10px;
+		border-left: 1px solid $gainsboro;
+		padding-left: 5px;
+		padding-bottom: 4px;
+	}
+}
+
+.nav-lang {
+	a {
+		margin: 5px 0 0 10px;
+		display: block;
+		float: left;
+		width: 16px;
+		height: 10px;
+		@include replace-text("icon-flag.png", 0, 0);
+	}
+	.nav-lang-eng { background-position: 0 0; }
+	.nav-lang-fr { background-position: -16px 0; }
 }
 
 .header {
@@ -86,9 +105,13 @@
 		color: #FFF;
 	}
 }
-.f-dropdown {
-	a {
-		color: $monsoon;
+.main-nav-link {
+	.f-dropdown {
+			a {
+			padding: 0.7rem 1rem;
+			color: $jet;
+			font-weight: $font-weight-medium;
+		}
 	}
 }
 
@@ -176,6 +199,8 @@
 	background-color: rgba(255, 255, 255, 0.2);
 	display: inline-block;
 	border-radius: 50%;
+	-webkit-transition: background-color 100ms ease-out;
+	transition: background-color 100ms ease-out;
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.4);
 	}
@@ -183,23 +208,24 @@
 
 .footer-bottom {
 	padding: 2.2rem 0 1rem;
-}
-.member-text,
-.nav-footer-info {
+	text-align: center;
 	font-size: $text-tiny;
 }
 .logo-myba {
 	margin-top: -20px;
-	margin-right: 20px;
-	width: 80px;
+	display: inline-block;
+	width: 90px;
 	height: 70px;
-	float: left;
 	@include replace-text("logo-myba.png", 0, 0);
 	background-size: 100% auto;
+	background-position: center;
 }
 .nav-footer-info {
+	text-align: center;
 	li {
-		margin-left: 1rem;
+		margin: 0 0.4rem 0.4rem;
+		display: inline-block;
+		float: none;
 	}
 }
 
@@ -246,10 +272,6 @@
 	max-width: 76rem;
 }
 
-.row .row {
-	margin: 0;
-}
-
 .button {
 	padding: .6rem 2rem .7rem;
 	font-family: $font-style-header;
@@ -274,13 +296,14 @@
 	}
 }
 .button-secondary {
-	color: $tuatara;
+	color: $charcoal;
 	border-color: shade($gainsboro, 10);
 	border-bottom-color: shade($iron, 20);
 	background-color: #FFF;
 	&:hover {
 		color: $jet;
-		background-color: #FFF;
+		border-bottom-color: shade($iron, 20);
+		background-color: adjust-lightness($gainsboro, 6);
 	}
 }
 .postfix.button {

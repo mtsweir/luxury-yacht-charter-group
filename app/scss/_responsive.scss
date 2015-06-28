@@ -130,21 +130,37 @@
 			font-size: 1.2rem;
 		}
 	}
-	
+	.text-lead {
+		padding: 0;
+	}
+
+	.home-hero {
+		.title {
+			padding-bottom: 70px;
+		}
+		h2 {
+			display: block;
+		}
+	}
+	.banner-search {
+		.input-list, .button, .input-search {
+			margin: 0;
+		}
+	}
+
 	.section-header {
 	  font-size: 1.8rem;
 	}
 
 	.panel-wrap {
-		padding-bottom: 25%;
-		float: left;
-		width: 33.333%;
+		padding-bottom: 65%;
 	}
-	.panel-span-6 {
-		width: 50%;
+
+	.destination-landing {
+		height: 70vh;
 	}
-	.panel-wrap:last-child {
-		float: right;
+	.regions li a {
+		font-size: 1.5rem;
 	}
 
 }
