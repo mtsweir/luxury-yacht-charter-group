@@ -117,8 +117,8 @@ module.exports = function(grunt) {
 					base: '<%= app %>/',
 					open: true,
 					livereload: true,
-					hostname: '192.168.1.105'
-					// hostname: '10.1.1.5'
+					// hostname: '192.168.1.105'
+					hostname: '10.1.1.5'
 					// hostname: '192.168.2.47'
 				}
 			},
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
 			},
 			pages: {
 			  options: {
-			    remote: 'git@github.com:mtsweir/yeoman-zf5-lycg.git',
+			    remote: 'git@github.com:theclicklab/yeoman-zf5-lycg.git',
 			    branch: 'gh-pages'
 			  }
 			},
