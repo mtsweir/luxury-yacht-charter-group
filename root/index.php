@@ -17,15 +17,6 @@
   $homepageRecord = @$homepageRecords[0]; // get first record
   if (!$homepageRecord) { dieWith404("Record not found!"); } // show error message if no record found
   
-  list($yachtsRecords, $yachtsMetaData) = getRecords(array(
-    'tableName'   => 'yachts',
-    'limit'       => '5',
-    'allowSearch' => '0',
-    'where'       => "feature = '1'" . ' AND active ="1"' . ' AND hide ="0"',
-    'useSeoUrls'  => true,
-    //'debugSql' =>'true',
-  ));
-  
   list($settingsRecords, $settingsMetaData) = getRecords(array(
     'tableName'   => 'settings',
     'limit'       => '1',
@@ -69,29 +60,48 @@
             <div class="medium-10 medium-offset-1 column">
 
                 <div class="search-form">
-                    <div class="row collapse">
-                        <div class="medium-4 column">
-                            <select class="input-list input-large" id="destination" name="destination">
-                                <option value="1">Destination</option>
-                                <option value="2">1</option>
-                            </select>
+                    <form id="searchhome" name="searchhome" method="get" action="/search.php">
+                        <div class="row collapse">
+                            <div class="medium-4 column">
+                                <select class="input-list input-large" id="destination" name="destination">
+                                    <?php
+                                      // load records from 'destinations' for search box
+                                      list($searchhome_destinationsRecords, $destinationsMetaData) = getRecords(array(
+                                        'tableName'   => 'destinations',
+                                        'where'       => 'active = "1"',
+                                        'loadUploads' => false,
+                                        'allowSearch' => false,
+                                      ));
+                                    ?>
+                                    <option value="">Destination</option>
+                                    <?php foreach ($searchhome_destinationsRecords as $record): ?><option value="<?php echo $record['num'] ?>"><?php if ($record['depth'] =="1"): ?>- <?php endif ?><?php if ($record['depth'] =="2"): ?>&nbsp;&nbsp;-- <?php endif ?><?php echo htmlspecialchars($record['name']) ?></option><?php endforeach ?>
+                                </select>
+                            </div>
+                            <div class="medium-3 column">
+                                <select class="input-list input-large" id="yacht_type" name="yacht_type">
+                                    <?php 
+                                      // load records from 'yacht_type' for top and footer nav
+                                      list($searchhome_yacht_typeRecords, $yacht_typeMetaData) = getRecords(array(
+                                        'tableName'   => 'yacht_type',
+                                        'where'       => 'active = "1"',
+                                        'loadUploads' => false,
+                                        'allowSearch' => false,
+                                      ));
+                                    ?>
+                                    <option value="">Yacht Type</option>
+                                    <?php foreach ($searchhome_yacht_typeRecords as $record): ?>
+                                    <option value="<?php echo $record['num'] ?>">- <?php echo htmlspecialchars($record['name_plural']) ?></option>
+                                    <?php endforeach ?>
+                                </select>
+                            </div>
+                            <div class="medium-3 column">
+                                <input class="input-search input-large" type="text" placeholder="keyword" name="yacht_title_query,meta_description_query,intro_query,yacht_name_query" />
+                            </div>
+                            <div class="medium-2 column">
+                                <input type="submit" class="button postfix" value="Search" />
+                            </div>
                         </div>
-                        <div class="medium-3 column">
-                            <select class="input-list input-large" id="yacht_type" name="yacht_type">
-                                <option value="1">Yacht Type</option>
-                                <option value="2">Sailing Yachts</option>
-                                <option value="3">Motor Yachts</option>
-                                <option value="4">Catamarans</option>
-                                <option value="5">Gulets</option>
-                            </select>
-                        </div>
-                        <div class="medium-3 column">
-                            <input class="input-search input-large" type="text" placeholder="keyword" />
-                        </div>
-                        <div class="medium-2 column">
-                            <a href="#" class="button postfix">Search</a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>
@@ -105,20 +115,20 @@
         <div class="small-12 column text-center">
             <?php if ($homepageRecord['choose_yacht']): ?><h2 class="section-header"><?php echo htmlencode($homepageRecord['choose_yacht']) ?></h2><?php endif ?>
             <?php if ($homepageRecord['choose_yacht_intro']): ?><p class="text-lead"><?php echo htmlencode($homepageRecord['choose_yacht_intro']) ?></p><?php endif ?>
-
+            <?php
+              // load records from 'yacht_type'
+              list($home_yacht_typeRecords, $yacht_typeMetaData) = getRecords(array(
+                'tableName'   => 'yacht_type',
+                'where'       => 'featured = "1"' . ' AND active ="1"',
+                'limit'       => '4',
+                'loadUploads' => true,
+                'allowSearch' => false,
+              ));
+            ?>
             <ul class="grid-yacht-type small-block-grid-1 medium-block-grid-2 large-block-grid-4 text-center">
-                <li>
-                    <a href="#"><img src="images/tile-sailing-yacht.jpg" alt=""><h3>Sailing</h3></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/tile-motor-yacht.jpg" alt=""><h3>Motor</h3></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/tile-catamaran.jpg" alt=""><h3>Catamaran</h3></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/tile-gulet.jpg" alt=""><h3>Gulets</h3></a>
-                </li>
+                <?php foreach ($home_yacht_typeRecords as $record): ?>
+                <li><a href="<?php echo $record['_link'] ?>"><?php foreach ($record['list_image'] as $index => $upload): ?><img src="<?php echo $upload['urlPath'] ?>" alt="<?php echo htmlencode($record['name_plural']) ?>"><h3><?php echo htmlencode($record['name_plural']) ?></h3></a><?php endforeach ?></li>
+                <?php endforeach ?>
             </ul>
             
         </div>

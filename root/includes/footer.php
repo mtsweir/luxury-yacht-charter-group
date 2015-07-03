@@ -5,47 +5,52 @@
             <div class="medium-6 medium-push-3 columns">
                 <div class="row collapse">
                     <div class="medium-4 columns">
-                        <h4>Yachts</h4>
+                        <h4>Destinations</h4>
                         <ul class="nav-list no-bullet">
-                          <li><a href="#">Sailing Yachts</a></li>
-                          <li><a href="#">Motor Yachts</a></li>
-                          <li><a href="#">Catamarans</a></li>
-                          <li><a href="#">Gulets</a></li>
+                          <?php foreach ($nav_destinationsRecords as $categoryRecord): ?><?php if($categoryRecord['active']==1): ?>
+                          <?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo $categoryRecord['_link'] ?>"><?php echo $categoryRecord['name'] ?></a>
+                          <?php echo $categoryRecord['_listItemEnd'] ?><?php endif ?><?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <div class="medium-4 columns">
+                        <h4>Yacht Types</h4>
+                        <ul class="nav-list no-bullet">
+                          <?php foreach ($nav_yacht_typeRecords as $record): ?><li><a href="/<?php echo $record['_link'] ?>"><?php echo htmlencode($record['name_plural']) ?></a></li><?php endforeach ?>
                         </ul>
                     </div>
                     <div class="medium-4 columns">
                         <h4>About Us</h4>
                         <ul class="nav-list no-bullet">
+                          <li><a href="#">Meet our Brokers</a></li>
+                          <li><a href="#">Latest News</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Faq's</a></li>
                           <li><a href="#">Our Vision</a></li>
                           <li><a href="#">Why choose us</a></li>
                           <li><a href="#">Testimonials</a></li>
                           <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="medium-4 columns">
-                        <h4>Resources</h4>
-                        <ul class="nav-list no-bullet">
-                          <li><a href="#">Meet our Brokers</a></li>
-                          <li><a href="#">Latest News</a></li>
-                          <li><a href="#">Blog</a></li>
-                          <li><a href="#">Faq's</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="medium-3 medium-push-3 columns">
-                <h4>Keep in Touch</h4>
-                <p>Get the latest updates on our work delivered to your inbox.</p>
+                <h4>Join our Member List</h4>
+                <p>Get news and updates on our premium crewed yachts and charter destinations:</p>
 
-                <form class="nav-subscribe">
+                <form action="http://luxurychartergroup.createsend.com/t/r/s/kliuuy/" method="post" id="subForm" class="nav-subscribe">
                   <div class="row collapse">
                     <div class="large-12 columns">
                       <div class="row collapse">
+                        <div class="small-12 column">
+                          <input class="input-subscribe" type="text" placeholder="your name" name="cm-name" id="name">
+                        </div>
+                      </div>
+                      <div class="row collapse">
                         <div class="small-10 column">
-                          <input class="input-subscribe" type="text" placeholder="email address">
+                          <input class="input-subscribe" type="text" placeholder="email address" name="cm-kliuuy-kliuuy" id="kliuuy-kliuuy">
                         </div>
                         <div class="small-2 column">
-                          <a href="#" class="button-subscribe button postfix postfix-radius">Go</a>
+                          <input type="submit" class="button-subscribe button postfix postfix-radius" value="Go" />
                         </div>
                       </div>
                     </div>
