@@ -8,14 +8,14 @@
                         <h4>Destinations</h4>
                         <ul class="nav-list no-bullet">
                           <?php foreach ($nav_destinationsRecords as $categoryRecord): ?><?php if($categoryRecord['active']==1): ?>
-                          <?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo $categoryRecord['_link'] ?>"><?php echo $categoryRecord['name'] ?></a>
+                          <?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo strtolower($categoryRecord['_link']); ?>"><?php echo $categoryRecord['name'] ?></a>
                           <?php echo $categoryRecord['_listItemEnd'] ?><?php endif ?><?php endforeach; ?>
                         </ul>
                     </div>
                     <div class="medium-4 columns">
                         <h4>Yacht Types</h4>
                         <ul class="nav-list no-bullet">
-                          <?php foreach ($nav_yacht_typeRecords as $record): ?><li><a href="/<?php echo $record['_link'] ?>"><?php echo htmlencode($record['name_plural']) ?></a></li><?php endforeach ?>
+                          <?php foreach ($nav_yacht_typeRecords as $record): ?><li><a href="/<?php echo strtolower($record['_link']); ?>"><?php echo htmlencode($record['name_plural']) ?></a></li><?php endforeach ?>
                         </ul>
                     </div>
                     <div class="medium-4 columns">
@@ -61,9 +61,9 @@
             <div class="medium-3 medium-pull-9 columns">
                 <h4>Follow us on</h4>
                 <nav class="nav-social">
-                    <?php if ($settingsRecord['facebook']): ?><a href="<?php echo $settingsRecord['facebook'] ?>" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a><?php endif ?>
-                    <?php if ($settingsRecord['twitter']): ?><a href="<?php echo $settingsRecord['twitter'] ?>" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a><?php endif ?>
-                    <?php if ($settingsRecord['google']): ?><a href="<?php echo $settingsRecord['google'] ?>" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a><?php endif ?>
+                    <?php if ($settingsRecord['facebook']): ?><a href="<?php echo $settingsRecord['facebook'] ?>" class="social-icon social-icon-facebook" target="_blank"><i class="fa fa-facebook"></i></a><?php endif ?>
+                    <?php if ($settingsRecord['twitter']): ?><a href="<?php echo $settingsRecord['twitter'] ?>" class="social-icon social-icon-twitter" target="_blank"><i class="fa fa-twitter"></i></a><?php endif ?>
+                    <?php if ($settingsRecord['google']): ?><a href="<?php echo $settingsRecord['google'] ?>" class="social-icon social-icon-googleplus" target="_blank"><i class="fa fa-google-plus"></i></a><?php endif ?>
                 </nav>
             </div>
         </div>

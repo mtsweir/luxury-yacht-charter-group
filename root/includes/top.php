@@ -29,7 +29,7 @@
         <a href="#panel1a">Destinations</a>
         <div id="panel1a" class="content">
             <ul class="no-bullet">
-                <?php foreach ($nav_destinationsRecords as $categoryRecord): ?><?php if($categoryRecord['active']==1): ?><?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo $categoryRecord['_link'] ?>"><?php echo $categoryRecord['name'] ?></a><?php echo $categoryRecord['_listItemEnd'] ?><?php endif ?><?php endforeach; ?>
+                <?php foreach ($nav_destinationsRecords as $categoryRecord): ?><?php if($categoryRecord['active']==1): ?><?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo strtolower($categoryRecord['_link']); ?>"><?php echo $categoryRecord['name'] ?></a><?php echo $categoryRecord['_listItemEnd'] ?><?php endif ?><?php endforeach; ?>
             </ul>
         </div>
       </li>
@@ -37,7 +37,7 @@
         <a href="#panel2a">Yacht Type</a>
         <div id="panel2a" class="content">
             <ul class="no-bullet">
-                <?php foreach ($nav_yacht_typeRecords as $record): ?><li><a href="/<?php echo $record['_link'] ?>"><?php echo htmlencode($record['name_plural']) ?></a></li><?php endforeach ?>
+                <?php foreach ($nav_yacht_typeRecords as $record): ?><li><a href="/<?php echo strtolower($record['_link']); ?>"><?php echo htmlencode($record['name_plural']) ?></a></li><?php endforeach ?>
             </ul>
         </div>
       </li>
@@ -66,9 +66,9 @@
       </li>
       <li class="accordion-navigation accordion-social">
         <nav class="nav-social">
-            <?php if ($settingsRecord['facebook']): ?><a href="<?php echo $settingsRecord['facebook'] ?>" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a><?php endif ?>
-            <?php if ($settingsRecord['twitter']): ?><a href="<?php echo $settingsRecord['twitter'] ?>" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a><?php endif ?>
-            <?php if ($settingsRecord['google']): ?><a href="<?php echo $settingsRecord['google'] ?>" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a><?php endif ?>
+            <?php if ($settingsRecord['facebook']): ?><a href="<?php echo $settingsRecord['facebook'] ?>" class="social-icon social-icon-facebook" target="_blank"><i class="fa fa-facebook"></i></a><?php endif ?>
+            <?php if ($settingsRecord['twitter']): ?><a href="<?php echo $settingsRecord['twitter'] ?>" class="social-icon social-icon-twitter" target="_blank"><i class="fa fa-twitter"></i></a><?php endif ?>
+            <?php if ($settingsRecord['google']): ?><a href="<?php echo $settingsRecord['google'] ?>" class="social-icon social-icon-googleplus" target="_blank"><i class="fa fa-google-plus"></i></a><?php endif ?>
         </nav>
       </li>
     </ul>
@@ -78,12 +78,12 @@
     <div class="row large-collapse">
         <div class="small-12 column">
             <ul class="top-links inline-list right">
-                <li><a href="#">Blog</a></li>
+                <li><a href="/blog.php">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li class="nav-lang">
-                    <a class="nav-lang-eng" href="#">English</a>
-                    <a class="nav-lang-fr" href="#">Français</a>
+                    <a class="nav-lang-eng" href="/">English</a>
+                    <a class="nav-lang-fr" href="/fr/">Français</a>
                 </li>
             </ul>
         </div>
@@ -111,7 +111,7 @@
                 <li class="main-nav-link">
                     <a href="/destinations.php" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
                     <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <?php foreach ($nav_destinationsRecords as $categoryRecord): ?><?php if($categoryRecord['active']==1): ?><?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo $categoryRecord['_link'] ?>"><?php echo $categoryRecord['name'] ?></a><?php echo $categoryRecord['_listItemEnd'] ?><?php endif ?><?php endforeach; ?>
+                        <?php foreach ($nav_destinationsRecords as $categoryRecord): ?><?php if($categoryRecord['active']==1): ?><?php echo $categoryRecord['_listItemStart'] ?><a href="/<?php echo strtolower($categoryRecord['_link']); ?>"><?php echo $categoryRecord['name'] ?></a><?php echo $categoryRecord['_listItemEnd'] ?><?php endif ?><?php endforeach; ?>
                     </ul>
                 </li>
                 <li class="main-nav-link">

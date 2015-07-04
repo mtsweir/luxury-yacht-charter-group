@@ -71,6 +71,7 @@
                                         'where'       => 'active = "1"',
                                         'loadUploads' => false,
                                         'allowSearch' => false,
+                                        'useSeoUrls'    => true,
                                       ));
                                     ?>
                                     <option value="">Destination</option>
@@ -86,6 +87,7 @@
                                         'where'       => 'active = "1"',
                                         'loadUploads' => false,
                                         'allowSearch' => false,
+                                        'useSeoUrls'    => true,
                                       ));
                                     ?>
                                     <option value="">Yacht Type</option>
@@ -123,11 +125,12 @@
                 'limit'       => '4',
                 'loadUploads' => true,
                 'allowSearch' => false,
+                'useSeoUrls'    => true,
               ));
             ?>
             <ul class="grid-yacht-type small-block-grid-1 medium-block-grid-2 large-block-grid-4 text-center">
                 <?php foreach ($home_yacht_typeRecords as $record): ?>
-                <li><a href="<?php echo $record['_link'] ?>"><?php foreach ($record['list_image'] as $index => $upload): ?><img src="<?php echo $upload['urlPath'] ?>" alt="<?php echo htmlencode($record['name_plural']) ?>"><h3><?php echo htmlencode($record['name_plural']) ?></h3></a><?php endforeach ?></li>
+                <li><a href="<?php echo strtolower($record['_link']); ?>"><?php foreach ($record['list_image'] as $index => $upload): ?><img src="<?php echo $upload['urlPath'] ?>" alt="<?php echo htmlencode($record['name_plural']) ?>"><h3><?php echo htmlencode($record['name_plural']) ?></h3></a><?php endforeach ?></li>
                 <?php endforeach ?>
             </ul>
             
@@ -163,75 +166,53 @@
             <?php if ($homepageRecord['destinations_intro']): ?><p class="text-lead"><?php echo htmlencode($homepageRecord['destinations_intro']) ?></p><?php endif ?>
         </div>
     </div>
+
+    <?php
+      // load records from 'destinations'
+      list($homedestinationsRecords, $destinationsMetaData) = getRecords(array(
+        'tableName'   => 'destinations',
+        'where'       => 'feature = "1"' . ' AND active ="1"',
+        'limit'       => '5',
+        'orderBy'     => 'RAND()',
+        'loadUploads' => true,
+        'allowSearch' => false,
+        'useSeoUrls'    => true,
+      ));
+    ?>
     <div class="panel-group row">
-        <div class="medium-6 column">
+        <?php $destinationcount = 0; ?> 
+        <?php foreach ($homedestinationsRecords as $record): ?>
+        <?php $destinationcount++; ?> 
+        <div class="<?php if ($destinationcount<3): ?>medium-6<?php else: ?>medium-4<?php endif ?> column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/tile-destination-caribbean.jpg" alt="">
+                <a href="<?php echo strtolower($record['_link']); ?>">
+                    <?php $destinationimage = ""; ?> 
+                    <?php foreach ($record['list_image'] as $index => $upload): ?>
+                        <?php if ($upload['thumbUrlPath'] > "186"): ?>
+                        <?php $destinationimage = $upload['thumbUrlPath'] ?>
+                        <?php else: ?>
+                        <?php $destinationimage = $upload['urlPath'] ?>
+                        <?php endif ?>
+                        <?php break ?>
+                    <?php endforeach ?>
+                    <img class="panel-img" src="<?php echo $destinationimage; ?>" alt="<?php echo htmlencode($record['name']) ?>">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Caribbean</h4>
-                            <h3>Explore coral atolls and uninhabited sandy islands</h3>
+                            <?php if ($record['tagline']): ?>
+                            <h4 class="destination-name"><?php echo htmlencode($record['name']) ?></h4>
+                            <h3><?php echo htmlencode($record['tagline']) ?></h3>
+                            <?php else: ?>
+                            <h3><?php echo htmlencode($record['name']) ?></h3>
+                            <?php endif ?>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="medium-6 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/tile-destination-tahiti.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Tahiti</h4>
-                            <h3>Adventure awaits in this magical South Pacific paradise</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <?php if ($destinationcount==2): ?></div><div class="panel-group row"><?php endif ?>
+        <?php endforeach ?>
     </div>
-    <div class="panel-group row">
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/tile-destination-st-barts.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">St Barts</h4>
-                            <h3>Gastronomic delights, bars, boutiques and culture</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/tile-destination-mediterranean.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Mediterranean</h4>
-                            <h3>From mystical coastlines to unspoilt cruising grounds</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/tile-destination-croatia.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Croatia</h4>
-                            <h3>Explore quaint seaside villages and historic towns</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+
     <div class="row">
         <div class="small-12 text-center">
             <div class="destination-sub">
@@ -239,6 +220,7 @@
             </div>  
         </div>
     </div>
+
 </div>
 
 <section id="news">
@@ -251,41 +233,30 @@
     </div>
 
     <div class="row">
-
+        <?php
+          // load records from 'blog'
+          list($homenewsRecords, $newsMetaData) = getRecords(array(
+            'tableName'   => 'news',
+            'limit'       => '3',
+            'loadUploads' => true,
+            'allowSearch' => false,
+            'useSeoUrls'    => true,
+          ));
+        ?>
         <div class="small-12 columns">
+            <?php foreach ($homenewsRecords as $record): ?>
             <div class="article-fluid">
                 <article class="article article-snippet">
-                    <a href="#">
-                    <figure class="post-image"><img src="images/luxury_yacht_arcadia_jurata.jpg" alt=""></figure>
+                    <a href="<?php echo strtolower($record['_link']); ?>">
+                    <figure class="post-image"><img src="<?php foreach ($record['list_image'] as $index => $upload): ?><?php echo $upload['thumbUrlPath2'] ?>" alt="<?php echo htmlencode($record['title']) ?>"><?php break ?><?php endforeach ?></figure>
                     <div class="post-content">
-                        <span class="post-date">March 20, 2015</span>
-                        <h3>Environmentally-aware ARCADIA</h3>
-                        <p>Italian shipyard, Arcadia Yachts are keeping pace with the trend towards larger superyachts, with new models the Arcadia 100 and 145 currently in build and preliminary plans for a 180.</p>
+                        <span class="post-date"><?php echo date("F d, Y", strtotime($record['publishDate'])) ?></span>
+                        <h3><?php echo htmlencode($record['title']) ?></h3>
+                        <p><?php echo htmlencode($record['intro']) ?></p>
                     </div></a>
                 </article>
             </div>
-            <div class="article-fluid">
-                <article class="article article-snippet">
-                    <a href="#">
-                    <figure class="post-image"><img src="images/alfa-nero-beach-club.jpg" alt=""></figure>
-                    <div class="post-content">
-                        <span class="post-date">March 20, 2015</span>
-                        <h3>Join the Club – the Superyacht Beach Club</h3>
-                        <p>Bigger and with more options than ever, the superyacht beach club brings charter guests as close as possible to the water.</p>
-                    </div></a>
-                </article>
-            </div>
-            <div class="article-fluid">
-                <article class="article article-snippet">
-                    <a href="#">
-                    <figure class="post-image"><img src="images/onboard-spa.jpg" alt=""></figure>
-                    <div class="post-content">
-                        <span class="post-date">March 20, 2015</span>
-                        <h3>Let's get Physical, or Spiritual – the choice is yours</h3>
-                        <p>Today's superyacht Owners are incorporating high-tech gyms and dedicated spas on their superyachts to cater to the every wellness whim of their charter guests.</p>
-                    </div></a>
-                </article>
-            </div>
+            <?php endforeach ?>
         </div>
 
         <div class="small-12 text-center">
