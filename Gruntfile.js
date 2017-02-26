@@ -6,7 +6,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		app: 'app',
@@ -15,18 +14,17 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'expanded', // expanded or nested or compact or compressed
+					style: 'nested', // expanded or nested or compact or compressed
 					loadPath: '<%= app %>/bower_components/foundation/scss',
 					compass: true,
 					quiet: true
 				},
 				files: {
+					'<%= app %>/css/foundation.css': '<%= app %>/scss/foundation.scss',
 					'<%= app %>/css/app.css': '<%= app %>/scss/app.scss'
 				}
 			}
 		},
-
-		
 
 		jshint: {
 			options: {
@@ -43,6 +41,7 @@ module.exports = function(grunt) {
 				src: ['<%= dist %>/*']
 			},
 		},
+
 		copy: {
 			dist: {
 				files: [{
@@ -50,7 +49,7 @@ module.exports = function(grunt) {
 					cwd:'<%= app %>/',
 					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
 					dest: '<%= dist %>/'
-				} , {
+				}, {
 					expand: true,
 					flatten: true,
 					src: ['<%= app %>/bower_components/font-awesome/fonts/**'],
@@ -117,8 +116,8 @@ module.exports = function(grunt) {
 					base: '<%= app %>/',
 					open: true,
 					livereload: true,
-					// hostname: '192.168.1.105'
-					hostname: '10.1.1.5'
+					hostname: '192.168.178.21'
+					// hostname: '10.1.1.8'
 					// hostname: '192.168.2.47'
 				}
 			},
@@ -178,14 +177,13 @@ module.exports = function(grunt) {
 
 	});
 
-	
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
-	
+
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
-	
+
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

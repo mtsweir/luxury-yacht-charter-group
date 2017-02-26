@@ -1,5 +1,13 @@
+# Windows image file caches
+Thumbs.db
+
+# Ignore docs files
+dist
+dist/*
+app/bower_components
 node_modules
 .tmp
-app/bower_components
-.sass-cache
-app/images/Thumbs.db
+*css
+*sass-cache
+*.rar
+*.zip
