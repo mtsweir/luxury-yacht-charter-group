@@ -1,11 +1,134 @@
-/* Compass ------------------------------ */
+/* Home
+   ========================================================================== */
 
-@import "compass/css3";
-@import "compass/utilities";
-@import "base";
+/* hero image */
 
-/* Homepage ------------------------------ */
+.media-photo {
+	&.home-hero {
+		margin-bottom: 0;
+		height: 250px;
+	}
+}
+/*
+.home-hero {
+	.title {
+		padding-bottom: 260px;
+	}
+	h2 {
+		display: none;
+	}
+}*/
 
+/* hero search */
+
+.banner-search {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute; left: 0; right: 0; bottom: 0;
+	background-color: rgba(0,0,0,0.4);
+	.button {
+		margin-bottom: 0;
+		width: 100%;
+		height: 44px;
+		line-height: 44px;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.input-large {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 44px;
+	}
+}
+
+/* Section: Advice */
+
+.expert-advice {
+	.media-photo {
+		margin-bottom: $spacer-x * 2;
+		padding: 2rem 0;
+		height: auto;
+	}
+}
+@media screen and (min-width: 768px) {
+	.expert-advice {
+		.media-photo {
+			padding: 0;
+			height: 30vh;
+		}
+	}
+}
+@media screen and (min-width: 61.25em) {
+	.expert-advice {
+		.media-photo {
+			height: 65vh;
+		}
+	}
+}
+
+/* Section: News */
+
+.home-feed {
+	background-color: lighten($base-color, 62%);
+}
+
+
+
+
+
+/* Section: Destinations
+.destination-sub {
+	margin-top: 1.6rem;
+	width: 100%;
+	clear: both;
+	display: inline-block;
+}*/
+
+/*
+.grid-yacht-type {
+	margin-bottom: 2rem;
+	h3 {
+		margin-top: 1.3rem;
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+}*/
+
+/*
+.sub-head {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 2rem;
+	text-align: center;
+	line-height: 1.8;
+}*/
+
+/*
+.intro {
+	padding: 0 8%;
+	.banner-title {
+		font-size: 2rem;
+		color: $contrast;
+		text-transform: uppercase;
+	}
+	.sub-line {
+		font-size: 1.1rem;
+		font-weight: $font-weight-normal;
+		color: $contrast;
+	}
+}*/
+
+
+/*.hero-banner-content {
+	display: table;
+	width: 100%;
+	height: 100%;
+	.va-middle {
+		padding-bottom: 120px;
+	}
+}*/
+
+/*
 .hero-wrapper {
 	position: relative;
 	height: 550px;
@@ -28,155 +151,4 @@
 .hero-bg img {
 	position: absolute;
 	bottom: 0;
-}
-
-.home-hero {
-	height: 70vh;
-	.media-cover {
-		background-position: 50% 80%;
-	}
-	.title {
-		padding-bottom: 260px;
-	}
-	h2 {
-		display: none;
-	}
-}
-
-.hero-banner-content {
-	display: table;
-	width: 100%;
-	height: 100%;
-	.va-middle {
-		padding-bottom: 120px;
-	}
-}
-
-.intro {
-	padding: 0 8%;
-	.banner-title {
-		font-size: 2rem;
-		color: #FFF;
-		text-transform: uppercase;
-	}
-	.sub-line {
-		font-size: 1.1rem;
-		font-weight: $font-weight-normal;
-		color: #FFF;
-	}
-}
-
-.banner-search {
-	background: #000;
-	background: rgba(0,0,0,0.6);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	.button {
-		margin-bottom: 0;
-		width: 100%;
-		height: 44px;
-		line-height: 44px;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-	}
-	.input-large {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		height: 44px;
-	}
-}
-
-/* Section styles */
-
-.section-header {
-	margin-bottom: .6rem;
-	font-size: 1.5rem;
-	line-height: 1.2;
-	text-align: center;
-}
-.sub-head {
-	text-align: center;
-	line-height: 1.8;
-	margin-bottom: 2rem;
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-/* Yacht Types */
-
-.grid-yacht-type {
-	margin-bottom: 2rem;
-	h3 {
-		margin-top: 1.3rem;
-		font-size: 1rem;
-		text-transform: uppercase;
-	}
-}
-
-/* Overview */
-
-.section-overview-sub {
-	margin-bottom: 4rem;
-}
-
-/* Destinations */
-
-.destination-sub {
-	margin-top: 1.6rem;
-	width: 100%;
-	clear: both;
-	display: inline-block;
-}
-
-/* News Feed */
-
-#news {
-	background-color: $smoke;
-	padding: 3rem 0;
-	margin: 2rem 0 3rem;
-}
-.article-fluid {
-	margin-bottom: 1.2rem;
-	display: inline-block;
-	width: 100%;
-	background-color: #FFF;
-	@include box-sizing(border-box);
-	&:hover a {
-		color: $teal;
-	}
-}
-.article-snippet {
-	/*padding: 0 0 0 280px;*/
-	.post-image {
-		margin: 0;
-		padding: 0;
-	}
-	a {
-		display: block;
-	}
-
-}
-.post-content {
-	padding: 1rem 1rem .5rem;
-	h3 {
-		margin-top: .6rem;
-		margin-bottom: 0;
-		font-size: 1.3rem;
-		&:hover {
-			color: $teal;
-		}
-		
-	}
-	.post-date {
-		font-size: $text-tiny;
-		color: $monsoon;
-		text-transform: uppercase;
-	}
-	p {
-		color: $tuatara;
-	}
-}
+}*/

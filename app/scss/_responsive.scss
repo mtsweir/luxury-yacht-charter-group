@@ -1,7 +1,13 @@
 
-@media only screen and (min-width: 25em) and (max-width: 44em) {
-	.panel-wrap {
-		padding-bottom: 50%;
+
+@media (min-width: 480px) {
+	.results-filter .sub-nav {
+		float: left;
+	}
+	.results-total {
+		float: right;
+		text-align: right;
+		clear: none;
 	}
 }
 
@@ -35,36 +41,52 @@
 
 @media only screen and (min-width: 40.0625em) {
 
-	.logo-wrap {
-		float: left;
+	.header {
+		height: 80px;
 	}
+
+	.logo-wrap {
+		margin-top: 10px;
+		padding-top: 5px;
+		float: left;
+		img {
+			height: 60px;
+		}
+	}
+
+	.main-nav {
+		li {
+			margin-left: 25px;
+		}
+	}
+
+	.off-canvas-nav-icon {
+		width: 70px;
+		height: 80px;
+		line-height: 92px;
+		.icon-menu {
+			font-size: 30px;
+		}
+	}
+
+	/* homepage */
+
+	.home-hero {
+		.title {
+			padding-bottom: 70px;
+		}
+		h2 {
+			display: block;
+		}
+	}
+
+	.post-date {
+		display: inline;
+	}
+
 	.sub-head {
 		padding-left: 4rem;
 		padding-right: 4rem;
-	}
-
-	.contain-to-grid .top-bar {
-		margin-top: -50px;
-		height: 50px;
-		line-height: 50px;
-	}
-	.top-bar-section ul li {
-		background-color: transparent;
-	}
-	.top-bar-section ul li a {
-		padding: 0 1.5rem !important;
-		line-height: 50px !important;
-		background-color: transparent !important;
-		&:hover {
-			color: $gainsboro !important;
-		}
-	}
-	.top-bar-section .current > a {
-		color: $jet;
-		background-color: #FFF !important;
-		&:hover {
-			color: $jet !important;
-		}
 	}
 
 	.page-container {
@@ -74,7 +96,7 @@
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-	
+
 	.content-header-inner {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -118,30 +140,27 @@
 		}
 	}
 
+
+
+	.broker-title {
+		clear: both;
+	}
+
+	hr {
+		margin-top: $spacer-x * 2;
+		margin-bottom: $spacer-x * 2;
+	}
+
 }
 
 @media only screen and (min-width: 44em) {
 
 	.title {
 		h1, .h1 {
-			font-size: 2.4rem;
+			font-size: 2.2rem;
 		}
-		h2 {
-			font-size: 1.2rem;
-		}
-	}
-	.text-lead {
-		padding: 0;
 	}
 
-	.home-hero {
-		.title {
-			padding-bottom: 70px;
-		}
-		h2 {
-			display: block;
-		}
-	}
 	.banner-search {
 		.input-list, .button, .input-search {
 			margin: 0;
@@ -152,28 +171,26 @@
 	  font-size: 1.8rem;
 	}
 
-	.panel-wrap {
-		padding-bottom: 65%;
-	}
-
-	.destination-landing {
-		height: 70vh;
-	}
 	.regions li a {
 		font-size: 1.5rem;
 	}
 
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 48em) {
 
-	/*.content-main {
-		width: 65%;
+	/*.media-photo {
+		height: 40vh;
+	}*/
+
+	.mobile-only {
+		display: none;
 	}
 
-	.sidebar {
-		width: 35%;
-	}*/
+}
+
+@media only screen and (min-width: 60em) {
+
 	.content-offest-3 {
 		padding-right: 3rem;
 	}
@@ -181,11 +198,10 @@
 	.panel-info h3 {
 		font-size: 1.5rem;
 	}
-	.panel-span-6 h3 {
-		font-size: 1.7rem;
+
+	.broker-title {
+		clear: none;
 	}
-
-
 
 }
 
@@ -195,14 +211,89 @@
 		display: block;
 	}
 	.menu-trigger,
-	.mobile-search-button {
+	.mobile-search-button,
+	.off-canvas-nav-icon {
 		display: none;
 	}
 
 }
 
-@media only screen and (max-width: 39.8em) {
-	
+@media only screen and (min-width: 64em) {
+
+	.price-range .price {
+		margin: 0;
+	}
+
+}
+
+
+// 980px
+@media only screen and (min-width: 61.250em) {
+
+	.media-photo  {
+		height: 65vh;
+		.media-cover {
+			position: absolute;
+		}
+		.title {
+			h1, .h1 {
+				font-size: 2.6rem;
+			}
+		}
+		.title {
+			h1, p {
+				color: $contrast;
+			}
+		}
+	}
+
+	.media-photo.yacht-hero  {
+		.title {
+			h1, p {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+
+	.yacht-tile {
+		height: 200px !important;
+		.media-cover {
+			background: {
+				image: image-url("oceanscape-tile.jpg");
+				repeat: repeat-x;
+			};
+		}
+	}
+
+	.yacht-hero {
+		img {
+			display: none;
+		}
+		.media-cover {
+			&:after {
+				@include opacity(1);
+				background: {
+					color: transparent;
+					image: image-url("header-fade.png");
+					repeat: repeat-x;
+					position: bottom right;
+				};
+			}
+		}
+
+		.title {
+			padding-bottom: 70px;
+			vertical-align: bottom;
+			text-align: left;
+		}
+
+	}
+
+}
+
+@media (max-width: 39.9em) {
+
 	.quote-wrapper {
 		&:after, &:before {
 			bottom: 100%;
@@ -214,7 +305,6 @@
 			position: absolute;
 			pointer-events: none;
 		}
-
 		&:after {
 			border-color: rgba(255, 255, 255, 0);
 			border-bottom-color: #fff;
@@ -233,13 +323,10 @@
 
 @media only screen and (max-width: 40.0624em) {
 
-	.header {
-		height: 3.5em;
-	}
 	.menu-trigger {
 		top: 13px;
 	}
-	.menu-trigger .icon-burger {
+	.menu-trigger .icon-menu {
 		font-size: 32px;
 	}
 	.primary-nav {
@@ -247,13 +334,7 @@
 		margin-top: 10px;
 		float: left;
 	}
-	.logo-wrap {
-		.logo {
-			top: 0;
-			width: 250px;
-			height: 20px;
-		}
-	}
+
 	.intro .sub-line {
 		display: none;
 	}
@@ -281,12 +362,8 @@
 
 }
 
-@media only screen and (max-width: 767px) {
-
-}
-
 @media only screen and (max-width: 1067px) {
-	
+
 	.hero-bg img {
 		position: absolute; bottom: 0;
 		width: auto;
@@ -301,6 +378,18 @@
 	.hero-bg img {
 		position: absolute; bottom: 0;
 		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	.main-nav {
+		li {
+			&.main-nav-link-showlarge {
+				display: inline-block;
+			}
+		}
 	}
 
 }

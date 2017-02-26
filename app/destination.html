@@ -4,17 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/app_override.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -27,139 +25,124 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="right-off-canvas-menu">
-        <ul class="mobile-nav accordion" data-accordion>
-          <li class="accordion-navigation">
-              <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
-          </li>
-          <li class="accordion-navigation"><a href="#">Home</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel1a">Destinations</a>
-            <div id="panel1a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel2a">Yacht Type</a>
-            <div id="panel2a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sailing Yachts</a></li>
-                    <li><a href="#">Motor Yachts</a></li>
-                    <li><a href="#">Catamarans</a></li>
-                    <li><a href="#">Gulets</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a">Charter Advice</a>
-            <div id="panel3a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation"><a href="#">News</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel4a">About Us</a>
-            <div id="panel4a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation accordion-social">
-            <nav class="nav-social">
-                <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
-            </nav>
-          </li>
-        </ul>
-    </aside>
-
-<div class="info-bar show-for-medium-up">
-    <div class="row large-collapse">
-        <div class="small-12 column">
-            <ul class="top-links inline-list right">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="nav-lang">
-                    <a class="nav-lang-eng" href="#">English</a>
-                    <a class="nav-lang-fr" href="#">Français</a>
-                </li>
-            </ul>
+  <aside class="right-off-canvas-menu">
+    <ul class="mobile-nav accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
+      </li>
+      <li class="accordion-navigation"><a href="#">Home</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel1a">Destinations</a>
+        <div id="panel1a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Caribbean</a></li>
+            <li><a href="#">Mediterranean</a></li>
+            <li><a href="#">Bahamas</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">South Pacific</a></li>
+          </ul>
         </div>
-    </div>
-</div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel2a">Yacht Type</a>
+        <div id="panel2a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sailing Yachts</a></li>
+            <li><a href="#">Motor Yachts</a></li>
+            <li><a href="#">Catamarans</a></li>
+            <li><a href="#">Gulets</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel3a">Charter Advice</a>
+        <div id="panel3a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation"><a href="#">News</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel4a">About Us</a>
+        <div id="panel4a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation accordion-social">
+        <nav class="nav-social">
+          <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+        </nav>
+      </li>
+    </ul>
+  </aside>
 
-<header class="header">
+  <header class="header">
     <div class="row">
-        <div class="medium-12 column">
-        
-        <a class="menu-trigger right-off-canvas-toggle" href="#">
-            <i class="fa fa-bars icon-burger"></i>
-            <span class="screen-reader-only">Menu</span>
+      <div class="medium-12 column">
+
+        <a class="off-canvas-nav-icon right-off-canvas-toggle" href="#">
+          <i class="fa fa-bars icon-burger"></i>
+          <span class="screen-reader-only">Menu</span>
         </a>
 
         <nav class="primary-nav">
-
-            <div class="logo-wrap">
-                <a class="logo" href="#" title="Luxury Yacht Charter Group">
-                    <img data-interchange="[/images/logo-lycg.svg, (medium)], [/images/logo-lycg-mobile.svg, (small-only)]">
-                </a>
-            </div>
-
-            <ul class="main-nav inline-list right">
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
-                    <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Caribbean</a></li>
-                        <li><a href="#">Mediterranean</a></li>
-                        <li><a href="#">Bahamas</a></li>
-                        <li><a href="#">Florida</a></li>
-                        <li><a href="#">South Pacific</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
-                    <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sailing Yachts</a></li>
-                        <li><a href="#">Motor Yachts</a></li>
-                        <li><a href="#">Catamarans</a></li>
-                        <li><a href="#">Gulets</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
-                    <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
-            </ul>
-            <a href="#" class="header-button-search mobile-search-button button">Search</a>
-
+          <div class="logo-wrap">
+            <a class="logo" href="#" title="Luxury Yacht Charter Group">
+              <img src="images/lyc_logo.svg" alt="">
+            </a>
+          </div>
+          <ul class="main-nav inline-list right">
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
+              <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Caribbean</a></li>
+                <li><a href="#">Mediterranean</a></li>
+                <li><a href="#">Bahamas</a></li>
+                <li><a href="#">Florida</a></li>
+                <li><a href="#">South Pacific</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
+              <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sailing Yachts</a></li>
+                <li><a href="#">Motor Yachts</a></li>
+                <li><a href="#">Catamarans</a></li>
+                <li><a href="#">Gulets</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
+              <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link"><a href="#">Blog</a></li>
+            <li class="main-nav-link"><a href="#" class="button header-button">Search</a></li>
+            <li class="main-nav-link-language">
+              <a class="nav-lang-eng current" href="#">English</a>
+              <a class="nav-lang-fr" href="#">Français</a>
+            </li>
+          </ul>
         </nav>
 
-        </div>
+      </div>
     </div>
-</header>
+  </header>
 
 <div id="content">
 
@@ -167,21 +150,20 @@
     <div class="media-cover" style="background-image:url(images/landing-hero.jpg)"></div>
     <div class="row row-table collapse">
         <div class="title small-12 text-center col-middle column">
-            <h1>French Riviera</h1>
-            <p>With seemingly endless sunny beaches, charming towns, glamorous yachts and celebrities galore, the beautiful French Riviera is the place to be.</p>   
+            <h1>Mediterranean Yacht Charters</h1>
         </div>
     </div>
 </div>
 
 <div class="content-body">
     <div class="row">
-        
+
         <div class="nav-tabs medium-12 column">
             <div class="contain-to-grid">
                 <nav class="nav-tabs-bar top-bar" data-topbar role="navigation" data-options="is_hover: false">
                     <ul class="title-area">
                     <li class="name">
-                      
+
                     </li>
                         <li class="toggle-topbar"><a href="#">Overview</a></li>
                     </ul>
@@ -216,12 +198,12 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="summary">
                 <p>Known as, the French Riviera or Côte d'Azur (azure coast), France's slice of the Mediterranean stretches from the Cassis to the Italian border, and has always been synonymous with glamour, celebrity, sophistication and of course, superyachts and yacht charter, and a magnet to those with means seeking sunshine and pleasure.</p>
             </div>
 
-            <div class="feature-yacht">
+            <div class="feature-block">
                 <div class="row">
                     <div class="small-12 medium-4 column">
                         <img src="images/yacht-thumb.jpg" alt="">
@@ -282,7 +264,7 @@
                 <b>St Paul de Vence</b>
                 <p>2km from Nice, this hilltop village was once the favourite spot for Picasso, Matisse and other influential artists who took up residence there. Today it is still a popular place for modern day creatives. For its markets, galleries, walks and historic sites, St Paul de Vence is probably the most visited village on the Côte d'Azur and certainly one of the most beautiful in Provence.</p>
                 <img class="img-responsive" src="images/st_paul_de_vence_001.jpg" alt="">
-                
+
                 <b>Antibes-Juan les Pins</b>
                 <p>Nestled between Nice and Cannes, Antibes retains its old world charms, with its rampart and twin medieval towers. It must be one of the most picturesque towns on the Côte d'Azur and preserves traditions with pride, including the flower and fruit markets. Vieille Antibes is notable for its charming cobble-stoned streets that have preserved the aura of its artistic past, one that included artists like Picasso, Chagall, Matisse and many more.</p>
                 <p>Close by is the Cap d'Antibes, one of the most exclusive areas on the French Riviera and the more relaxed Juan les Pins, the place where in the 1920s and 30s luminaries of the likes of Scott and Jelda Fitzgerald, Rudolf Valentino, Charlie Chaplin, Douglas Fairbanks and other Americans sought social and cultural entertainment. In fact, they say fun-seekers invented water skiing right here in the 1920s.</p>
@@ -342,25 +324,25 @@
 
             <div class="widget widget-broker-contact">
                 <div class="widget-inner widget-inner-leader">
-                    <div class="row">
-                        <div class="small-3 medium-3 column">
-                            <div class="broker-image">
-                                <img src="images/radek-gendek.jpg" alt="Radek Gendek">
-                            </div>
-                        </div>
-                        <div class="small-9 medium-9 column">
-                            <div class="broker-title">
-                                <h4>Radek Gendek
-                                <span class="small">Yacht Broker</span></h4>
-                            </div>
-                        </div>
-                        <div class="small-12 column">
-                            <div class="broker-message">
-                                <span class="small">Call me today on +33 184 884 395 or send me an email to get started.</span>
-                                <a class="button" href="#"><i class="fa fa-envelope-o icon-before"></i> Contact Me</a>
-                            </div>
-                        </div>
+                  <div class="row">
+
+                    <div class="small-4 medium-4 column">
+                      <div class="broker-image">
+                        <img src="images/radek-gendek.jpg" alt="Radek Gendek">
+                      </div>
                     </div>
+
+                    <div class="small-8 medium-8 column">
+                      <div class="broker-title">
+                        <h4>Radek Gendek
+                        <span class="small">Yacht Broker</span></h4>
+                        <div class="broker-message">
+                          <span class="x-small">Want to know more? <br>Call me on +61 459 303 221 or email using the form below...</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
                 <div class="widget-inner">
                     <h4>Submit Enquiry</h4>
@@ -591,7 +573,6 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

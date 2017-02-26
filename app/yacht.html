@@ -3,22 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yacht Index - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <title>Yacht Detail - LYC</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <!-- build:css css/libraries.min.css -->
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font--awesome.css">
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/app_override.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <style>
+      @media only screen and (min-width: 40.0625em) {
+        .yacht-hero .media-cover {
+          background-image: url(images/dubois-sailing-yacht-drumbeat-sailing.jpg);
+        }
+      }
+    </style>
+
   </head>
   <body>
 
@@ -27,357 +34,462 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="right-off-canvas-menu">
-        <ul class="mobile-nav accordion" data-accordion>
-          <li class="accordion-navigation">
-              <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
-          </li>
-          <li class="accordion-navigation"><a href="#">Home</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel1a">Destinations</a>
-            <div id="panel1a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel2a">Yacht Type</a>
-            <div id="panel2a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sailing Yachts</a></li>
-                    <li><a href="#">Motor Yachts</a></li>
-                    <li><a href="#">Catamarans</a></li>
-                    <li><a href="#">Gulets</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a">Charter Advice</a>
-            <div id="panel3a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation"><a href="#">News</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel4a">About Us</a>
-            <div id="panel4a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation accordion-social">
-            <nav class="nav-social">
-                <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
-            </nav>
-          </li>
-        </ul>
-    </aside>
-
-<div class="info-bar show-for-medium-up">
-    <div class="row large-collapse">
-        <div class="small-12 column">
-            <ul class="top-links inline-list right">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="nav-lang">
-                    <a class="nav-lang-eng" href="#">English</a>
-                    <a class="nav-lang-fr" href="#">Français</a>
-                </li>
-            </ul>
+  <aside class="right-off-canvas-menu">
+    <ul class="mobile-nav accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#">Find your Yacht <i class="button-search font_lcg icon-search"></i></a>
+      </li>
+      <li class="accordion-navigation"><a href="#">Home</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel1a">Destinations</a>
+        <div id="panel1a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Caribbean</a></li>
+            <li><a href="#">Mediterranean</a></li>
+            <li><a href="#">Bahamas</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">South Pacific</a></li>
+          </ul>
         </div>
-    </div>
-</div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel2a">Yacht Type</a>
+        <div id="panel2a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sailing Yachts</a></li>
+            <li><a href="#">Motor Yachts</a></li>
+            <li><a href="#">Catamarans</a></li>
+            <li><a href="#">Gulets</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel3a">Charter Advice</a>
+        <div id="panel3a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation"><a href="#">News</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel4a">About Us</a>
+        <div id="panel4a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation accordion-social">
+        <nav class="nav-social">
+          <a href="#" class="social-icon social-icon-facebook"><i class="font_lcg icon-facebook"></i></a>
+          <a href="#" class="social-icon social-icon-twitter"><i class="font_lcg icon-twitter"></i></a>
+          <a href="#" class="social-icon social-icon-googleplus"><i class="font_lcg icon-googleplus"></i></a>
+        </nav>
+      </li>
+    </ul>
+  </aside>
 
-<header class="header">
+  <header class="header">
     <div class="row">
-        <div class="medium-12 column">
-        
-        <a class="menu-trigger right-off-canvas-toggle" href="#">
-            <i class="fa fa-bars icon-burger"></i>
-            <span class="screen-reader-only">Menu</span>
+      <div class="medium-12 column">
+
+        <a class="off-canvas-nav-icon right-off-canvas-toggle" href="#">
+          <i class="font_lcg icon-menu"></i>
+          <span class="screen-reader-only">Menu</span>
         </a>
 
         <nav class="primary-nav">
-
-            <div class="logo-wrap">
-                <a class="logo" href="#" title="Luxury Yacht Charter Group">
-                    <img data-interchange="[/images/logo-lycg.svg, (medium)], [/images/logo-lycg-mobile.svg, (small-only)]">
-                </a>
-            </div>
-
-            <ul class="main-nav inline-list right">
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
-                    <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Caribbean</a></li>
-                        <li><a href="#">Mediterranean</a></li>
-                        <li><a href="#">Bahamas</a></li>
-                        <li><a href="#">Florida</a></li>
-                        <li><a href="#">South Pacific</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
-                    <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sailing Yachts</a></li>
-                        <li><a href="#">Motor Yachts</a></li>
-                        <li><a href="#">Catamarans</a></li>
-                        <li><a href="#">Gulets</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
-                    <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
-            </ul>
-            <a href="#" class="header-button-search mobile-search-button button">Search</a>
-
+          <div class="logo-wrap">
+            <a class="logo" href="#" title="Luxury Yacht Charter Group">
+              <img src="images/lyc_logo.svg" alt="">
+            </a>
+          </div>
+          <ul class="main-nav inline-list right">
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
+              <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Caribbean</a></li>
+                <li><a href="#">Mediterranean</a></li>
+                <li><a href="#">Bahamas</a></li>
+                <li><a href="#">Florida</a></li>
+                <li><a href="#">South Pacific</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
+              <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sailing Yachts</a></li>
+                <li><a href="#">Motor Yachts</a></li>
+                <li><a href="#">Catamarans</a></li>
+                <li><a href="#">Gulets</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
+              <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link"><a href="#">Blog</a></li>
+            <li class="main-nav-link"><a href="#" class="button header-button">Search</a></li>
+            <li class="main-nav-link-language">
+              <a class="nav-lang-eng current" href="#">English</a>
+              <a class="nav-lang-fr" href="#">Français</a>
+            </li>
+          </ul>
         </nav>
 
-        </div>
+      </div>
     </div>
-</header>
+  </header>
 
 <div id="content">
 
-<div class="media-photo yacht-hero">
-    <div class="media-cover" style="background-image:url(images/cocktails_hero.jpg)"></div>
-    <div class="row row-table collapse">
-        <div class="title small-12 col-middle column">
-            <h1>Cocktails</h1>
-            <p>47m (157ft) | 2004 Trinity Yachts</p>   
-        </div>
+  <div class="media-photo yacht-hero">
+
+    <div class="media-cover">
+      <img src="images/bella-ragazza.jpg" alt="Drumbeat">
     </div>
-</div>
 
-<div class="content-body row-space-bottom-3">
-    <div class="row">
-
-        <div class="nav-tabs medium-12 column">
-            <div class="contain-to-grid">
-                <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
-                    <ul class="title-area">
-                    <li class="name">
-                      
-                    </li>
-                        <li class="toggle-topbar"><a href="#">Overview</a></li>
-                    </ul>
-
-                    <section class="top-bar-section">
-                        <ul>
-                            <li class="current"><a href="#">Overview</a></li>
-                            <li><a href="#">Photos</a></li>
-                            <li><a href="#">Specifications</a></li>
-                            <li><a href="#">Rates</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Brochure</a></li>
-                            <li><a href="#">Reviews</a></li>
-                            <li><a href="#">Request Information</a></li>
-                        </ul>
-                    </section>
-                </nav>
-            </div>
-        </div>
-
-        <div class="large-8 column content-main content-offest-3">
-
-            <div class="gallery">
-
-                <ul class="gallery-tiles clearing-thumbs clearing-feature medium-block-grid-4" data-clearing>
-                    <li class="gallery-hero clearing-featured-img hide">
-                        <a href="images/cocktails_sun-deck_001.jpg"><img class="img-responsive" data-caption="Relax and unwind" src="images/cocktails_sun-deck_001.jpg" alt=""></a>
-                    </li>
-                    <li class="clearing-featured-img hide">
-                        <a href="images/cocktails_sky-lounge.jpg"><img src="images/cocktails_sky-lounge.jpg" data-caption="Everything at your fingertips" alt=""></a>
-                    </li>
-                    <li class="clearing-featured-img hide">
-                        <a href="images/cocktails_night-table-aft.jpg"><img data-caption="Dine in luxury" src="images/cocktails_night-table-aft.jpg" alt=""></a>
-                    </li>
-                    <li class="clearing-featured-img">
-                        <div class="media-photo media-photo-block row-full-height">
-                            <div class="media-cover"></div>
-                            <a href="images/cocktails_dining.jpg"><img data-caption="Dine in luxury" class="img-responsive" src="images/cocktails_dining.jpg" alt=""></a>
-                            <a href="#" class="media-photo-trigger">
-                                <div class="row row-table row-full-height">
-                                    <div class="title small-12 text-center col-middle column">
-                                        <h5 class="small">See all 21 photos</h5>
-                                    </div>
-                                </div>  
-                            </a>
-                        </div>
-                    </li>
-                    <li class="clearing-featured-img hide">
-                        <a href="images/cocktails_sun-deck_001.jpg"><img class="img-responsive" data-caption="Relax and unwind" src="images/cocktails_sun-deck_001.jpg" alt=""></a>
-                    </li>
-                    <li class="clearing-featured-img hide">
-                        <a href="images/cocktails_sky-lounge.jpg"><img src="images/cocktails_sky-lounge.jpg" data-caption="Everything at your fingertips" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="images/cocktails_night-table-aft.jpg"><img data-caption="Dine in luxury" src="images/cocktails_night-table-aft.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="images/cocktails_sun-deck_001.jpg"><img class="img-responsive" data-caption="Relax and unwind" src="images/cocktails_sun-deck_001.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="images/cocktails_sky-lounge.jpg"><img src="images/cocktails_sky-lounge.jpg" data-caption="Everything at your fingertips" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="images/cocktails_night-table-aft.jpg"><img data-caption="Dine in luxury" src="images/cocktails_night-table-aft.jpg" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="summary">
-                <p>With the style and ambience of a 5-star private Club, MY COCKTAILS is a magnificent 47m (157ft) luxury charter yacht which combines classic elegance and modern appointments. Available for charter in Alaska next summer 2015!</p>
-            </div>
-
-            <p>Built in 2004 by the highly awarded US superyacht specialist, Trinity Yachts, COCKTAILS enjoyed a thorough refit in 2012 and boasts welcoming and warm interiors designed by the esteemed Howard Design Group. Accommodating 11 charter guests in four double suites and one twin cabin, each with flat-screen TV and DVD, COCKTAILS is a true home away from home.  The spacious master suite offers a king-size bed, desk, sofa and private office, with a luxurious ensuite with oversized central shower and Jacuzzi bath.</p>
-            <p>The main saloon envelopes guests in complete comfort, with large cushioned sofas and armchairs, a refined palette of timber, taupe and navy, and specially chosen art works. The spacious skylounge features timber panelling and sumptuous furnishings, and the equally elegant formal dining area seats 10 charter guests. The aft deck offers a spacious al fresco dining area and guests can also take in the views from the sundeck with its Jacuzzi, sun pads and chaise lounge seating.</p>
-            <p>Her impressive entertainment and leisure facilities, including onboard gym, make her the ideal charter yacht for socialising and entertaining with large groups or families.</p>
-            <p>COCKTAILS features the latest stabilization system to reduce roll motion effect underway and at anchor. Her retinue of tenders and toys will entertain even the most sporty charter guests, and includes: Scuba equipment for six people, and two crew who are Dive Instructors, Dive Compressor (with Nitrox), two Yamaha Waverunners, water skis, wakeboard, towable toys and fishing gear.</p>
-            <p>Guests are attended by COCKTAILS' highly professional crew of nine who are versatile, experienced and dedicated to making your luxury charter experience the ultimate vacation.</p>
-            <p>COCKTAILS is available for charter in the Mediterranean and Caribbean, and is now taking bookings for charters in Alaska next summer 2015.</p>
-
-            <div class="cruising-grounds">
-                <h2>Cruising Grounds</h2>
-                <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">British Virgin Islands</a></li>
-                    <li><a href="#">Windward Islands</a></li>
-                    <li><a href="#">Martinique</a></li>
-                    <li><a href="#">St Lucia</a></li>
-                    <li><a href="#">St Vincent</a></li>
-                    <li><a href="#">The Grenadines</a></li>
-                    <li><a href="#">Grenada</a></li>
-                    <li><a href="#">Leeward Islands</a></li>
-                    <li><a href="#">St Martin (St Maarten)</a></li>
-                    <li><a href="#">St Barts</a></li>
-                    <li><a href="#">Antigua</a></li>
-                    <li><a href="#">Barbuda</a></li>
-                    <li><a href="#">Dominica</a></li>
-                    <li><a href="#">Guadeloupe</a></li>
-                    <li><a href="#">Anguilla</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                </ul>
-            </div>
-
-            <div class="row row-collapse page-footer-nav">
-                <div class="small-12 medium-6 column">
-                    <a class="button icon-before" href="#"><i class="fa fa-envelope-o"></i> Request Information</a>
-                </div>
-                <div class="small-12 medium-6 column">
-                    <a class="button button-secondary icon-after right" href="#">Photos <i class="fa fa-angle-double-right"></i></a>
-                </div>
-            </div>
-            
-            <hr>
-
-            <div class="disclaimer">
-                <p>Disclaimer: This document is not contractual. The charter yacht details displayed above are displayed in good faith and whilst believed to be correct are not guaranteed. The Luxury Charter Group does not warrant or assume any legal liability or responsibility for the accuracy, completeness, or usefulness of any information and/or images displayed. All information is subject to change without notice and is without warrantee.</p>
-            </div>
-
-        </div>
-
-        <div class="large-4 column sidebar">
-
-            <div class="widget widget-broker-contact">
-                <div class="widget-inner widget-inner-leader">
-                    <div class="row">
-                        <div class="small-3 medium-3 column">
-                            <div class="broker-image">
-                                <img src="images/radek-gendek.jpg" alt="Radek Gendek">
-                            </div>
-                        </div>
-                        <div class="small-9 medium-9 column">
-                            <div class="broker-title">
-                                <h4>Radek Gendek
-                                <span class="small">Yacht Broker</span></h4>
-                            </div>
-                        </div>
-                        <div class="small-12 column">
-                            <div class="broker-message">
-                                <span class="small">Call me today on +33 184 884 395 or send me an email to get started.</span>
-                                <a class="button" href="#"><i class="fa fa-envelope-o icon-before"></i> Request Information</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="widget-inner">
-                    <div class="quick-view">
-                        <h4>Accommodation</h4>
-                        <div class="row">
-                            <div class="quick-view-item text-center small-4 column">
-                                <div class="type"><i class="fa fa-columns"></i></div>
-                                <div class="heading">5 Cabins</div>
-                            </div>
-                            <div class="quick-view-item text-center small-4 column">
-                                <div class="type"><i class="fa fa-bed"></i></div>
-                                <div class="heading">11 Guests</div>
-                            </div>
-                            <div class="quick-view-item text-center small-4 column">
-                                <div class="type"><i class="fa fa-users"></i></div>
-                                <div class="heading">8 Crew</div>
-                            </div>
-                            <div class="quick-view-summary small-12 column">
-                                <p>Accommodation for 10 guests in 5 staterooms: 3 King, 1 Queen, 1 Twin and 1 Pullman.</p>
-                                <p><a href="#"><b>Full Specifications</b></a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="widget">
-
-                <div class="widget-inner price-range">
-                    <h4>Charter Season</h4>
-                    <div class="row">
-                        <div class="small-6 medium-6 columns price-low">
-                            <span class="range-title">Low Season from:</span>
-                            <span class="price">US $185,000 <em>p/wk</em></span>
-                        </div>
-                        <div class="small-6 medium-6 columns price-high">
-                            <span class="range-title">High Season from:</span>
-                            <span class="price">US $225,000 <em>p/wk</em></span>
-                        </div>
-                        <div class="small-12 column">
-                            <div class="summary-message">
-                                <p>Rates are weekly plus taxes and expemses.Holiday rate is $225,000/wk plus expenses. Bahamas and Florida Taxes apply AYCA Demose 80/20 Contract.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="nav-tabs nav-tabs-mobile small-12 column">
+      <nav class="nav-tabs-bar top-bar" data-topbar role="navigation" data-options="is_hover: false">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar"><a href="#">Browse</a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul>
+            <li class="current"><a href="/yacht.php/drumbeat-199/">Overview</a></li>
+            <li><a href="/yacht.php/drumbeat-199/photos/">Photos</a></li>
+            <li><a href="/yacht.php/drumbeat-199/specs/">Specifications</a></li>
+            <li><a href="/yacht.php/drumbeat-199/request/">Request Information</a></li>
+          </ul>
+        </section>
+      </nav>
     </div>
-</div>
+
+    <div class="row row-table ">
+      <div class="title small-12 col-middle column">
+        <h1>Drumbeat</h1>
+        <p>53m, (174') - Sleeps 11 Guests</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="content-body row-space-bottom-3">
+
+      <div class="row">
+
+        <div class="nav-tabs nav-tabs-lg nav-tabs-yacht small-12 column">
+          <nav class="nav-tabs-bar top-bar" data-topbar role="navigation" data-options="is_hover: false">
+            <ul class="title-area">
+              <li class="name"></li>
+              <li class="toggle-topbar"><a href="#">Browse</a></li>
+            </ul>
+            <section class="top-bar-section">
+              <ul>
+                <li class="current"><a href="/yacht.php/drumbeat-199/">Overview</a></li>
+                <li><a href="/yacht.php/drumbeat-199/photos/">Photos</a></li>
+                <li><a href="/yacht.php/drumbeat-199/specs/">Specifications</a></li>
+                <li><a href="/yacht.php/drumbeat-199/request/">Request Information</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+
+          <div class="medium-8 column content-main content-offest-3">
+
+
+              <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/search.php">All Yachts</a> &rsaquo; Drumbeat</p>
+
+                          <div class="summary">
+                  <p>One of the largest modern sailing yachts ever built, DRUMBEAT combines excellent sailing performance, sea worthiness and comfort in a unique one-level layout. In 2016 summer, DRUMBEAT is available for charter in Iceland, Greenland, Spitzberg and Norway from June onwards and will be available in the Baltic Sea in September. Spring/Summer 2017, DRUMBEAT will be located in Bermuda for the America's Cup
+
+
+  </p>
+              </div>
+
+              <div class="gallery">
+                  <ul class="gallery-tiles clearing-thumbs clearing-feature medium-block-grid-4" data-clearing>
+
+
+
+
+
+                                                      <li class="gallery-hero clearing-featured-img hide"><a href="/cms/uploads/dubois-sailing-yacht-drumbeat-under-sail.jpg"><img class="img-responsive" data-caption="Drumbeat sailing" src="/cms/uploads/dubois-sailing-yacht-drumbeat-under-sail.jpg" alt="Drumbeat sailing"></a></li>
+
+
+                                                      <li class="clearing-featured-img hide"><a href="/cms/uploads/drumbeat-living_area_041.jpg"><img src="/cms/uploads/drumbeat-living_area_041.jpg" data-caption="Drumbeat alfresco table setting" alt="Drumbeat alfresco table setting"></a></li>
+
+
+                                                      <li class="clearing-featured-img hide"><a href="/cms/uploads/drumbeat-living_area_021.jpg"><img src="/cms/uploads/drumbeat-living_area_021.jpg" data-caption="Drumbeat aft living area" alt="Drumbeat aft living area"></a></li>
+
+
+                                                      <li class="clearing-featured-img hide"><a href="/cms/uploads/drumbeat-living_area_031.jpg"><img src="/cms/uploads/drumbeat-living_area_031.jpg" data-caption="Drumbeat aft alfresco dining " alt="Drumbeat aft alfresco dining "></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_interior_main-salon.jpg"><img src="/cms/uploads/drumbeat_interior_main-salon.jpg" data-caption="Drumbeat main saloon" alt="Drumbeat main saloon"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_interior_dining1.jpg"><img src="/cms/uploads/drumbeat_interior_dining1.jpg" data-caption="Drumbeat interior dining" alt="Drumbeat interior dining"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-master-cabin.jpg"><img src="/cms/uploads/drumbeat-master-cabin.jpg" data-caption="Drumbeat master stateroom" alt="Drumbeat master stateroom"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_master_bathroom.jpg"><img src="/cms/uploads/drumbeat_master_bathroom.jpg" data-caption="Drumbeat master bathroom" alt="Drumbeat master bathroom"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_master_stateroom_seating.jpg"><img src="/cms/uploads/drumbeat_master_stateroom_seating.jpg" data-caption="Drumbeat master stateroom seating" alt="Drumbeat master stateroom seating"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_master_cabin_011.jpg"><img src="/cms/uploads/drumbeat_master_cabin_011.jpg" data-caption="Drumbeat master stateroom" alt="Drumbeat master stateroom"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_interior_detail.jpg"><img src="/cms/uploads/drumbeat_interior_detail.jpg" data-caption="Drumbeat interior detail" alt="Drumbeat interior detail"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_guest_cabin_with_pullman.jpg"><img src="/cms/uploads/drumbeat_guest_cabin_with_pullman.jpg" data-caption="Drumbeat guest cabin with pullman" alt="Drumbeat guest cabin with pullman"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_twin-guest_cabin.jpg"><img src="/cms/uploads/drumbeat_twin-guest_cabin.jpg" data-caption="Drumbeat twin guest stateroom" alt="Drumbeat twin guest stateroom"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_deck-spaces_071.jpg"><img src="/cms/uploads/drumbeat_deck-spaces_071.jpg" data-caption="Drumbeat flybridge helm" alt="Drumbeat flybridge helm"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-living_area_051.jpg"><img src="/cms/uploads/drumbeat-living_area_051.jpg" data-caption="Drumbeat cockpit relaxation" alt="Drumbeat cockpit relaxation"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-020.jpg"><img src="/cms/uploads/drumbeat-020.jpg" data-caption="Drumbeat sailing" alt="Drumbeat sailing"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_deck-spaces_081.jpg"><img src="/cms/uploads/drumbeat_deck-spaces_081.jpg" data-caption="Drumbeat playtime!" alt="Drumbeat playtime!"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_water-toys_aft.jpg"><img src="/cms/uploads/drumbeat_water-toys_aft.jpg" data-caption="Drumbeat water toys" alt="Drumbeat water toys"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_deck-spaces_101.jpg"><img src="/cms/uploads/drumbeat_deck-spaces_101.jpg" data-caption="Drumbeat swimming platform" alt="Drumbeat swimming platform"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_stern.jpg"><img src="/cms/uploads/drumbeat_stern.jpg" data-caption="Drumbeat stern" alt="Drumbeat stern"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_deck-spaces_061.jpg"><img src="/cms/uploads/drumbeat_deck-spaces_061.jpg" data-caption="Drumbeat deck space" alt="Drumbeat deck space"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-sea_02.jpg"><img src="/cms/uploads/drumbeat-sea_02.jpg" data-caption="Drumbeat at sea" alt="Drumbeat at sea"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-sea_06.jpg"><img src="/cms/uploads/drumbeat-sea_06.jpg" data-caption="Drumbeat eased sheets" alt="Drumbeat eased sheets"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/dubois-sailing-yacht-drumbeat-under-sail_001.jpg"><img src="/cms/uploads/thumb2/dubois-sailing-yacht-drumbeat-under-sail_001.jpg" data-caption="Dubois Sailing yacht DRUMBEAT underway" alt="Dubois Sailing yacht DRUMBEAT underway"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-sea_03.jpg"><img src="/cms/uploads/drumbeat-sea_03.jpg" data-caption="Drumbeat sailing away" alt="Drumbeat sailing away"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-sea_07.jpg"><img src="/cms/uploads/drumbeat-sea_07.jpg" data-caption="Drumbeat on the wind" alt="Drumbeat on the wind"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat-sea_05.jpg"><img src="/cms/uploads/drumbeat-sea_05.jpg" data-caption="Drumbeat bow on" alt="Drumbeat bow on"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/drumbeat_deck-space.jpg"><img src="/cms/uploads/drumbeat_deck-space.jpg" data-caption="Drumbeat deck space" alt="Drumbeat deck space"></a></li>
+                                                              </ul>
+              </div>
+
+
+                          <div class="segment-overview">
+                  <p align="justify">Formerly SALPERTON, this exquisite example of Dubois-designed Alloy yachts construction sailing superyacht is an award-winning charter yacht</p>
+  <p align="justify">At 53m (173' 11"), DRUMBEAT offers extremely spacious, luxury accommodation for 11 charter guests and comes complete with 10 crew to manage every charter request and requirement onboard.  This luxury sailing yacht has a unique one-level layout, stretching from the aft deck through the saloon and dining area to the forward wheelhouse – ideal for socialising and entertaining and perfect for charter.</p>
+  <p align="justify">Guest accommodation is for up to 11 charter guests in 5 Staterooms. The full beam Master Stateroom boasts king size bed, ensuite with jacuzzi bath and shower, walk-in wardrobe, seating area, desk and state-of-the-art entertainment system. There are two identical double cabins with seating area and two twin cabins (one with a pullman), all with ensuite facilities.</p>
+  <p align="justify">In any one of the three saloon areas, charter guests can enjoy the large-screen TV with DVD player and a vast library of DVDs, as well as high quality Bose surround sound system. There are two dining areas inside, and two aft deck al fresco dining spaces, plus the bridge deck for dining with 360-degree views to the horizon.</p>
+  <p align="justify">A large hydraulic swim platform with two ladders provides access to the water, which makes for easy enjoyment of the vast array of water toys including two sailing dinghies, two underwater Sea-Doo scooters, windsurfer, two sea kayaks, wakeboard, water skis, double doughnut, snorkelling and assorted fishing equipment. There are also two RIBs, one Castoldi 6.2m (21') RIB with 182hp engine and a 4.5m Avon RIB with 50hp outboard for towing water toys.</p>
+  <p align="justify">Having just undergone a major refit, luxury sailing yacht DRUMBEAT is in optimum condition to welcome charter guests in 2016.</p>            </div>
+
+              <div class="row row-collapse page-footer-nav">
+                  <div class="small-12 medium-6 column">
+                      <a class="button button-before" href="/yacht.php/drumbeat-199/request/"><i class="font_lcg icon-mail"></i> Request Information</a>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                          <a class="button button-secondary button-after right" href="/yacht.php/drumbeat-199/photos/">Photos <i class="font_lcg icon-angle-double-right"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="disclaimer">
+                  <p>Disclaimer: This document is not contractual. The charter yacht details displayed above are displayed in good faith and whilst believed to be correct are not guaranteed. The Luxury Charter Group does not warrant or assume any legal liability or responsibility for the accuracy, completeness, or usefulness of any information and/or images displayed. All information is subject to change without notice and is without warrantee.</p>
+              </div>
+
+
+          </div>
+
+          <div class="medium-4 column sidebar">
+
+              <div class="widget widget-broker-contact">
+
+                  <a name="request"></a>
+                  <div class="widget-inner widget-inner-leader">
+                      <div class="row">
+                          <div class="small-12 column">
+
+                              <div class="broker-image">
+                                <img src="/cms/uploads/jeni-tidmarsh_002.jpg" alt="Jeni Tidmarsh">
+                              </div>
+                              <div class="broker-title">
+                                  <h4>Jeni Tidmarsh <span class="small"> Head Office</span></h4>
+                                  <p class="broker-message">
+                                      Want to know more?<br>Call me on +61 459 303 221 or click the button to email me.
+                                  </p>
+                              </div>
+
+                          </div>
+                          <div class="small-12 column">
+                            <a class="button button-before" href="/yacht.php/drumbeat-199/request/"><i class="font_lcg icon-mail"></i> Request Information</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="widget">
+
+                  <div class="widget-inner">
+                      <div class="quick-view">
+                          <div class="row">
+                                                          <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="font_lcg icon-ship"></i></div>
+                                  <div class="heading">53m,&nbsp;174'</div>
+                              </div>
+                                                                                      <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="font_lcg icon-cabins"></i></div>
+                                  <div class="heading">5 Cabins</div>
+                              </div>
+                                                                                      <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="font_lcg icon-bed"></i></div>
+                                  <div class="heading">11 Guests</div>
+                              </div>
+                                                                                      <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="font_lcg icon-crew"></i></div>
+                                  <div class="heading">10 Crew</div>
+                              </div>
+                                                          <div class="quick-view-summary small-12 column">
+                                  <p><a class="button button-secondary button-after" href="/yacht.php/drumbeat-199/specs/">Full Specifications <i class="font_lcg icon-angle-double-right"></i></a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+                          <div class="widget">
+                  <div class="widget-inner price-range">
+                      <h4>Charter Season &amp; Rates</h4>
+                      <div class="row">
+                                                  <div class="small-6 medium-6 columns price-low">
+                              <span class="range-title">Low Season from:</span>
+                              <span class="price">&euro;190000 <em>p/wk</em></span>
+                          </div>
+                                                                          <div class="small-6 medium-6 columns price-high">
+                              <span class="range-title">High Season from:</span>
+                              <span class="price">&euro;190000 <em>p/wk</em></span>
+                          </div>
+                                                                          <div class="small-12 column">
+                              <div class="summary-message">
+                                  <p>Weekly rates are  + expenses MYBA Terms<br />Local taxes may apply<br /> </p>                            </div>
+                          </div>
+
+
+                          <div class="small-12 column">
+                              <h4 style="margin-top: 1em;">Charter Destinations</h4>
+                          <p>
+                                                  <a href="/destination.php/mediterranean-45/">Mediterranean</a>                        </p>
+                          </div>
+
+                          <div class="small-12 column">
+                          <a class="button button-before" href="/yacht.php/drumbeat-199/request/"><i class="font_lcg icon-mail"></i> Request Information</a>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <div class="related-yachts">
+                  <h4>Related Yachts</h4>
+                  <ul class="yacht-list small-block-grid-1 ">
+                  <!-- RELATED YACHTS START -->
+                  <!-- NOTE: Similar code is used in destinations.php -->
+                  <!-- CRITERIA FOR RELATED: 1. Same yacht type 2. Matching destinations -->
+                  <!-- SORT BY: default search as per yachts table -->
+                                      <li>
+                          <a href="/yacht.php/regina-147/">
+
+                                                          <img src="/cms/uploads/Regina-Sailing.jpg" alt="Regina" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/regina-147/"><b>Regina</b></a> -
+                              56m (184')                             / 12 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/silencio-243/">
+
+                                                          <img src="/cms/uploads/thumb/perini_navi_charter_yacht_silencio.jpg" alt="SILENCIO" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/silencio-243/"><b>SILENCIO</b></a> -
+                              50.01m (164')                             / 12 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/andromeda-la-dea-139/">
+
+                                                          <img src="/cms/uploads/Andromeda-La-Dea-Sailing.jpg" alt="Andromeda La Dea" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/andromeda-la-dea-139/"><b>Andromeda La Dea</b></a> -
+                              47m (154')                             / 9 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/salperton-189/">
+
+                                                          <img src="/cms/uploads/thumb/salperton_charter_dubois_sailing_yacht.jpg" alt="Salperton" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/salperton-189/"><b>Salperton</b></a> -
+                              45m (148')                             / 7 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/this-is-us-84/">
+
+                                                          <img src="/cms/uploads/thumb/classic-sailing-yacht-this-is-us-for-charter.jpg" alt="This Is Us" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/this-is-us-84/"><b>This Is Us</b></a> -
+                              42.98m (141')                             / 8 Guests                        </p>
+                          <p></p>
+                      </li>
+                                      </ul>
+              </div>
+
+
+          </div>
+
+      </div>
+
+  </div>
 
 </div>
 
@@ -446,9 +558,9 @@
             <div class="medium-3 medium-pull-9 columns">
                 <h4>Follow us on</h4>
                 <nav class="nav-social">
-                    <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social-icon social-icon-facebook"><i class="font_lcg facebook"></i></a>
+                    <a href="#" class="social-icon social-icon-twitter"><i class="font_lcg twitter"></i></a>
+                    <a href="#" class="social-icon social-icon-googleplus"><i class="font_lcg googleplus"></i></a>
                 </nav>
             </div>
         </div>
@@ -481,7 +593,6 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

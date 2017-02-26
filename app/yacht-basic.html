@@ -3,18 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yacht Basic Index - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <title>Yacht Detail - LYC</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/app_override.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -27,342 +25,419 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="right-off-canvas-menu">
-        <ul class="mobile-nav accordion" data-accordion>
-          <li class="accordion-navigation">
-              <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
-          </li>
-          <li class="accordion-navigation"><a href="#">Home</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel1a">Destinations</a>
-            <div id="panel1a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel2a">Yacht Type</a>
-            <div id="panel2a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sailing Yachts</a></li>
-                    <li><a href="#">Motor Yachts</a></li>
-                    <li><a href="#">Catamarans</a></li>
-                    <li><a href="#">Gulets</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a">Charter Advice</a>
-            <div id="panel3a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation"><a href="#">News</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel4a">About Us</a>
-            <div id="panel4a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation accordion-social">
-            <nav class="nav-social">
-                <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
-            </nav>
-          </li>
-        </ul>
-    </aside>
-
-<div class="info-bar show-for-medium-up">
-    <div class="row large-collapse">
-        <div class="small-12 column">
-            <ul class="top-links inline-list right">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="nav-lang">
-                    <a class="nav-lang-eng" href="#">English</a>
-                    <a class="nav-lang-fr" href="#">Français</a>
-                </li>
-            </ul>
+  <aside class="right-off-canvas-menu">
+    <ul class="mobile-nav accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
+      </li>
+      <li class="accordion-navigation"><a href="#">Home</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel1a">Destinations</a>
+        <div id="panel1a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Caribbean</a></li>
+            <li><a href="#">Mediterranean</a></li>
+            <li><a href="#">Bahamas</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">South Pacific</a></li>
+          </ul>
         </div>
-    </div>
-</div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel2a">Yacht Type</a>
+        <div id="panel2a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sailing Yachts</a></li>
+            <li><a href="#">Motor Yachts</a></li>
+            <li><a href="#">Catamarans</a></li>
+            <li><a href="#">Gulets</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel3a">Charter Advice</a>
+        <div id="panel3a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation"><a href="#">News</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel4a">About Us</a>
+        <div id="panel4a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation accordion-social">
+        <nav class="nav-social">
+          <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+        </nav>
+      </li>
+    </ul>
+  </aside>
 
-<header class="header">
+  <header class="header">
     <div class="row">
-        <div class="medium-12 column">
-        
-        <a class="menu-trigger right-off-canvas-toggle" href="#">
-            <i class="fa fa-bars icon-burger"></i>
-            <span class="screen-reader-only">Menu</span>
+      <div class="medium-12 column">
+
+        <a class="off-canvas-nav-icon right-off-canvas-toggle" href="#">
+          <i class="fa fa-bars icon-burger"></i>
+          <span class="screen-reader-only">Menu</span>
         </a>
 
         <nav class="primary-nav">
-
-            <div class="logo-wrap">
-                <a class="logo" href="#" title="Luxury Yacht Charter Group">
-                    <img data-interchange="[/images/logo-lycg.svg, (medium)], [/images/logo-lycg-mobile.svg, (small-only)]">
-                </a>
-            </div>
-
-            <ul class="main-nav inline-list right">
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
-                    <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Caribbean</a></li>
-                        <li><a href="#">Mediterranean</a></li>
-                        <li><a href="#">Bahamas</a></li>
-                        <li><a href="#">Florida</a></li>
-                        <li><a href="#">South Pacific</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
-                    <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sailing Yachts</a></li>
-                        <li><a href="#">Motor Yachts</a></li>
-                        <li><a href="#">Catamarans</a></li>
-                        <li><a href="#">Gulets</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
-                    <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
-            </ul>
-            <a href="#" class="header-button-search mobile-search-button button">Search</a>
-
+          <div class="logo-wrap">
+            <a class="logo" href="#" title="Luxury Yacht Charter Group">
+              <img src="images/lyc_logo.svg" alt="">
+            </a>
+          </div>
+          <ul class="main-nav inline-list right">
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
+              <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Caribbean</a></li>
+                <li><a href="#">Mediterranean</a></li>
+                <li><a href="#">Bahamas</a></li>
+                <li><a href="#">Florida</a></li>
+                <li><a href="#">South Pacific</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
+              <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sailing Yachts</a></li>
+                <li><a href="#">Motor Yachts</a></li>
+                <li><a href="#">Catamarans</a></li>
+                <li><a href="#">Gulets</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
+              <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link"><a href="#">Blog</a></li>
+            <li class="main-nav-link"><a href="#" class="button header-button">Search</a></li>
+            <li class="main-nav-link-language">
+              <a class="nav-lang-eng current" href="#">English</a>
+              <a class="nav-lang-fr" href="#">Français</a>
+            </li>
+          </ul>
         </nav>
 
-        </div>
+      </div>
     </div>
-</header>
+  </header>
 
-<div id="content">
+  <div id="content">
 
-<div class="media-photo yacht-tile">
-    <div class="media-cover" style="background-image:url(images/oceanscape-tile.jpg)"></div>
-    <div class="row row-table collapse">
-        <div class="title small-12 col-middle column">
-            <h1>Cocktails</h1>
-            <p>47m (157ft) | 2004 Trinity Yachts</p>   
-        </div>
-    </div>
-</div>
+  <div class="media-photo yacht-tile yacht-hero">
 
-<div class="content-body">
-    <div class="row row-space-bottom-4">
+      <div class="media-cover">
+          <img src="images/swallow-amazon-banner.jpg" alt="Swallows and Amazons">
+      </div>
 
-        <div class="nav-tabs medium-12 column">
-            <div class="contain-to-grid">
-                <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false">
-                    <ul class="title-area">
-                    <li class="name">
-                      
-                    </li>
-                        <li class="toggle-topbar"><a href="#">Overview</a></li>
-                    </ul>
+      <div class="nav-tabs nav-tabs-mobile small-12 column">
+        <nav class="nav-tabs-bar top-bar" data-topbar role="navigation" data-options="is_hover: false">
+          <ul class="title-area">
+            <li class="name"></li>
+            <li class="toggle-topbar"><a href="#">Browse</a></li>
+          </ul>
+          <section class="top-bar-section">
+            <ul>
+              <li class="current"><a href="/yacht.php/drumbeat-199/">Overview</a></li>
+              <li><a href="/yacht.php/drumbeat-199/photos/">Photos</a></li>
+              <li><a href="/yacht.php/drumbeat-199/specs/">Specifications</a></li>
+              <li><a href="/yacht.php/drumbeat-199/request/">Request Information</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
 
-                    <section class="top-bar-section">
-                        <ul>
-                            <li class="current"><a href="#">Overview</a></li>
-                            <li><a href="#">Photos</a></li>
-                            <li><a href="#">Specifications</a></li>
-                            <li><a href="#">Rates</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Brochure</a></li>
-                            <li><a href="#">Reviews</a></li>
-                            <li><a href="#">Request Information</a></li>
-                        </ul>
-                    </section>
-                </nav>
-            </div>
-        </div>
+      <div class="row row-table ">
+          <div class="title small-12 col-middle column">
+              <h1>Swallows and Amazons</h1>
+              <p>23.7m, (78') - Sleeps 8 Guests</p>
+          </div>
+      </div>
 
-        <div class="large-8 column content-main content-offest-3">
+  </div>
 
-            <div class="gallery">
-                <ul class="gallery-tiles clearing-thumbs medium-block-grid-3" data-clearing>
-                    <li class="gallery-hero">
-                        <a href="images/luxury-charter-yacht-cosmos-tahiti.jpg"><img data-caption="Cocktails" class="img-responsive" src="images/luxury-charter-yacht-cosmos-tahiti.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="images/cosmos-upper-deck.jpg"><img data-caption="Relax and unwind" class="img-responsive" src="images/cosmos-upper-deck.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="images/cosmos-p7180107.jpg"><img data-caption="Everything at your fingertips" class="img-responsive" src="images/cosmos-p7180107.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <div class="media-photo media-photo-block row-full-height">
-                            <div class="media-cover"></div>
-                            <a href="#"><img class="img-responsive" src="images/cosmos-breakfast2.jpg" alt=""></a>
-                            <a href="#" class="media-photo-trigger">
-                                <div class="row row-table row-full-height">
-                                    <div class="title small-12 text-center col-middle column">
-                                        <h5 class="small">See all 21 photos</h5>
-                                    </div>
-                                </div>  
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="summary">
-                <p>Take this unique opportunity to charter COSMOS in Tahiti, and explore the magical islands of Huahine, Raiatea, Taha'a and Bora Bora, always guided by her amazing Crew.</p>
-            </div>
+  <div class="content-body row-space-bottom-3">
 
-            <div class="feature-block">
-                <div class="row">
-                    <div class="small-12 medium-4 column">
-                        <img class="img-responsive" src="images/tahiti_lagoon.jpg" alt="">
-                    </div>
-                    <div class="small-12 medium-8 column">
-                        <h3 class="block-feature-title">Tahiti Dreaming</h3>
-                        <p>Tahiti - the word alone conjures up images of tropical beaches, azure waters and a tranquil pace of life. Authors rhapsodise about the 118 islands that are cast over the crystalline sea like jewels, a cruising region almost the size of continental Europe. Ask us about your next charter in paradise.</p>
-                        <p class="bold"><a href="#">Read more</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <p>COSMOS has great outdoor spaces to enjoy the holiday destinations where she charters in the South Pacific. After a major refit, COSMOS now impresses as a lady who belies her years!</p>
-            <p>COSMOS South Pacific Charter Programme 2015:</p>
-            <p>Includes French Polynesia, Tahiti:  the Leeward islands of Huahine, Raiatea, Taha'a and Bora Bora; and the Tuamotu atolls. COSMOS would consider returning  to Fiji for charters. ASK US NOW</p>
-            <p>The minute you step aboard you'll feel you've arrived at your place. Recent interior renovations of warm natural colours create a very homely ambience.</p>
-            <p>By day the saloon has panoramic views of your destination. For cosy evenings enjoy state of the art entertainment with 60" plasma screen, satellite TV, and1200 movies on hard drive, VCR, DVD and surround sound.</p>
-            <p>For outdoor living, COSMOS flybridge is tops. Whether basking on a sun lounge, enjoying an expresso coffee, a sunset cocktail, or a BBQ dining under the stars, life here is as agreeable as it gets.</p>
-            <p>The more adventurous can enjoy the fabulous water sports, while on the foredeck there’s a special quiet place to enjoy a glass of champagne and a vista of the beautiful anchorage that today is all yours.</p>
-            <p>Accommodation for 8 guests is in 4 staterooms; 1 master king, 1 queen that converts to a twin, and two twin staterooms each with a double and a single bed.</p>
-            <p>Built in 1987 by Lloyd Ships, COSMOS has enjoyed regular maintenance. After a major refit  and 5m extension in early 2012, COSMOS now impresses as a lady that belies her years!</p>
-
-            <div class="cruising-grounds">
-                <h2>Cruising Grounds</h2>
-                <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
-                    <li><a href="#">South Pacific</a></li>
-                    <li><a href="#">Fiji</a></li>
-                    <li><a href="#">Tonga</a></li>
-                    <li><a href="#">Tahiti</a></li>
-                </ul>
-            </div>
-
-            <div class="row row-collapse page-footer-nav">
-                <div class="small-12 medium-6 column">
-                    <a class="button icon-before" href="#"><i class="fa fa-envelope-o"></i> Request Information</a>
-                </div>
-                <div class="small-12 medium-6 column">
-                    <a class="button button-secondary icon-after right" href="#">Photos <i class="fa fa-angle-double-right"></i></a>
-                </div>
-            </div>
-            
-            <hr>
-
-            <div class="disclaimer">
-                <p>Disclaimer: This document is not contractual. The charter yacht details displayed above are displayed in good faith and whilst believed to be correct are not guaranteed. The Luxury Charter Group does not warrant or assume any legal liability or responsibility for the accuracy, completeness, or usefulness of any information and/or images displayed. All information is subject to change without notice and is without warrantee.</p>
-            </div>
-
+      <div class="row">
+        <div class="nav-tabs nav-tabs-lg small-12 column">
+          <nav class="nav-tabs-bar top-bar" data-topbar role="navigation" data-options="is_hover: false">
+            <ul class="title-area">
+              <li class="name"></li>
+              <li class="toggle-topbar"><a href="#">Browse</a></li>
+            </ul>
+            <section class="top-bar-section">
+              <ul>
+                <li class="current"><a href="/yacht.php/drumbeat-199/">Overview</a></li>
+                <li><a href="/yacht.php/drumbeat-199/photos/">Photos</a></li>
+                <li><a href="/yacht.php/drumbeat-199/specs/">Specifications</a></li>
+                <li><a href="/yacht.php/drumbeat-199/request/">Request Information</a></li>
+              </ul>
+            </section>
+          </nav>
         </div>
 
-        <div class="large-4 column sidebar">
+          <div class="medium-8 column content-main content-offest-3">
 
-            <div class="widget widget-broker-contact">
-                <div class="widget-inner widget-inner-leader">
-                    <div class="row">
-                        <div class="small-3 medium-3 column">
-                            <div class="broker-image">
-                                <img src="images/radek-gendek.jpg" alt="Radek Gendek">
-                            </div>
-                        </div>
-                        <div class="small-9 medium-9 column">
-                            <div class="broker-title">
-                                <h4>Radek Gendek
-                                <span class="small">Yacht Broker</span></h4>
-                            </div>
-                        </div>
-                        <div class="small-12 column">
-                            <div class="broker-message">
-                                <span class="small">Call me today on +33 184 884 395 or send me an email to get started.</span>
-                                <a class="button" href="#"><i class="fa fa-envelope-o icon-before"></i> Request Information</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="widget-inner">
-                    <div class="quick-view">
-                        <h4>Accommodation</h4>
-                        <div class="row">
-                            <div class="quick-view-item text-center small-4 column">
-                                <div class="type"><i class="fa fa-columns"></i></div>
-                                <div class="heading">5 Cabins</div>
-                            </div>
-                            <div class="quick-view-item text-center small-4 column">
-                                <div class="type"><i class="fa fa-bed"></i></div>
-                                <div class="heading">11 Guests</div>
-                            </div>
-                            <div class="quick-view-item text-center small-4 column">
-                                <div class="type"><i class="fa fa-users"></i></div>
-                                <div class="heading">8 Crew</div>
-                            </div>
-                            <div class="quick-view-summary small-12 column">
-                                <p>Accommodation for 10 guests in 5 staterooms: 3 King, 1 Queen, 1 Twin and 1 Pullman.</p>
-                                <p><a href="#"><b>Full Specifications</b></a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="widget">
+              <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/search.php">All Yachts</a> &rsaquo; Swallows and Amazons</p>
 
-                <div class="widget-inner price-range">
-                    <h4>Charter Season</h4>
-                    <div class="row">
-                        <div class="small-6 medium-6 columns price-low">
-                            <span class="range-title">Low Season from:</span>
-                            <span class="price">US $185,000 <em>p/wk</em></span>
-                        </div>
-                        <div class="small-6 medium-6 columns price-high">
-                            <span class="range-title">High Season from:</span>
-                            <span class="price">US $225,000 <em>p/wk</em></span>
-                        </div>
-                        <div class="small-12 column">
-                            <div class="summary-message">
-                                <p>Rates are weekly plus taxes and expemses.Holiday rate is $225,000/wk plus expenses. Bahamas and Florida Taxes apply AYCA Demose 80/20 Contract.</p>
+
+              <div class="gallery">
+                  <ul class="gallery-tiles clearing-thumbs clearing-feature medium-block-grid-4" data-clearing>
+
+                                                                          <li class="gallery-hero clearing-featured-img hide"><a href="/cms/uploads/swallow-amazon-banner.jpg"><img class="img-responsive" data-caption="Swallows and Amazons" src="/cms/uploads/swallow-amazon-banner.jpg" alt="Swallows and Amazons"></a></li>
+
+
+
+
+                                                      <li class="clearing-featured-img hide"><a href="/cms/uploads/swallow-amazon-feature_001.jpg"><img src="/cms/uploads/swallow-amazon-feature_001.jpg" data-caption="Feature" alt="Feature"></a></li>
+
+
+                                                      <li class="clearing-featured-img hide"><a href="/cms/uploads/swallow-amazon-cockpit.jpg"><img src="/cms/uploads/swallow-amazon-cockpit.jpg" data-caption="Cockpit" alt="Cockpit"></a></li>
+
+
+                                                      <li class="clearing-featured-img hide"><a href="/cms/uploads/swallow-amazon-guest-cabin.jpg"><img src="/cms/uploads/swallow-amazon-guest-cabin.jpg" data-caption="guest Cabin" alt="guest Cabin"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-guest-cabin-2.jpg"><img src="/cms/uploads/swallow-amazon-guest-cabin-2.jpg" data-caption="Guest Cabin 2" alt="Guest Cabin 2"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-guest-cabin-convertible.jpg"><img src="/cms/uploads/swallow-amazon-guest-cabin-convertible.jpg" data-caption="Guest Cabin Convertable" alt="Guest Cabin Convertable"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-guest-cabin-double.jpg"><img src="/cms/uploads/swallow-amazon-guest-cabin-double.jpg" data-caption="Guest Cabin Double" alt="Guest Cabin Double"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-hero.jpg"><img src="/cms/uploads/swallow-amazon-hero.jpg" data-caption="Swallows and Amazons" alt="Swallows and Amazons"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-lunch-area.jpg"><img src="/cms/uploads/swallow-amazon-lunch-area.jpg" data-caption="Lunch Area" alt="Lunch Area"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-night-time.jpg"><img src="/cms/uploads/swallow-amazon-night-time.jpg" data-caption="Night Time" alt="Night Time"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-p1010480.jpg"><img src="/cms/uploads/swallow-amazon-p1010480.jpg" data-caption="Cuisine" alt="Cuisine"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-saloon.jpg"><img src="/cms/uploads/swallow-amazon-saloon.jpg" data-caption="Saloon" alt="Saloon"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-saloon-lounge.jpg"><img src="/cms/uploads/swallow-amazon-saloon-lounge.jpg" data-caption="Lounge" alt="Lounge"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-snorkelling.jpg"><img src="/cms/uploads/swallow-amazon-snorkelling.jpg" data-caption="Snorkelling" alt="Snorkelling"></a></li>
+
+
+                                                      <li><a href="/cms/uploads/swallow-amazon-table-setting.jpg"><img src="/cms/uploads/swallow-amazon-table-setting.jpg" data-caption="Table Setting" alt="Table Setting"></a></li>
+                                                              </ul>
+              </div>
+
+                          <div class="summary">
+                  <p>Delivered by CNB Bordeaux from the design board of naval architect Philippe Briand, SWALLOWS & AMAZONS has excellent sailing pedigree. Finished to the highest specifications the sleek lines and fresh modern interior of SWALLOWS & AMAZONS make her a superb charter yacht, now available for charter from Cap d'Agde for sailing in South of France and Corsica.</p>
+              </div>
+
+                          <div class="segment-overview">
+                  <p align="justify">The stunning design of this yacht will enhance your charter experience whether you're reclining on deck with a cocktail, flying along on a beam reach, or gazing at her from your beachside barbeque</p>
+  <p align="justify">The deck of SWALLOWS &amp; AMAZONS was designed to keep the yacht easy to handle and uncluttered so the yacht gives you maximum sailing pleasure in luxury and comfort. For water sports choose from snorkeling, wake boarding and water skiing or fishing, when you head ashore you can make use of the beach games.</p>
+  <p align="justify">The interior of SWALLOWS &amp; AMAZONS is modern and features an incredible amount of light creating a sense of space in the open-plan saloon. The interior is complemented by fine linens and all the finishing touches of a luxury hotel, without having compronmised on CNB's infamous sailing capabilities.She is air-conditioned throughout and the saloon can be an ideal retreat from the sun. The yacht can cater for eight guests in three double cabins and one twin cabin that can be converted to a double if needed.</p>
+  <p align="justify">The friendly professional crew of three and the highly experienced captain and chef will ensure you have a memorable stay on board.</p>            </div>
+
+              <div class="row row-collapse page-footer-nav">
+                  <div class="small-12 medium-6 column">
+                      <a class="button icon-before" href="/yacht.php/swallows-and-amazons-71/request/"><i class="fa fa-envelope-o"></i> Request Information</a>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                          <a class="button button-secondary icon-after right" href="/yacht.php/swallows-and-amazons-71/photos/">Photos <i class="fa fa-angle-double-right"></i></a>
+                  </div>
+              </div>
+
+
+              <div class="disclaimer">
+                  <p>Disclaimer: This document is not contractual. The charter yacht details displayed above are displayed in good faith and whilst believed to be correct are not guaranteed. The Luxury Charter Group does not warrant or assume any legal liability or responsibility for the accuracy, completeness, or usefulness of any information and/or images displayed. All information is subject to change without notice and is without warrantee.</p>
+              </div>
+
+
+          </div>
+
+          <div class="medium-4 column sidebar">
+
+              <div class="widget widget-broker-contact">
+
+                  <a name="request"></a>
+                  <div class="widget-inner widget-inner-leader">
+                      <div class="row">
+                          <div class="small-12 column">
+                            <div class="broker-image left">
+                              <img class="img-responsive" src="images/jeni-tidmarsh_002.jpg" alt="Jeni Tidmarsh">
                             </div>
-                        </div>
-                    </div>
-                </div>
+                              <div class="broker-title">
+                                  <h4>Jeni Tidmarsh <span class="small"> Head Office</span></h4>
+                                  <p class="broker-message">
+                                      <span class="small">Want to know more?<br>Call me on +61 459 303 221 or click the button to email me...</span>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="small-12 column">
+                            <p class="broker-message">
+                                <span class="small">Want to know more?<br>Call me on +61 459 303 221 or click the button to email me...</span>
+                            </p>
+                            <a class="button" href="/yacht.php/swallows-and-amazons-71/request/"><i class="fa fa-envelope-o icon-before"></i> Request Information</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-            </div>
+              <div class="widget">
 
-        </div>
+                  <div class="widget-inner">
+                      <div class="quick-view">
+                          <div class="row">
+                                                          <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="fa fa-ship"></i></div>
+                                  <div class="heading">24m,&nbsp;78'</div>
+                              </div>
+                                                                                      <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="fa fa-columns"></i></div>
+                                  <div class="heading">4 Cabins</div>
+                              </div>
+                                                                                      <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="fa fa-bed"></i></div>
+                                  <div class="heading">8 Guests</div>
+                              </div>
+                                                                                      <div class="quick-view-item text-center small-6 large-3 column">
+                                  <div class="type"><i class="fa fa-users"></i></div>
+                                  <div class="heading">3 Crew</div>
+                              </div>
+                                                          <div class="quick-view-summary small-12 column">
+                                  <p><a class="button button-secondary icon-after" href="/yacht.php/swallows-and-amazons-71/specs/">Full Specifications <i class="fa fa-angle-double-right"></i></a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-    </div>
-</div>
 
-</div><!-- /#content-->
+                          <div class="widget">
+                  <div class="widget-inner price-range">
+                      <h4>Charter Season &amp; Rates</h4>
+                      <div class="row">
+                                                  <div class="small-6 medium-6 columns price-low">
+                              <span class="range-title">Low Season from:</span>
+                              <span class="price">&euro;20000 <em>p/wk</em></span>
+                          </div>
+                                                                          <div class="small-6 medium-6 columns price-high">
+                              <span class="range-title">High Season from:</span>
+                              <span class="price">&euro;25000 <em>p/wk</em></span>
+                          </div>
+                                                                          <div class="small-12 column">
+                              <div class="summary-message">
+                                  <p>MYBA terms plus expenses<br />Taxes apply in EU waters</p>                            </div>
+                          </div>
+
+
+                          <div class="small-12 column">
+                              <h4 style="margin-top: 1em;">Charter Destinations</h4>
+                          <p>
+                                                  <a href="/destination.php/mediterranean-45/">Mediterranean</a>, <a href="/destination.php/corsica-5/">Corsica</a>, <a href="/destination.php/italy-9/">Italy</a>, <a href="/destination.php/sardinia-12/">Sardinia</a>, <a href="/destination.php/sicily-&-aeolian-islands-19/">Sicily &amp; Aeolian Islands</a>, <a href="/destination.php/gulf-of-naples-&-amalfi-20/">Gulf of Naples &amp; Amalfi</a>                        </p>
+                          </div>
+
+                          <div class="small-12 column">
+                          <a class="button" style="margin-top: 1em;" href="/yacht.php/swallows-and-amazons-71/request/"><i class="fa fa-envelope-o icon-before"></i> Request Information</a>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <div class="related-yachts">
+                  <h4>Related Yachts</h4>
+                  <ul class="yacht-list small-block-grid-1 ">
+                  <!-- RELATED YACHTS START -->
+                  <!-- NOTE: Similar code is used in destinations.php -->
+                  <!-- CRITERIA FOR RELATED: 1. Same yacht type 2. Matching destinations -->
+                  <!-- SORT BY: default search as per yachts table -->
+                                      <li>
+                          <a href="/yacht.php/drumbeat-199/">
+
+                                                          <img src="/cms/uploads/thumb/dubois-sailing-yacht-drumbeat-sailing.jpg" alt="Drumbeat" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/drumbeat-199/"><b>Drumbeat</b></a> -
+                              53m (174')                             / 11 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/silencio-243/">
+
+                                                          <img src="/cms/uploads/thumb/perini_navi_charter_yacht_silencio.jpg" alt="SILENCIO" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/silencio-243/"><b>SILENCIO</b></a> -
+                              50.01m (164')                             / 12 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/andromeda-la-dea-139/">
+
+                                                          <img src="/cms/uploads/Andromeda-La-Dea-Sailing.jpg" alt="Andromeda La Dea" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/andromeda-la-dea-139/"><b>Andromeda La Dea</b></a> -
+                              47m (154')                             / 9 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/salperton-189/">
+
+                                                          <img src="/cms/uploads/thumb/salperton_charter_dubois_sailing_yacht.jpg" alt="Salperton" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/salperton-189/"><b>Salperton</b></a> -
+                              45m (148')                             / 7 Guests                        </p>
+                          <p></p>
+                      </li>
+                                          <li>
+                          <a href="/yacht.php/this-is-us-84/">
+
+                                                          <img src="/cms/uploads/thumb/classic-sailing-yacht-this-is-us-for-charter.jpg" alt="This Is Us" />
+                                                                                                          </a>
+                          <p><a href="/yacht.php/this-is-us-84/"><b>This Is Us</b></a> -
+                              42.98m (141')                             / 8 Guests                        </p>
+                          <p></p>
+                      </li>
+                                      </ul>
+              </div>
+
+
+          </div>
+
+      </div>
+
+  </div>
+
+  </div>
 
 <footer class="site-footer">
 
@@ -464,7 +539,6 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

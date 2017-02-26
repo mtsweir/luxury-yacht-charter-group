@@ -3,18 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destination Landing - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <title>Mediterranean - LYC</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <!-- build:css css/libraries.min.css -->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/app_override.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -27,498 +25,834 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="right-off-canvas-menu">
-        <ul class="mobile-nav accordion" data-accordion>
-          <li class="accordion-navigation">
-              <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
-          </li>
-          <li class="accordion-navigation"><a href="#">Home</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel1a">Destinations</a>
-            <div id="panel1a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel2a">Yacht Type</a>
-            <div id="panel2a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sailing Yachts</a></li>
-                    <li><a href="#">Motor Yachts</a></li>
-                    <li><a href="#">Catamarans</a></li>
-                    <li><a href="#">Gulets</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a">Charter Advice</a>
-            <div id="panel3a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation"><a href="#">News</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel4a">About Us</a>
-            <div id="panel4a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation accordion-social">
-            <nav class="nav-social">
-                <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
-            </nav>
-          </li>
-        </ul>
-    </aside>
-
-<div class="info-bar show-for-medium-up">
-    <div class="row large-collapse">
-        <div class="small-12 column">
-            <ul class="top-links inline-list right">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="nav-lang">
-                    <a class="nav-lang-eng" href="#">English</a>
-                    <a class="nav-lang-fr" href="#">Français</a>
-                </li>
-            </ul>
+  <aside class="right-off-canvas-menu">
+    <ul class="mobile-nav accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
+      </li>
+      <li class="accordion-navigation"><a href="#">Home</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel1a">Destinations</a>
+        <div id="panel1a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Caribbean</a></li>
+            <li><a href="#">Mediterranean</a></li>
+            <li><a href="#">Bahamas</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">South Pacific</a></li>
+          </ul>
         </div>
-    </div>
-</div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel2a">Yacht Type</a>
+        <div id="panel2a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sailing Yachts</a></li>
+            <li><a href="#">Motor Yachts</a></li>
+            <li><a href="#">Catamarans</a></li>
+            <li><a href="#">Gulets</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel3a">Charter Advice</a>
+        <div id="panel3a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation"><a href="#">News</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel4a">About Us</a>
+        <div id="panel4a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation accordion-social">
+        <nav class="nav-social">
+          <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+        </nav>
+      </li>
+    </ul>
+  </aside>
 
-<header class="header">
+  <header class="header">
     <div class="row">
-        <div class="medium-12 column">
-        
-        <a class="menu-trigger right-off-canvas-toggle" href="#">
-            <i class="fa fa-bars icon-burger"></i>
-            <span class="screen-reader-only">Menu</span>
+      <div class="medium-12 column">
+
+        <a class="off-canvas-nav-icon right-off-canvas-toggle" href="#">
+          <i class="fa fa-bars icon-burger"></i>
+          <span class="screen-reader-only">Menu</span>
         </a>
 
         <nav class="primary-nav">
-
-            <div class="logo-wrap">
-                <a class="logo" href="#" title="Luxury Yacht Charter Group">
-                    <img data-interchange="[/images/logo-lycg.svg, (medium)], [/images/logo-lycg-mobile.svg, (small-only)]">
-                </a>
-            </div>
-
-            <ul class="main-nav inline-list right">
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
-                    <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Caribbean</a></li>
-                        <li><a href="#">Mediterranean</a></li>
-                        <li><a href="#">Bahamas</a></li>
-                        <li><a href="#">Florida</a></li>
-                        <li><a href="#">South Pacific</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
-                    <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sailing Yachts</a></li>
-                        <li><a href="#">Motor Yachts</a></li>
-                        <li><a href="#">Catamarans</a></li>
-                        <li><a href="#">Gulets</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
-                    <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
-            </ul>
-            <a href="#" class="header-button-search mobile-search-button button">Search</a>
-
+          <div class="logo-wrap">
+            <a class="logo" href="#" title="Luxury Yacht Charter Group">
+              <img src="images/lyc_logo.svg" alt="">
+            </a>
+          </div>
+          <ul class="main-nav inline-list right">
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
+              <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Caribbean</a></li>
+                <li><a href="#">Mediterranean</a></li>
+                <li><a href="#">Bahamas</a></li>
+                <li><a href="#">Florida</a></li>
+                <li><a href="#">South Pacific</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
+              <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sailing Yachts</a></li>
+                <li><a href="#">Motor Yachts</a></li>
+                <li><a href="#">Catamarans</a></li>
+                <li><a href="#">Gulets</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
+              <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link"><a href="#">Blog</a></li>
+            <li class="main-nav-link"><a href="#" class="button header-button">Search</a></li>
+            <li class="main-nav-link-language">
+              <a class="nav-lang-eng current" href="#">English</a>
+              <a class="nav-lang-fr" href="#">Français</a>
+            </li>
+          </ul>
         </nav>
 
-        </div>
+      </div>
     </div>
-</header>
+  </header>
 
 <div id="content">
 
 <div class="media-photo destination-landing">
-    <div class="media-cover" style="background-image:url(images/oceanscape.jpg)"></div>
-    <div class="row row-table collapse">
-        <div class="title small-12 text-center col-middle column">
-            <h1>Yacht Charter Destinations</h1>
-            <p>The Luxury Charter Group travels worldwide to explore new charter destinations and to inspect charter yachts, so we are best informed to advise you.</p>
-            <div class="regions">
-                <ul class="small-block-grid-2 medium-block-grid-3 no-bullet">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-            </div>
-            <div class="show-for-medium-up">
-                <a href="#">
-                    <div class="circle-text"><div><i class="fa fa-angle-down"></i></div></div>
-                </a>
-            </div>
-        </div>
+  <div class="media-cover" style="background-image:url(images/destinations_001.jpg)"></div>
+  <div class="row row-table collapse">
+    <div class="title small-12 text-center col-middle column">
+      <h1>Yacht Charter Destinations</h1>
+      <p>The Luxury Charter Group travels worldwide to explore new charter destinations and to inspect charter yachts, so we are best informed to advise you.</p>
+      <div class="regions">
+        <ul class="small-block-grid-2 medium-block-grid-2 no-bullet">
+          <li><a href="/destination.php/mediterranean-45/">Mediterranean</a></li>
+          <li><a href="/destination.php/caribbean-4/">Caribbean</a></li>
+          <li><a href="/destination.php/south-pacific-46/">South Pacific</a></li>
+          <li><a href="/destination.php/events-50/">Events</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
 
 <section id="destination-regions">
+                            <div class="row leader row-space-bottom-1">
+            <div class="small-12 column">
+                <h2 class="section-header">Mediterranean</h2>
+                <p class="text-lead text-center"></p>
+            </div>
+        </div>
 
-    <div class="row leader row-space-bottom-1">
-        <div class="small-12 column">
-            <h2 class="section-header">Mediterranean</h2>
-            <p class="text-lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi similique impedit accusantium excepturi.</p>
-        </div>
-    </div>
-    <div class="panel-group row row-space-bottom-3">
+
+
+
+        <div class="panel-group row row-space-bottom-3"><!--open row-->
+
+
         <div class="medium-6 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/corsica-5/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/fortress_at_bonifacio_corsica_003.jpg" alt="Corsica">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Croatia</h4>
-                            <h3>Paradise with quaint seaside villages</h3>
+                            <h3>Corsica</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="medium-6 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/croatia-6/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/dubrovnik-croatia-charter-destination.jpg" alt="Croatia">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">French Riviera (Côte d'Azur)</h4>
-                            <h3>Glamour, Celebrity, sophistication</h3>
+                            <h3>Croatia</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="medium-3 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/french-riviera-48/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/french-riviera-yacht-charter.jpg" alt="French Riviera (Côte d'Azur)">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Greece</h4>
+                            <h3>French Riviera (Côte d'Azur)</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="medium-3 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/greece-8/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/charter-itinerary-greek-islands.jpg" alt="Greece">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Turkey</h4>
+                            <h3>Greece</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="medium-3 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/turkey-13/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Turkey-Home-Page-Thuimb.jpg" alt="Turkey">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Italy</h4>
+                            <h3>Turkey</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
+
+
+
+
+
+
+
+
         <div class="medium-3 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Balearic Islands</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+                <a href="/destination.php/italy-9/">
 
-    <div class="row leader row-space-bottom-1">
-        <div class="small-12 column">
-            <h2 class="section-header">Caribbean</h2>
-            <p class="text-lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi similique impedit accusantium excepturi.</p>
-        </div>
-    </div>
-    <div class="panel-group row row-space-bottom-3">
-        <div class="medium-6 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/italy-luxury-yacht-charter.jpg" alt="Italy">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">British Virgin Islands</h4>
-                            <h3>Alluring golden beaches</h3>
+                            <h3>Italy</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="medium-6 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">US Virgin Islands</h4>
-                            <h3>Vibrant entertainment and nightlife</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Windward Islands</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Leeward Islands</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Anguilla</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/villefranche_charter_001.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Antigua</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Barbuda</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/ionian-4.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Dominica</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <div class="row leader row-space-bottom-1">
-        <div class="small-12 column">
-            <h2 class="section-header">South Pacific</h2>
-            <p class="text-lead text-center">Discover the beauty and tranquility of the South Pacific.</p>
-        </div>
-    </div>
-    <div class="panel-group row row-space-bottom-3">
-        <div class="medium-6 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Australia</h4>
-                            <h3>Urban grandeur and sandy coastlines</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-6 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">New Zealand</h4>
-                            <h3>Take in breathing taking scenery</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Fiji</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Tahiti</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Tonga</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Bay of Islands</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Hauraki Gulf</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="medium-4 column">
-            <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
-                    <div class="panel-inner">
-                        <div class="panel-info">
-                            <h4 class="destination-name">Marlborough Sounds</h4>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <div class="row leader row-space-bottom-1">
-        <div class="small-12 column">
-            <h2 class="section-header">Events</h2>
-            <p class="text-lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi similique impedit accusantium excepturi.</p>
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/balearic-islands-49/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/spain-vacation.jpg" alt="Balearic Islands">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Balearic Islands</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="panel-group row row-space-bottom-3">
+
+
+
+            </div><!--close row-->                <div class="row leader row-space-bottom-1">
+            <div class="small-12 column">
+                <h2 class="section-header">Caribbean</h2>
+                <p class="text-lead text-center"></p>
+            </div>
+        </div>
+
+
+
+
+        <div class="panel-group row row-space-bottom-3"><!--open row-->
+
+
         <div class="medium-6 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/anguilla-35/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/anguilla_beach_on_-yacht_charter.jpg" alt="Anguilla">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Cannes Film Festival</h4>
+                            <h3>Anguilla</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-       <div class="medium-6 column">
+
+
+
+
+
+
+
+
+        <div class="medium-6 column">
             <div class="panel-wrap margin-space">
-                <a href="#">
-                    <img class="panel-img" src="images/dubrovniuk_maltese_falcon_at_anchor.jpg" alt="">
+                <a href="/destination.php/antigua-barbuda-33/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/english_harbour_antigua_001.jpg" alt="Antigua &amp; Barbuda">
                     <div class="panel-inner">
                         <div class="panel-info">
-                            <h4 class="destination-name">Monaco Grand Prix</h4>
+                            <h3>Antigua &amp; Barbuda</h3>
                         </div>
                     </div>
                 </a>
             </div>
         </div>
-    </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/bahamas-25/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/bahamas.jpg" alt="Bahamas">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Bahamas</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/british-virgin-islands-23/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/famous-foxys-bar-jost-van-dyke.jpg" alt="British Virgin Islands">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>British Virgin Islands</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/dominica-31/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Dominica-Emerald-Pool_001.jpg" alt="Dominica">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Dominica</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/florida-47/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/siesta-beach-florida_001.jpg" alt="Florida">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Florida</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/grenada-30/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Grenada_001.jpg" alt="Grenada">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Grenada</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/guadeloupe-32/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Guadeloupe_003.jpg" alt="Guadeloupe">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Guadeloupe</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/martinique-26/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Martinique_001.jpg" alt="Martinique">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Martinique</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/st-barths-37/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/gustavia-harbour-st-barths-charter-itinerary_002.jpg" alt="St Barts (St. Barths or St. Barthelemy) ">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>St Barts (St. Barths or St. Barthelemy) </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/st-martin-36/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/st-maarten-plane-landing.jpg" alt="St Martin (St Maarten)">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>St Martin (St Maarten)</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/st-vincent-28/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/St-Vincent_002.jpg" alt="St Vincent">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>St Vincent</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/st-lucia-27/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/St-Lucia_002.jpg" alt="St Lucia">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>St Lucia</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/the-grenadines-29/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Grenadines.jpg" alt="The Grenadines">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>The Grenadines</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/us-virgin-islands-24/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/USVI.jpg" alt="US Virgin Islands">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>US Virgin Islands</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/windward-islands-21/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/windward-islands.jpg" alt="Windward Islands">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Windward Islands</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/leeward-islands-22/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Leeward-Islands.jpg" alt="Leeward Islands">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Leeward Islands</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+            </div><!--close row-->                <div class="row leader row-space-bottom-1">
+            <div class="small-12 column">
+                <h2 class="section-header">South Pacific</h2>
+                <p class="text-lead text-center"></p>
+            </div>
+        </div>
+
+
+
+
+        <div class="panel-group row row-space-bottom-3"><!--open row-->
+
+
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/australia-1/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/Princess-Iluka.jpg" alt="Australia">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Australia</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/fiji-16/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/island_image4.jpg" alt="Fiji">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Fiji</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/tonga-10/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/tonga-bay_001.jpg" alt="Tonga">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Tonga</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/tahiti-11/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/charter-helicopter-bora-bora-tahiti.jpg" alt="Tahiti">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Tahiti</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-3 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/new-zealand-2/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/nz.jpg" alt="New Zealand">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>New Zealand</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+            </div><!--close row-->                <div class="row leader row-space-bottom-1">
+            <div class="small-12 column">
+                <h2 class="section-header">Events</h2>
+                <p class="text-lead text-center"></p>
+            </div>
+        </div>
+
+
+
+
+        <div class="panel-group row row-space-bottom-3"><!--open row-->
+
+
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/cannes-film-festival-51/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/festival_de_cannes_003.jpg" alt="Cannes Film Festival ">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Cannes Film Festival </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="medium-6 column">
+            <div class="panel-wrap margin-space">
+                <a href="/destination.php/monaco-grand-prix-52/">
+
+                                                                                                                                        <img class="panel-img" src="/cms/uploads/thumb/monaco_grand_prix_charter_a_yacht.jpg" alt="Monaco Grand Prix ">
+                    <div class="panel-inner">
+                        <div class="panel-info">
+                            <h3>Monaco Grand Prix </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+</div>
 
 </section>
 
@@ -624,7 +958,6 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

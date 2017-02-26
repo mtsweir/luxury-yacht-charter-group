@@ -1,180 +1,123 @@
-$navy-blue   : #1A1C33;
-$teal        : #6fa2cd;
-$links       : #6fa2cd;
-
-$contrast    : #FFFFFF;
-$ghost       : #FAFAFA;
-$snow        : #F9F9F9;
-$vapor       : #F6F6F6;
-$smoke       : #EEEEEE;
-$gainsboro   : #DDDDDD;
-$iron        : #CCCCCC;
-$base        : #AAAAAA;
-$slate       : #999999;
-$monsoon     : #777777;
-$charcoal    : #555555;
-$tuatara     : #444444;
-$jet         : #222222;
-$coal        : #111111;
-$black       : #000000;
-
-$text-center : center;
-$text-tiny   : .8rem;
-$text-small  : .9rem;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-
-$font-style-header: 'Roboto', Helvetica, Arial, sans-serif;
-$font-style-fancy: 'Roboto Slab', Georgia, Times, serif;
-$font-style-body: 'Roboto', Helvetica, Arial, sans-serif;
-
-$base-font  : 14px;
-
-$modular    : 100;
-$header     : 50;
-$hero       : 10;
-$content    : 5;
-
-body {
-	font-family: $font-style-body;
-	font-size: $base-font;
-	color: $charcoal;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: $font-style-header;
-	font-weight: $font-weight-bold;
-}
-h2 {
-	font-size: 1.5rem;
-	color: $charcoal;
-}
-h3 {
-	font-size: 1.125rem;
-	color: $tuatara;
-}
-h4 {
-	margin-top: 1rem;
-	font-size: 1rem;
-	color: $charcoal;
-}
-p {
-	font-size: inherit;
-}
-ul, ol, dl {
-	font-size: inherit;
-}
-
-a {
-	color: $links;
-}
-
-/* Typography ------------------------------ */
-
-.h2 {
-	font-size: 1.9rem;
-	font-weight: $font-weight-normal;
-	margin-bottom: 1.4rem;
-}
-
-.xsmall {
-	font-size: $text-tiny;
-}
-.small {
-	font-size: $text-small;
-}
-
-.normal {
-	font-weight: $font-weight-normal;
-}
 .bold {
 	font-weight: $font-weight-bold;
 }
 
-.uppercase {
-	text-transform: uppercase;
+.small {
+	font-size: $text-small;
+}
+.x-small {
+	font-size: $text-tiny;
 }
 
-.text-right {
-	text-align: right;
+/* alignment */
+
+.left {
+	float: left !important;
+}
+.right {
+	float: right !important;
 }
 
-.light {
-	color: $base;
-}
-.grey {
-	color: $monsoon;
-}
+/* images */
 
-/* Grid ------------------------------ */
-
-.row-table {
-	display: table;
+.img-responsive {
 	width: 100%;
-	height: 100%;
-}
-.col-middle {
-	display: table-cell;
-	vertical-align: middle;
-	float: none;
-}
-
-.row-space-bottom-1,
-.row .row-space-bottom-1 {
-	margin-bottom: 1rem;
-}
-
-.row-space-top-2,
-.row .row-space-top-2 {
-	margin-top: 2rem;
-}
-.row-space-bottom-2,
-.row .row-space-bottom-2 {
-	margin-bottom: 2rem;
-}
-
-.row-space-top-3,
-.row .row-space-top-3 {
-	margin-top: 3rem;
-}
-.row-space-bottom-3,
-.row .row-space-bottom-3 {
-	margin-bottom: 3rem;
-}
-
-.row-space-top-4,
-.row .row-space-top-4 {
-	margin-top: 4rem;
-}
-.row-space-bottom-4,
-.row .row-space-bottom-4 {
-	margin-bottom: 4rem;
-}
-
-.margin-space {
-	margin-bottom: 1.2rem;
-}
-
-/* Helpers ------------------------------ */
-
-hr {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	border: 0;
-	border-top: 1px solid $gainsboro;
+	height: auto;
 }
 
 .img-responsive-height {
 	width: auto;
 	height: 100%;
 }
-
 .img-circle {
-	border-radius: 50%;
+	border-radius: $br-round;
 }
 
-/* Icons ------------------------------ */
+/* hr */
+
+hr {
+	margin-top: $spacer-x;
+	margin-bottom: $spacer-x;
+	border: 0;
+	border-top: 1px solid $border-line;
+}
+
+/* spacing */
+
+.tile {
+	margin-bottom: $spacer-x;
+}
+
+.row-space-bottom-1,
+.row .row-space-bottom-1 {
+	margin-bottom: $spacer-x;
+}
+
+.row-space-top-2,
+.row .row-space-top-2 {
+	margin-top: $spacer-x * 2;
+}
+.row-space-bottom-2,
+.row .row-space-bottom-2 {
+	margin-bottom: $spacer-x * 2;
+}
+
+.row-space-top-3,
+.row .row-space-top-3 {
+	margin-top: $spacer-x * 3;
+}
+.row-space-bottom-3,
+.row .row-space-bottom-3 {
+	margin-bottom: $spacer-x * 3;
+}
+
+.row-space-top-4,
+.row .row-space-top-4 {
+	margin-top: $spacer-x * 4;
+}
+.row-space-bottom-4,
+.row .row-space-bottom-4 {
+	margin-bottom: $spacer-x * 4;
+}
+
+.m-t-1 {
+  margin-top: $spacer-x;
+}
+.m-t-2 {
+  margin-top: $spacer-x * 2;
+}
+
+.m-b-1 {
+  margin-bottom: $spacer-x;
+}
+.m-b-2 {
+  margin-bottom: $spacer-x * 2;
+}
+
+/* grid */
+
+[class*=block-grid-] > li {
+  padding: 0 .625rem .625rem;
+}
+
+/* style placeholder text */
+
+::-webkit-input-placeholder {
+	color: lighten($base-color, 16%);
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: lighten($base-color, 16%);
+}
+::-moz-placeholder {  /* Firefox 19+ */
+	color: lighten($base-color, 16%);
+}
+:-ms-input-placeholder {
+	color: lighten($base-color, 16%);
+}
 
 .icon-size-4 {
 	font-size: 4.5rem;
+}
+.grey {
+	color: lighten($base-color, 12%);
 }
