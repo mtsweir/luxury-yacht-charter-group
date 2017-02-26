@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search - LYC</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/libraries.min.css">
     <link rel="stylesheet" href="css/app.min.css">
     <script src="js/vendor/modernizr.min.js"></script>
@@ -17,487 +16,874 @@
 <div class="off-canvas-wrap" data-offcanvas>
 <div class="inner-wrap">
 
-    <aside class="right-off-canvas-menu">
-        <ul class="mobile-nav accordion" data-accordion>
-          <li class="accordion-navigation">
-              <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
-          </li>
-          <li class="accordion-navigation"><a href="#">Home</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel1a">Destinations</a>
-            <div id="panel1a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Caribbean</a></li>
-                    <li><a href="#">Mediterranean</a></li>
-                    <li><a href="#">Bahamas</a></li>
-                    <li><a href="#">Florida</a></li>
-                    <li><a href="#">South Pacific</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel2a">Yacht Type</a>
-            <div id="panel2a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sailing Yachts</a></li>
-                    <li><a href="#">Motor Yachts</a></li>
-                    <li><a href="#">Catamarans</a></li>
-                    <li><a href="#">Gulets</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a">Charter Advice</a>
-            <div id="panel3a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation"><a href="#">News</a></li>
-          <li class="accordion-navigation">
-            <a href="#panel4a">About Us</a>
-            <div id="panel4a" class="content">
-                <ul class="no-bullet">
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                    <li><a href="#">Sub Nav Link</a></li>
-                </ul>
-            </div>
-          </li>
-          <li class="accordion-navigation accordion-social">
-            <nav class="nav-social">
-                <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
-            </nav>
-          </li>
-        </ul>
-    </aside>
-
-<div class="info-bar show-for-medium-up">
-    <div class="row large-collapse">
-        <div class="small-12 column">
-            <ul class="top-links inline-list right">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="nav-lang">
-                    <a class="nav-lang-eng" href="#">English</a>
-                    <a class="nav-lang-fr" href="#">Français</a>
-                </li>
-            </ul>
+  <aside class="right-off-canvas-menu">
+    <ul class="mobile-nav accordion" data-accordion>
+      <li class="accordion-navigation">
+        <a href="#">Find your Yacht <i class="button-search fa fa-search"></i></a>
+      </li>
+      <li class="accordion-navigation"><a href="#">Home</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel1a">Destinations</a>
+        <div id="panel1a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Caribbean</a></li>
+            <li><a href="#">Mediterranean</a></li>
+            <li><a href="#">Bahamas</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">South Pacific</a></li>
+          </ul>
         </div>
-    </div>
-</div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel2a">Yacht Type</a>
+        <div id="panel2a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sailing Yachts</a></li>
+            <li><a href="#">Motor Yachts</a></li>
+            <li><a href="#">Catamarans</a></li>
+            <li><a href="#">Gulets</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation">
+        <a href="#panel3a">Charter Advice</a>
+        <div id="panel3a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation"><a href="#">News</a></li>
+      <li class="accordion-navigation">
+        <a href="#panel4a">About Us</a>
+        <div id="panel4a" class="content">
+          <ul class="no-bullet">
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+            <li><a href="#">Sub Nav Link</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-navigation accordion-social">
+        <nav class="nav-social">
+          <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+        </nav>
+      </li>
+    </ul>
+  </aside>
 
-<header class="header">
+  <header class="header">
     <div class="row">
-        <div class="medium-12 column">
-        
-        <a class="menu-trigger right-off-canvas-toggle" href="#">
-            <i class="fa fa-bars icon-burger"></i>
-            <span class="screen-reader-only">Menu</span>
+      <div class="medium-12 column">
+
+        <a class="off-canvas-nav-icon right-off-canvas-toggle" href="#">
+          <i class="fa fa-bars icon-burger"></i>
+          <span class="screen-reader-only">Menu</span>
         </a>
 
         <nav class="primary-nav">
-
-            <div class="logo-wrap">
-                <a class="logo" href="#" title="Luxury Yacht Charter Group">
-                    <img data-interchange="[/images/logo-lycg.svg, (medium)], [/images/logo-lycg-mobile.svg, (small-only)]">
-                </a>
-            </div>
-
-            <ul class="main-nav inline-list right">
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
-                    <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Caribbean</a></li>
-                        <li><a href="#">Mediterranean</a></li>
-                        <li><a href="#">Bahamas</a></li>
-                        <li><a href="#">Florida</a></li>
-                        <li><a href="#">South Pacific</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
-                    <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sailing Yachts</a></li>
-                        <li><a href="#">Motor Yachts</a></li>
-                        <li><a href="#">Catamarans</a></li>
-                        <li><a href="#">Gulets</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link">
-                    <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
-                    <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                        <li><a href="#">Sub Nav Link</a></li>
-                    </ul>
-                </li>
-                <li class="main-nav-link"><a href="#" class="header-button-search button">Search</a></li>
-            </ul>
-            <a href="#" class="header-button-search mobile-search-button">
-                <i class="fa fa-search"></i>
+          <div class="logo-wrap">
+            <a class="logo" href="#" title="Luxury Yacht Charter Group">
+              <img src="images/lyc_logo.svg" alt="">
             </a>
+          </div>
+          <ul class="main-nav inline-list right">
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-destinations" data-options="is_hover:true">Destinations</a>
+              <ul id="nav-destinations" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Caribbean</a></li>
+                <li><a href="#">Mediterranean</a></li>
+                <li><a href="#">Bahamas</a></li>
+                <li><a href="#">Florida</a></li>
+                <li><a href="#">South Pacific</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-yacht-type" data-options="is_hover:true">Yacht Type</a>
+              <ul id="nav-yacht-type" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sailing Yachts</a></li>
+                <li><a href="#">Motor Yachts</a></li>
+                <li><a href="#">Catamarans</a></li>
+                <li><a href="#">Gulets</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link">
+              <a href="#" data-dropdown="nav-charter-advice" data-options="is_hover:true">Charter Advice</a>
+              <ul id="nav-charter-advice" class="f-dropdown text-left dropdown" data-dropdown-content="">
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+                <li><a href="#">Sub Nav Link</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-link"><a href="#">Blog</a></li>
+            <li class="main-nav-link"><a href="#" class="button header-button">Search</a></li>
+            <li class="main-nav-link-language">
+              <a class="nav-lang-eng current" href="#">English</a>
+              <a class="nav-lang-fr" href="#">Français</a>
+            </li>
+          </ul>
         </nav>
 
-        </div>
+      </div>
     </div>
-</header>
+  </header>
 
 <div id="content">
+  <div class="content-body row-space-bottom-3">
 
-<!--<div class="media-photo section-hero section-hero-search">
-    <div class="media-cover" style="background-image:url(images/diamond_a_motor_yacht_001.jpg)"></div>
-    <div class="row row-table collapse">
-        <div class="title small-12 text-center col-middle column">
-            <h1>Yacht Charter Fleet</h1>  
-        </div>
-    </div>
-</div>-->
+          <form method="get" action="?">
 
-<div class="content-body">
+          <div class="filters">
 
-<div class="filters">
-    <div class="page-container">
+                  <div class="row">
 
-        <div class="row">
-            
+                      <div class="small-12 column">
+                          <h2>Yacht Charter Search</h2>
+                                                  <p>Use the options below to filter the list of yachts. Looking for destinations? <a href="/destinations.php">Click here to view all</a></p>
+                                              </div>
+                      <div class="search-inline">
+                          <div class="medium-4 column">
+                              <select class="input-list input-large" id="destinations" name="destinations">
+                                  <option value="">Destination...</option>
+                                                                                                                                          <option value="45">
+                                                                                                                          Mediterranean                                    </option>
+                                                                                                                                              <option value="5">
+                                          -                                                                                 Corsica                                    </option>
+                                                                                                                                              <option value="6">
+                                          -                                                                                 Croatia                                    </option>
+                                                                                                                                              <option value="48">
+                                          -                                                                                 French Riviera (Côte d'Azur)                                    </option>
+                                                                                                                                              <option value="8">
+                                          -                                                                                 Greece                                    </option>
+                                                                                                                                              <option value="13">
+                                          -                                                                                 Turkey                                    </option>
+                                                                                                                                              <option value="9">
+                                          -                                                                                 Italy                                    </option>
+                                                                                                                                                                                                                  <option value="19">
+                                                                                  &nbsp;&nbsp;--                                         Sicily &amp; Aeolian Islands                                    </option>
+                                                                                                                                              <option value="20">
+                                                                                  &nbsp;&nbsp;--                                         Gulf of Naples &amp; Amalfi                                    </option>
+                                                                                                                                              <option value="49">
+                                          -                                                                                 Balearic Islands                                    </option>
+                                                                                                                                              <option value="4">
+                                                                                                                          Caribbean                                    </option>
+                                                                                                                                              <option value="35">
+                                          -                                                                                 Anguilla                                    </option>
+                                                                                                                                              <option value="33">
+                                          -                                                                                 Antigua &amp; Barbuda                                    </option>
+                                                                                                                                              <option value="25">
+                                          -                                                                                 Bahamas                                    </option>
+                                                                                                                                              <option value="23">
+                                          -                                                                                 British Virgin Islands                                    </option>
+                                                                                                                                              <option value="31">
+                                          -                                                                                 Dominica                                    </option>
+                                                                                                                                              <option value="47">
+                                          -                                                                                 Florida                                    </option>
+                                                                                                                                              <option value="30">
+                                          -                                                                                 Grenada                                    </option>
+                                                                                                                                              <option value="32">
+                                          -                                                                                 Guadeloupe                                    </option>
+                                                                                                                                              <option value="26">
+                                          -                                                                                 Martinique                                    </option>
+                                                                                                                                              <option value="37">
+                                          -                                                                                 St Barts (St. Barths or St. Barthelemy)                                     </option>
+                                                                                                                                              <option value="36">
+                                          -                                                                                 St Martin (St Maarten)                                    </option>
+                                                                                                                                              <option value="28">
+                                          -                                                                                 St Vincent                                    </option>
+                                                                                                                                              <option value="27">
+                                          -                                                                                 St Lucia                                    </option>
+                                                                                                                                              <option value="29">
+                                          -                                                                                 The Grenadines                                    </option>
+                                                                                                                                              <option value="24">
+                                          -                                                                                 US Virgin Islands                                    </option>
+                                                                                                                                              <option value="21">
+                                          -                                                                                 Windward Islands                                    </option>
+                                                                                                                                              <option value="22">
+                                          -                                                                                 Leeward Islands                                    </option>
+                                                                                                                                              <option value="46">
+                                                                                                                          South Pacific                                    </option>
+                                                                                                                                              <option value="1">
+                                          -                                                                                 Australia                                    </option>
+                                                                                                                                              <option value="16">
+                                          -                                                                                 Fiji                                    </option>
+                                                                                                                                              <option value="10">
+                                          -                                                                                 Tonga                                    </option>
+                                                                                                                                                                                                                  <option value="11">
+                                          -                                                                                 Tahiti                                    </option>
+                                                                                                                                              <option value="2">
+                                          -                                                                                 New Zealand                                    </option>
+                                                                                                                                              <option value="3">
+                                                                                  &nbsp;&nbsp;--                                         Bay of Islands                                    </option>
+                                                                                                                                              <option value="17">
+                                                                                  &nbsp;&nbsp;--                                         Hauraki Gulf                                    </option>
+                                                                                                                                              <option value="18">
+                                                                                  &nbsp;&nbsp;--                                         Marlborough Sounds                                    </option>
+                                                                                                                                              <option value="50">
+                                                                                                                          Events                                    </option>
+                                                                                                                                              <option value="51">
+                                          -                                                                                 Cannes Film Festival                                     </option>
+                                                                                                                                              <option value="52">
+                                          -                                                                                 Monaco Grand Prix                                     </option>
+                                                                                                  </select>
+                          </div>
+                          <div class="medium-3 column">
+                              <select class="input-list input-large" id="type" name="type">
+                                  <option value="">Yacht Type...</option>
+                                                                                                  <option value="sailing">- Sailing Yachts</option>
+                                                                  <option value="motor">- Motor Yachts</option>
+                                                                  <option value="catamaran">- Catamarans</option>
+                                                                  <option value="power-catamaran">- Power Catamarans</option>
+                                                                  <option value="gulet">- Gulets</option>
+                                                              </select>
+                          </div>
+                          <div class="medium-3 column">
+                              <input class="input-search input-large" type="text" placeholder="Keyword..." name="yacht_title_query,meta_description_query,intro_query,yacht_name_query" value="">
+                          </div>
+                          <div class="medium-2 column">
+                              <button type="submit" class="button postfix">Search</button>
+                          </div>
+                      </div>
+                  </div>
+
+          </div>
+
+          <div class="row results-filter">
+              <div class="filter-sort medium-8 column">
+                  <dl class="sub-nav">
+                      <dt>Sort by: </dt>
+
+                      <dd class="active"><a href="?">Default</a> </dd>
+                      <dd class="sortasc"><a href="?&amp;sort=rateASC">Rate</a></dd>
+                      <dd class="sortasc"><a href="?&amp;sort=lengthASC">Length</a></dd>
+                      <dd class="hide-for-small-only sortasc">  <a href="?&amp;sort=guestsASC">Guests</a></dd>
+                  </dl>
+              </div>
+              <div class="results-total medium-4 column text-right">
+                  <p><b>165 results ( Page 1 of 9 )</b></p>
+              </div>
+          </div>
+
+          </form>
+
+          <div class="row">
+              <div class="small-12 column">
+
+                  <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/bliss-5/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/bliss-tahiti-2_001.jpg" alt="Yacht Bliss">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>10</span>
+                                  </div>
+                                  <a href="/yacht.php/bliss-5/"><h3>Bliss</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">37m, 121'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      US$89000
+
+                                       -
+                                                                              US$95000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 37 </span>
+                                      <span class="listing-rate">Guests (night): 10 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/cosmos-9/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/charter-yacht-cosmos-in-australia.jpg" alt="Yacht Cosmos">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>8</span>
+                                  </div>
+                                  <a href="/yacht.php/cosmos-9/"><h3>Cosmos</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">32.5m, 107'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              US$60000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 32.5 </span>
+                                      <span class="listing-rate">Guests (night): 8 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/koi-13/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/luxury_yacht_koi_profile.jpg" alt="Yacht Koi">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>9</span>
+                                  </div>
+                                  <a href="/yacht.php/koi-13/"><h3>Koi</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">35m, 115'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              €75000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 35 </span>
+                                      <span class="listing-rate">Guests (night): 9 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/askari-14/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/askari-askari-profile-a.jpg" alt="Yacht Askari">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>10</span>
+                                  </div>
+                                  <a href="/yacht.php/askari-14/"><h3>Askari</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">32.8m, 108'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              US$75000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 32.8 </span>
+                                      <span class="listing-rate">Guests (night): 10 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/aurora-209/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/aurora-underway.jpg" alt="Yacht AURORA">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/aurora-209/"><h3>AURORA</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">30.6m, 100'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €42000
+
+                                       -
+                                                                              €49000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 30.6 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/riviera-255/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/riviera_profile.jpg" alt="Yacht Riviera">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>9</span>
+                                  </div>
+                                  <a href="/yacht.php/riviera-255/"><h3>Riviera</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">24m, 79'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €27000
+
+                                       -
+                                                                              €30000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 24 </span>
+                                      <span class="listing-rate">Guests (night): 9 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/de-lisle-iii-25/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/de-lidle-lll-underway_001.jpg" alt="Yacht De Lisle III">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>10</span>
+                                  </div>
+                                  <a href="/yacht.php/de-lisle-iii-25/"><h3>De Lisle III</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">42.m, 138'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              US$125000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 42. </span>
+                                      <span class="listing-rate">Guests (night): 10 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/vvs1-29/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/yacht_vvs1_profile.jpg" alt="Yacht VVS1">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>8</span>
+                                  </div>
+                                  <a href="/yacht.php/vvs1-29/"><h3>VVS1</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">34.18m, 112'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      US$85000
+
+                                       -
+                                                                              US$95000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 34.18 </span>
+                                      <span class="listing-rate">Guests (night): 8 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/bamarandi-270/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/charter_catamaran_bamarandi_002.jpg" alt="Yacht Bamarandi">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>10</span>
+                                  </div>
+                                  <a href="/yacht.php/bamarandi-270/"><h3>Bamarandi</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">20.42m, 67'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      US$39000
+
+                                       -
+                                                                              US$42750                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 20.42 </span>
+                                      <span class="listing-rate">Guests (night): 10 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/magic-cat-32/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/magic-cat-feature2.jpg" alt="Yacht Magic Cat">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>8</span>
+                                  </div>
+                                  <a href="/yacht.php/magic-cat-32/"><h3>Magic Cat</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">25m, 82'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              €35000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 25 </span>
+                                      <span class="listing-rate">Guests (night): 8 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/catamaran-anassa-33/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/anassa.jpg" alt="Yacht Catamaran Anassa">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>10</span>
+                                  </div>
+                                  <a href="/yacht.php/catamaran-anassa-33/"><h3>Catamaran Anassa</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">18.9m, 62'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €22000
+
+                                       -
+                                                                              €24000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 18.9 </span>
+                                      <span class="listing-rate">Guests (night): 10 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/ombre-blu-37/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/ombre-blu_001.jpg" alt="Yacht Ombre Blu">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>6</span>
+                                  </div>
+                                  <a href="/yacht.php/ombre-blu-37/"><h3>Ombre Blu</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">15.4m, 51'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €12500
+
+                                       -
+                                                                              €17500                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 15.4 </span>
+                                      <span class="listing-rate">Guests (night): 6 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/lady-j-125/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/Lady-J-Profile.jpg" alt="Yacht Lady J">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/lady-j-125/"><h3>Lady J</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">43.28m, 142'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      US$99000
+
+                                       -
+                                                                              US$109000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 43.28 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/douce-france-38/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/sailing-catamaran-douce-france-sailing-away_001.jpg" alt="Yacht Douce France">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/douce-france-38/"><h3>Douce France</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">42.2m, 138'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €95000
+
+                                       -
+                                                                              €105000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 42.2 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/motor-sailer-liana-h-43/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/liana-h-underway.jpg" alt="Yacht Motor Sailer Liana H">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/motor-sailer-liana-h-43/"><h3>Motor Sailer Liana H</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">28.03m, 92'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              €30100                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 28.03 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/gulet-mare-nostrum-44/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/mare-nostrum-thumb.jpg" alt="Yacht Gulet Mare Nostrum">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/gulet-mare-nostrum-44/"><h3>Gulet Mare Nostrum</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">43m, 141'</span>
+                                                                          <span class="listing-rate">Rate:
+
+
+                                                                              €50000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 43 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/athos-191/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/athos.jpg" alt="Yacht Athos">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>10</span>
+                                  </div>
+                                  <a href="/yacht.php/athos-191/"><h3>Athos</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">62m, 203'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €160000
+
+                                       -
+                                                                              €180000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 62 </span>
+                                      <span class="listing-rate">Guests (night): 10 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/sovereign-267/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/charter_motor_yacht_sovereign_profile.jpg" alt="Yacht Sovereign">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/sovereign-267/"><h3>Sovereign</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">44.20m, 145'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      US$149000
+
+                                       -
+                                                                              US$169000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 44.20 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/gulet-zephyria-ii-45/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/gulet_zephyria_ii_sailing.jpg" alt="Yacht Gulet Zephyria II">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>12</span>
+                                  </div>
+                                  <a href="/yacht.php/gulet-zephyria-ii-45/"><h3>Gulet Zephyria II</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">34.8m, 114'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €23100
+
+                                       -
+                                                                              €30100                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 34.8 </span>
+                                      <span class="listing-rate">Guests (night): 12 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+                                          <li>
+                          <div class="card-wrap">
+                              <div class="card-img">
+                                  <div class="card-media-cover">
+                                  <a href="/yacht.php/rapture-47/">
+                                                                                                                                          <img src="/cms/uploads/thumb2/rapture-sailing.jpg" alt="Yacht Rapture">
+                                                                                                                                      </a>
+                                  </div>
+                              </div>
+                              <div class="card-section">
+                                  <div class="guests right">
+                                      <span>8</span>
+                                  </div>
+                                  <a href="/yacht.php/rapture-47/"><h3>Rapture</h3></a>
+                                  <div class="card-listing-info xsmall">
+                                      <span class="listing-length">30.2m, 99'</span>
+                                                                          <span class="listing-rate">Rate:
+
+                                      €45000
+
+                                       -
+                                                                              €50000                                     pw
+                                      </span>
+                                      <span class="listing-rate">Length: 30.2 </span>
+                                      <span class="listing-rate">Guests (night): 8 </span>
+
+                                                                      </div>
+                              </div>
+                          </div>
+                      </li>
+
+                  </ul>
+
+              </div>
+          </div>
+
+          <div class="row">
             <div class="small-12 column">
-                <h2>Yacht Charter Search Results</h2>
+              <div class="results-footer">
+                  <div class="pagination-row">
+                      <ul class="pagination clearfix">
+                                                                <li class="right"><a class="button button-secondary button-after" href="/search.php/page-2/">Next Page <i class="font_lcg icon-caret-right"></i></a></li>
+                                          </ul>
+                  </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="medium-4 column">
-                    <select class="input-list input-large" id="destination" name="destination">
-                        <option value="1">Destination</option>
-                        <option value="2">1</option>
-                    </select>
-                </div>
-                <div class="medium-3 column">
-                    <select class="input-list input-large" id="yacht_type" name="yacht_type">
-                        <option value="1">Yacht Type</option>
-                        <option value="2">Sailing Yachts</option>
-                        <option value="3">Motor Yachts</option>
-                        <option value="4">Catamarans</option>
-                        <option value="5">Gulets</option>
-                    </select>
-                </div>
-                <div class="medium-3 column">
-                    <input class="input-search input-large" type="text" placeholder="keyword" />
-                </div>
-                <div class="medium-2 column">
-                    <a href="#" class="button postfix">Search</a>
-                </div>
-            </div>
-        </div>
+          </div>
 
-    </div>
+      </div>
 </div>
-
-    <div class="page-container">
-    
-        <form action="" method="get">
-        <div class="row results-filter">
-            <div class="filter-sort medium-8 column">
-                <dl class="sub-nav">
-                    <dt>Sort by:</dt>
-                    <dd class="active"><a href="#">All</a></dd>
-                    <dd><a href="#">Price</a></dd>
-                    <dd><a href="#">Length</a></dd>
-                    <dd class="hide-for-small-only"><a href="#">Guests</a></dd>
-                </dl>
-            </div>
-            <div class="results-total medium-4 column text-right">
-                <p><b>100+ results</b></p>
-            </div>
-        </div>
-    </form>
-        <div class="row">
-            <div class="small-12 column">
-
-                <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/cocktails_001.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/nero_anchored.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/Regina-sailing-away.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/athos.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/idol-charter-yacht-aerial.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/diamond_a.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/luxury_charter_yacht_my_seanna.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/charter_yacht_gravitas_underway.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/amarula_sun_luxury_motor_yacht.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/broadwater_feadship.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/andromeda-la-dea-sailing3_001.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/cocktails_001.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-wrap">
-                            <div class="card-img">
-                                <div class="card-media-cover">
-                                    <img src="images/cocktails_001.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-section">
-                                <div class="guests right">
-                                    <i class="fa fa-bed"></i> <span>11</span>
-                                </div>
-                                <a href="#"><h3>COCKTAILS</h3></a>
-                                <div class="card-listing-info xsmall">
-                                    <span class="listing-length">47.85m, 157'</span>
-                                    <span class="listing-rate">Rate: US$185000 - US$225000 pw</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="results-footer">
-            <div class="row row-space-bottom-3">
-                <div class="pagination-row">
-                    <ul class="pagination">
-                      <li class="arrow unavailable"><a href=""><i class="fa fa-caret-left"></i></a></li>
-                      <li class="current"><a href="">1</a></li>
-                      <li><a href="">2</a></li>
-                      <li><a href="">3</a></li>
-                      <li><a href="">4</a></li>
-                      <li class="unavailable"><a href="">&hellip;</a></li>
-                      <li><a href="">12</a></li>
-                      <li><a href="">13</a></li>
-                      <li class="arrow"><a href=""><i class="fa fa-caret-right"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-</div>
-
-</div><!-- /#content-->
 
 <footer class="site-footer">
 
@@ -564,9 +950,9 @@
             <div class="medium-3 medium-pull-9 columns">
                 <h4>Follow us on</h4>
                 <nav class="nav-social">
-                    <a href="#" class="social-icon social-icon-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="social-icon social-icon-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="social-icon social-icon-googleplus"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social-icon social-icon-facebook"><i class="font_lcg icon-facebook"></i></a>
+                    <a href="#" class="social-icon social-icon-twitter"><i class="font_lcg icon-twitter"></i></a>
+                    <a href="#" class="social-icon social-icon-googleplus"><i class="font_lcg icon-googleplus"></i></a>
                 </nav>
             </div>
         </div>
